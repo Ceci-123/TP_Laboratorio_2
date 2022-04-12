@@ -13,7 +13,7 @@ namespace Entidades
         #region constructor
 
         /// <summary>
-        /// Constructor por defecto de un objeto de tipo Operando, inicializa el numero en 0
+        /// Constructor por defecto de un objeto de tipo Operando, inicializa numero en 0
         /// </summary>
         public Operando()
         {
@@ -117,7 +117,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Valida si una cadena es un numero binario
+        /// Valida si una cadena es un numero binario o no lo es
         /// </summary>
         /// <param name="binario">La cadena a evaluar</param>
         /// <returns>Devuelve true si la cadena es un numero binario y false si no lo es</returns>
@@ -147,6 +147,11 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// Metodo publico que lama al metodo privado que evalua si un numero es o no es binario
+        /// </summary>
+        /// <param name="binario">La cadena a evaluar </param>
+        /// <returns></returns>
         public static bool ConsultaBinario(string binario)
         {
             return EsBinario(binario);

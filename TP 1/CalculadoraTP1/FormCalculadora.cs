@@ -16,7 +16,7 @@ namespace CalculadoraTP1
 
         #region Variables
         string memoria = "";
-                
+              
         #endregion
 
         public FormCalculadora()
@@ -94,6 +94,13 @@ namespace CalculadoraTP1
 
         #region Metodos
 
+        /// <summary>
+        /// Llama al metodo Operar de la biblioteca de clases y le pasa los parametros que necesita
+        /// </summary>
+        /// <param name="primerNumeroStr"></param>
+        /// <param name="segundoNumeroStr"></param>
+        /// <param name="operador"></param>
+        /// <returns>Devuelve lo que devuelva el metodo Operar</returns>
         private static double Operar(string primerNumeroStr, string segundoNumeroStr, string operador)
         {
             Operando primerOperando = new Operando();
@@ -124,6 +131,9 @@ namespace CalculadoraTP1
             
         }
 
+        /// <summary>
+        /// Coloca strings vacios en los campos de ingreso de numeros, en el resultado y el operador
+        /// </summary>
         private void Limpiar()
         {
             this.lblResultado.Text = " ";
@@ -147,6 +157,9 @@ namespace CalculadoraTP1
             }
         }
 
+        /// <summary>
+        /// Escribe en el listBox el contenido del label resultado
+        /// </summary>
         private void EscribirHistorialBinario()
         {
             memoria = " = " + lblResultado.Text + "\n";

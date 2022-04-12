@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\TP LABO 2 repo github\\TP_Laboratorio_2\\TP 1\\CalculadoraTP1\\MiCalculadora.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\abril2022 repo github\\TP_Laboratorio_2\\TP 1\\CalculadoraTP1\\MiCalculadora.csproj",
       "projectName": "MiCalculadora",
-      "projectPath": "C:\\Users\\user\\Desktop\\TP LABO 2 repo github\\TP_Laboratorio_2\\TP 1\\CalculadoraTP1\\MiCalculadora.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\abril2022 repo github\\TP_Laboratorio_2\\TP 1\\CalculadoraTP1\\MiCalculadora.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\TP LABO 2 repo github\\TP_Laboratorio_2\\TP 1\\CalculadoraTP1\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\abril2022 repo github\\TP_Laboratorio_2\\TP 1\\CalculadoraTP1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\TP LABO 2 repo github\\TP_Laboratorio_2\\TP 1\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\TP LABO 2 repo github\\TP_Laboratorio_2\\TP 1\\Entidades\\Entidades.csproj"
+            "C:\\Users\\user\\Desktop\\abril2022 repo github\\TP_Laboratorio_2\\TP 1\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\abril2022 repo github\\TP_Laboratorio_2\\TP 1\\Entidades\\Entidades.csproj"
             }
           }
         }
