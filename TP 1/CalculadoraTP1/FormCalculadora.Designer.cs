@@ -138,15 +138,13 @@
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(204, 25);
+            this.lblResultado.Location = new System.Drawing.Point(45, 25);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblResultado.Size = new System.Drawing.Size(79, 40);
+            this.lblResultado.Size = new System.Drawing.Size(447, 40);
             this.lblResultado.TabIndex = 1;
             this.lblResultado.Text = "label1";
-            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // FormCalculadora
             // 

@@ -11,6 +11,9 @@ using Entidades;
 
 namespace CalculadoraTP1
 {
+    /// <summary>
+    /// Ceci abril 2022
+    /// </summary>
     public partial class FormCalculadora : Form
     {
 
