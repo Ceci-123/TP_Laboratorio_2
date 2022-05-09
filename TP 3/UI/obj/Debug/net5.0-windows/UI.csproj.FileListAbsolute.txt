@@ -20,3 +20,25 @@ C:\Users\user\Desktop\TP3\UI\bin\Debug\net5.0-windows\Entidades.dll
 C:\Users\user\Desktop\TP3\UI\bin\Debug\net5.0-windows\Entidades.pdb
 C:\Users\user\Desktop\TP3\UI\obj\Debug\net5.0-windows\UI.csproj.CopyComplete
 C:\Users\user\Desktop\TP3\UI\obj\Debug\net5.0-windows\UI.Form_Atencion.resources
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\UI.exe
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\UI.deps.json
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\UI.runtimeconfig.json
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\UI.runtimeconfig.dev.json
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\UI.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\UI.pdb
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.Form_Atencion.resources
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.Form_Veterinaria.resources
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.csproj.GenerateResource.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.AssemblyInfo.cs
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.csproj.CopyComplete
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\refint\UI.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.pdb
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.genruntimeconfig.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\ref\UI.dll

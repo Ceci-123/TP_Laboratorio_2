@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Atencion));
             this.lbl_Atencion = new System.Windows.Forms.Label();
             this.num_edad = new System.Windows.Forms.NumericUpDown();
             this.lbl_edad = new System.Windows.Forms.Label();
@@ -84,8 +85,12 @@
             this.Controls.Add(this.lbl_edad);
             this.Controls.Add(this.num_edad);
             this.Controls.Add(this.lbl_Atencion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form_Atencion";
             this.Text = "Form_Atencion";
+            this.Load += new System.EventHandler(this.Form_Atencion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.num_edad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

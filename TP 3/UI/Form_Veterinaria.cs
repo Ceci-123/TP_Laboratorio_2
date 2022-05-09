@@ -60,12 +60,30 @@ namespace UI
         private void RefrescarLista()
         {
             this.rchTxt_Info.Text = Veterinaria.MostrarFila(Veterinaria.FilaDePacientes);
+            SumarUnPaciente();
+        }
+
+        private void SumarUnPaciente()
+        {
             cantidadEsperando++;
+            this.lbl_PacientesEnEspera.Text = $"Pacientes en espera {cantidadEsperando}";
         }
 
         private void btn_AtenderProximo_Click(object sender, EventArgs e)
         {
-            Form frmAtencion = new Form_Atencion(Veterinaria.FilaDePacientes.Dequeue());
+            try
+            {
+                Form frmAtencion = new Form_Atencion(Veterinaria.FilaDePacientes.Dequeue());
+
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("No hay pacientes en espera");
+            }    
+            catch (Exception)
+            {
+                MessageBox.Show("algo malio sal");
+            }
         }
     }
 }

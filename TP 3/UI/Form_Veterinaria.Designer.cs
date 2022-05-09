@@ -190,6 +190,8 @@
             this.Controls.Add(this.lbl_PacientesEnEspera);
             this.Controls.Add(this.lbl_NombreVet);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form_Veterinaria";
             this.Text = "Pequeñas Patitas";
             this.Load += new System.EventHandler(this.Form_Veterinaria_Load);

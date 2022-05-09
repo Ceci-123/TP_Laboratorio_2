@@ -13,9 +13,16 @@ namespace UI
 {
     public partial class Form_Atencion : Form
     {
+        Paciente pacienteActual;
         public Form_Atencion(Paciente unPaciente)
         {
             InitializeComponent();
+            this.pacienteActual = unPaciente;
+        }
+
+        private void Form_Atencion_Load(object sender, EventArgs e)
+        {
+            this.lbl_Atencion.Text = $"Atendiendo a {pacienteActual.Nombre}";
         }
     }
 }
