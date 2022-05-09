@@ -13,7 +13,7 @@ namespace UI
 {
     public partial class Form_Veterinaria : Form
     {
-        private int cantidadEsperando;
+        private int cantidadEsperando = 0;
         private Paciente? pacienteActual = null;
         public Form_Veterinaria()
         {
@@ -30,7 +30,7 @@ namespace UI
             this.lbl_TipoAnimal.Visible = false;
             this.cmb_TipoAnimal.Visible = false;
             this.txt_bx_nombre.Visible = false;
-            RefrescarLista();
+            //RefrescarLista();
         }
 
         private void btn_AgregarPaciente_Click(object sender, EventArgs e)
@@ -39,6 +39,7 @@ namespace UI
             this.lbl_TipoAnimal.Visible = true;
             this.cmb_TipoAnimal.Visible = true;
             this.txt_bx_nombre.Visible = true;
+            this.cmb_TipoAnimal.Text = "";
         }
 
         private void btn_Ok_Click(object sender, EventArgs e)
@@ -49,7 +50,8 @@ namespace UI
                 pacienteActual = new Paciente(this.txt_bx_nombre.Text,(Paciente.eAnimal)this.cmb_TipoAnimal.SelectedItem);
                 Veterinaria.FilaDePacientes = pacienteActual + Veterinaria.FilaDePacientes;
                 RefrescarLista();
-
+                this.txt_bx_nombre.Text = "";
+                this.cmb_TipoAnimal.Text = "";
             }
             else
             {
@@ -73,7 +75,7 @@ namespace UI
         {
             try
             {
-                Form frmAtencion = new Form_Atencion(Veterinaria.FilaDePacientes.Dequeue());
+               pacienteActual = Veterinaria.FilaDePacientes.Dequeue();
 
             }
             catch (InvalidOperationException)
@@ -84,6 +86,15 @@ namespace UI
             {
                 MessageBox.Show("algo malio sal");
             }
+            if(pacienteActual is not null)
+            {
+               Form frmAtencion = new Form_Atencion(pacienteActual);
+                if (frmAtencion.ShowDialog() == DialogResult.OK)
+                {
+                    //aqui codigo
+                }
+            }
+            
         }
     }
 }

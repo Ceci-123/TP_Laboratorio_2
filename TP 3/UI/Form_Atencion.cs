@@ -24,5 +24,11 @@ namespace UI
         {
             this.lbl_Atencion.Text = $"Atendiendo a {pacienteActual.Nombre}";
         }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            // instanciar bicho
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }
