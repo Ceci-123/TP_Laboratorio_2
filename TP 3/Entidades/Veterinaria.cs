@@ -6,8 +6,8 @@ namespace Entidades
 {
     public class Veterinaria
     {
-        //private static string nombre;
         private static Queue<Paciente> filaDePacientes;
+        private static List<Animal> listaAnimales;
 
         public static string Nombre 
         {
@@ -16,12 +16,18 @@ namespace Entidades
         }
 
         public static Queue<Paciente> FilaDePacientes { get => filaDePacientes;
-            set => filaDePacientes = value;
+            set => filaDePacientes = value;         }
+
+        public static List<Animal> ListaAnimales
+        {
+            get => listaAnimales;
+            set => listaAnimales = value;
         }
 
         static Veterinaria()
         {
             filaDePacientes = new Queue<Paciente>();
+            listaAnimales = new List<Animal>();
         }
 
         public static string MostrarFila(Queue<Paciente> filaDePacientes)

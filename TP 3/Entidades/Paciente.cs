@@ -8,27 +8,22 @@ namespace Entidades
         {
             Perro,
             Gato,
-            Conejo
+            Conejo,
+            Hamster
         }
-        private static int nextId;
+        
         private string nombre;
-        private int id;
         private eAnimal tipoDeAnimal;
 
         public string Nombre { get => nombre; set => nombre = value; }
-        public int Id { get => id; }
         internal eAnimal TipoDeAnimal { get => tipoDeAnimal; }
 
-        static Paciente()
-        {
-            nextId = 1;
-        }
+        
         public Paciente(string nombre, eAnimal tipo)
         {
             this.nombre = nombre;
             this.tipoDeAnimal = tipo;
-            this.id = nextId;
-            nextId++;
+            
         }
 
         public static Queue<Paciente> operator +(Paciente unPaciente, Queue<Paciente> listado)
