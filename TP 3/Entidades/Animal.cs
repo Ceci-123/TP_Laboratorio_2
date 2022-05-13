@@ -29,5 +29,24 @@ namespace Entidades
             this.id = nextId;
             nextId++;
         }
+
+        public static bool operator ==(Animal a1, Animal a2)
+        {
+            bool retorno = false;
+            if (a1 == null && a2 == null)
+            {
+                if(a1.Id == a2.Id)
+                {
+                    retorno = true;
+                }  
+            }
+            return retorno;
+        }
+        public static bool operator !=(Animal a1, Animal a2)
+        {
+            return !(a1 == a2);
+        }
+
+       
     }
 }

@@ -16,5 +16,20 @@ namespace Entidades
         {
 
         }
+
+        public bool DevolverSiFichaEstaCompleta(Perro unPerro)
+        {
+            bool retorno = false;
+            if(unPerro != null)
+            {
+                if (unPerro.Edad > 0 && !(String.IsNullOrEmpty(unPerro.Nombre)) &&
+                    unPerro.peso > 0 && !(String.IsNullOrEmpty(unPerro.raza))
+                    && vacunado)
+                {
+                    retorno = true;
+                }
+            }
+            return retorno; 
+        }
     }
 }

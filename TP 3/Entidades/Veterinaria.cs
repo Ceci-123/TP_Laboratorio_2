@@ -41,5 +41,57 @@ namespace Entidades
             }
             return sb.ToString();   
         }
+
+        public static string MostrarLista(List<Animal> lista)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (Animal item in lista)
+            {
+                sb.AppendLine($"id de Registro {item.Id.ToString()}");
+                sb.Append(item.Nombre + " ");
+                sb.AppendLine(item.Edad.ToString() + "años");
+                sb.AppendLine("----------------------------");
+            }
+            return sb.ToString();
+        }
+
+        public void AgregarAnimal(Animal unAnimal)
+        {
+            if(unAnimal is not null)
+            {
+                foreach (Animal item in ListaAnimales)
+                {
+                    if(item == unAnimal)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                       ListaAnimales.Add(unAnimal);
+
+                    }
+                }
+            }
+        }
+
+        public bool ExportarListaAnimalesXml(List<Animal> lista)
+        {
+            return true;
+        }
+
+        public bool ExportarListaAnimalesJson(List<Animal> lista)
+        {
+            return true;
+        }
+
+        public bool ImportarListaAnimalesXml(List<Animal> lista)
+        {
+            return true;
+        }
+
+        public bool ImportarListaAnimalesJson(List<Animal> lista)
+        {
+            return true;
+        }
     }
 }

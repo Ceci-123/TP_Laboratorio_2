@@ -2,30 +2,35 @@
 
 <h1 align="center">TP 3 - Junio de 2022</h1>
 
-# \*\*\*\*
+# \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
 ## Veterinaria **Pequeñas Patitas**
 
 > Es un sistema de atencion de pacientes en una veterinaria
+> En un primer formulario se agregan pacientes en espera de ser atendidos
+> Al irse atendiendo cada paciente se lo ingresa en una ficha con sus datos y se le asigna un paseador.
 
-⭐️ Se agregan pacientes en espera
-❤ Se da de alta ficha con datos al atenderlos
+⭐️ Temas vistos entre la clase 10 a 15
 
-Temas vistos entre la clase 10 a 15
-✅ Excepciones en la serializacion
-✅ Pruebas unitarias metodo de ficha completa?
-✅ Pruebas unitarias metodo bool si esta vacunado
-✅ Metodos de extension en el reloj
-✅ Generics
-✅ Inv¿terfaces vacunacion
-✅Se sobrecarga el == si dos pacientes son iguales
-ya es paciente? sino agregarlo
-Serializacion xml y json
+✅ Excepciones: se usan en la serializacion de los datos de las fichas de pacientes
 
-Temas vistos entre la clase 15 a 20
+✅ Pruebas unitarias: en el metodo de ficha completa
+
+✅ Metodos de extension, se extiende la clase DateTime agregando un mensaje personalizado segun el dia de la semana.
+
+✅ Generics, se usa una clase paseador generica, puede aceptar solo los animales de la veterinaria.
+
+✅ Interfaces: vacunacion.
+
+✅Se sobrecarga el == para saber si dos pacientes son iguales.
+
+✅ Serializacion xml y json
+
+❤ Temas vistos entre la clase 15 a 20
+
 ✅ sql
 ✅ conexion a data base
 ✅ delegados
 ✅ expresiones lambda
-✅ ,multi hilo y concurrencia
+✅ multi hilo y concurrencia
 ✅eventos
