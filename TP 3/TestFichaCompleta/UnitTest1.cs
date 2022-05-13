@@ -15,12 +15,10 @@ namespace TestFichaCompleta
             p.Peso = 20;
             p.Raza = "mestizo";
             p.Vacunado = true;
-            bool expected = false;
             bool actual;
             //Act
-            actual = Perro.FichaCompleta(p);
+            actual = p.FichaCompleta();
             //Assert
-            //Assert.AreEqual(expected, actual);
             Assert.IsFalse(actual);
         }
 
@@ -33,12 +31,11 @@ namespace TestFichaCompleta
             p.Peso = 20;
             p.Raza = "mestizo";
             p.Vacunado = true;
-            bool expected = false;
             bool actual;
             //Act
-            actual = Perro.FichaCompleta(p);
+            actual = p.FichaCompleta();
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsFalse(actual);
         }
 
         [TestMethod]
@@ -50,12 +47,11 @@ namespace TestFichaCompleta
             p.Peso = 20;
             p.Raza = "";
             p.Vacunado = true;
-            bool expected = false;
             bool actual;
             //Act
-            actual = Perro.FichaCompleta(p);
+            actual = p.FichaCompleta();
             //Assert
-            Assert.AreEqual(expected,actual);
+            Assert.IsFalse(actual);
         }
 
         [TestMethod]
@@ -65,14 +61,13 @@ namespace TestFichaCompleta
             Perro p = new Perro("Milo");
             p.Edad = 7;
             p.Peso = 20;
-            p.Raza = "";
+            p.Raza = "mestizo";
             p.Vacunado = false;
-            bool expected = false;
             bool actual;
             //Act
-            actual = Perro.FichaCompleta(p);
+            actual = p.FichaCompleta();
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsFalse(actual);
         }
 
         [TestMethod]
@@ -82,14 +77,13 @@ namespace TestFichaCompleta
             Perro p = new Perro("Milo");
             p.Edad = 7;
             p.Peso = 20;
-            p.Raza = "";
+            p.Raza = "mestizo";
             p.Vacunado = true;
-            bool expected = true;
             bool actual;
             //Act
-            actual = Perro.FichaCompleta(p);
+            actual = p.FichaCompleta();
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsTrue(actual);
         }
     }
 }

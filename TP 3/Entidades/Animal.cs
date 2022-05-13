@@ -46,7 +46,5 @@ namespace Entidades
         {
             return !(a1 == a2);
         }
-
-       
     }
 }

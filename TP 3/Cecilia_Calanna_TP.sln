@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Enti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "UI\UI.csproj", "{7A2E0F40-A7FD-4981-9863-4F9C545315EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFichaCompleta", "TestFichaCompleta\TestFichaCompleta.csproj", "{40B9B7E4-786F-45E8-B84E-BDD99AD3FB06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFichaCompleta", "TestFichaCompleta\TestFichaCompleta.csproj", "{40B9B7E4-786F-45E8-B84E-BDD99AD3FB06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
