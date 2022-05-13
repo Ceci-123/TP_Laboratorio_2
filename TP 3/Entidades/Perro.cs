@@ -17,14 +17,18 @@ namespace Entidades
 
         }
 
-        public bool DevolverSiFichaEstaCompleta(Perro unPerro)
+        public int Peso { get => peso; set => peso = value; }
+        public string Raza { get => raza; set => raza = value; }
+        public bool Vacunado { get => vacunado; set => vacunado = value; }
+
+        public static bool FichaCompleta(Perro unPerro)
         {
             bool retorno = false;
             if(unPerro != null)
             {
-                if (unPerro.Edad > 0 && !(String.IsNullOrEmpty(unPerro.Nombre)) &&
-                    unPerro.peso > 0 && !(String.IsNullOrEmpty(unPerro.raza))
-                    && vacunado)
+                if (unPerro.Edad == 0 && !(String.IsNullOrEmpty(unPerro.Nombre)) &&
+                    unPerro.peso == 0 && !(String.IsNullOrEmpty(unPerro.raza))
+                    && !unPerro.vacunado)
                 {
                     retorno = true;
                 }

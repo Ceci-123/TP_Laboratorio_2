@@ -1,4 +1,4 @@
-![imagen](https://.png)
+![imagen](https://nupec.com/wp-content/uploads/2020/07/Captura-de-pantalla-2020-07-24-a-las-17.33.44.png)
 
 <h1 align="center">TP 3 - Junio de 2022</h1>
 
