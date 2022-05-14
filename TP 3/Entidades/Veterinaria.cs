@@ -59,13 +59,18 @@ namespace Entidades
         public static string MostrarLista(List<Animal> lista)
         {
             StringBuilder sb = new StringBuilder();
-            foreach (Animal item in lista)
+            if (lista is not null)
             {
-                sb.AppendLine($"id de Registro {item.Id.ToString()}");
-                sb.Append(item.Nombre + " ");
-                sb.AppendLine(item.Edad.ToString() + "años");
-                sb.AppendLine("----------------------------");
+                foreach (Animal item in lista)
+                {
+                    sb.AppendLine($"id de Registro {item.Id.ToString()}");
+                    sb.Append(item.Nombre + " ");
+                    sb.AppendLine(item.Edad.ToString() + "años");
+                    sb.AppendLine("----------------------------");
+                }
             }
+            
+            
             return sb.ToString();
         }
 

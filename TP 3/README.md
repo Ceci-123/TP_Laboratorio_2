@@ -14,7 +14,7 @@
 
 ⭐️ Temas vistos entre la clase 10 a 15
 
-✅ Excepciones: (//todo en las serializaciones) en el Formulario de Atenciones
+✅ Excepciones: (//todo en las cargas y guardado) en el Formulario de Atenciones
 
 ✅ Pruebas unitarias: en el metodo de ficha completa
 

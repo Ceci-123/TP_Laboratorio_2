@@ -58,7 +58,7 @@ namespace UI
                        
         }
 
-        private void btn_ok_Click(object sender, EventArgs e)
+        private void btn_ingresarFicha_Click(object sender, EventArgs e)
         {
            string auxNombre = pacienteActual.Nombre;
             string auxPelaje = this.txt_pelaje.Text;
@@ -87,14 +87,14 @@ namespace UI
                     break;
 
             }
-
+            LimpiarCampos();
             RefrescarLista();
         }
 
         private void RefrescarLista()
         {
-            this.txt_devolverInfo.Text = null;
-            this.txt_devolverInfo.Text += Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
+            this.txt_devolverInfo.Text = String.Empty;
+            this.txt_devolverInfo.Text = Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
         }
         private void btn_buscar_Click(object sender, EventArgs e)
         {
@@ -108,9 +108,15 @@ namespace UI
 
         private void ReproducirLadrido()
         {
-
-            SoundPlayer sonido = new SoundPlayer(Properties.Resources.ladrido);
-            sonido.Play();
+            try
+            {
+                SoundPlayer sonido = new SoundPlayer(Properties.Resources.ladrido);
+                sonido.Play();
+            }
+            catch (Exception)
+            {
+                Console.Beep();
+            }
 
         }
 
@@ -165,5 +171,17 @@ namespace UI
                 MessageBox.Show("No se pudo guardar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void LimpiarCampos()
+        {
+            this.numeric_peso.Value = 0;
+            this.txt_raza.Text = String.Empty;
+            this.chk_bx_vacunado.Checked = false;
+            this.chk_paseo.Checked = false;
+            this.txt_pelaje.Text= String.Empty;
+        }
+
+        
+ 
     }
 }

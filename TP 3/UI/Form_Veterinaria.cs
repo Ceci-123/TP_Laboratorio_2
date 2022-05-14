@@ -39,9 +39,16 @@ namespace UI
 
         private void ReproducirLadrido()
         {
-           
-            SoundPlayer sonido = new SoundPlayer(Properties.Resources.ladrido);
-            sonido.Play();
+            try
+            {
+                SoundPlayer sonido = new SoundPlayer(Properties.Resources.ladrido);
+                sonido.Play();
+            }
+            catch (Exception)
+            {
+                Console.Beep();
+            }  
+            
             
         }
 

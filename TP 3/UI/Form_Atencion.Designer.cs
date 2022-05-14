@@ -167,7 +167,7 @@
             this.btn_ingresarFicha.TabIndex = 9;
             this.btn_ingresarFicha.Text = "Ingresar Ficha";
             this.btn_ingresarFicha.UseVisualStyleBackColor = true;
-            this.btn_ingresarFicha.Click += new System.EventHandler(this.btn_ok_Click);
+            this.btn_ingresarFicha.Click += new System.EventHandler(this.btn_ingresarFicha_Click);
             // 
             // btn_buscarPorId
             // 
