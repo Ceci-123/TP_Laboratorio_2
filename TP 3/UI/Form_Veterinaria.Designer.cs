@@ -43,6 +43,8 @@
             this.btn_GuardarXml = new System.Windows.Forms.Button();
             this.lbl_Hora = new System.Windows.Forms.Label();
             this.lbl_mensajito = new System.Windows.Forms.Label();
+            this.pictureBox_Foto = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Foto)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_NombreVet
@@ -188,11 +190,22 @@
             this.lbl_mensajito.TabIndex = 15;
             this.lbl_mensajito.Text = "Mensajito";
             // 
+            // pictureBox_Foto
+            // 
+            this.pictureBox_Foto.Image = global::UI.Properties.Resources.perroVeterinario;
+            this.pictureBox_Foto.Location = new System.Drawing.Point(33, 271);
+            this.pictureBox_Foto.Name = "pictureBox_Foto";
+            this.pictureBox_Foto.Size = new System.Drawing.Size(345, 155);
+            this.pictureBox_Foto.TabIndex = 16;
+            this.pictureBox_Foto.TabStop = false;
+            // 
             // Form_Veterinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UI.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(907, 540);
+            this.Controls.Add(this.pictureBox_Foto);
             this.Controls.Add(this.lbl_mensajito);
             this.Controls.Add(this.lbl_Hora);
             this.Controls.Add(this.btn_GuardarXml);
@@ -215,6 +228,7 @@
             this.Name = "Form_Veterinaria";
             this.Text = "Pequeñas Patitas";
             this.Load += new System.EventHandler(this.Form_Veterinaria_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Foto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +250,6 @@
         private System.Windows.Forms.Button btn_GuardarXml;
         private System.Windows.Forms.Label lbl_Hora;
         private System.Windows.Forms.Label lbl_mensajito;
+        private System.Windows.Forms.PictureBox pictureBox_Foto;
     }
 }

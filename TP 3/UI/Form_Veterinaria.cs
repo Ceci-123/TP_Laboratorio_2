@@ -37,6 +37,7 @@ namespace UI
 
         private void btn_AgregarPaciente_Click(object sender, EventArgs e)
         {
+            this.pictureBox_Foto.Visible = false;
             this.lbl_NombrePaciente.Visible = true;
             this.lbl_TipoAnimal.Visible = true;
             this.cmb_TipoAnimal.Visible = true;
