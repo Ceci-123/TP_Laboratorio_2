@@ -157,6 +157,7 @@
             this.btn_CargaXML.TabIndex = 11;
             this.btn_CargaXML.Text = "Cargar desde XML";
             this.btn_CargaXML.UseVisualStyleBackColor = true;
+            this.btn_CargaXML.Click += new System.EventHandler(this.btn_CargaXML_Click);
             // 
             // btn_GuardarXml
             // 
@@ -167,6 +168,7 @@
             this.btn_GuardarXml.TabIndex = 13;
             this.btn_GuardarXml.Text = "Guardar en XML";
             this.btn_GuardarXml.UseVisualStyleBackColor = true;
+            this.btn_GuardarXml.Click += new System.EventHandler(this.btn_GuardarXml_Click);
             // 
             // lbl_Hora
             // 
@@ -196,6 +198,7 @@
             this.pictureBox_Foto.Location = new System.Drawing.Point(33, 271);
             this.pictureBox_Foto.Name = "pictureBox_Foto";
             this.pictureBox_Foto.Size = new System.Drawing.Size(345, 155);
+            this.pictureBox_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Foto.TabIndex = 16;
             this.pictureBox_Foto.TabStop = false;
             // 
