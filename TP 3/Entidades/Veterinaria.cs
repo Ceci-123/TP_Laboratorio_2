@@ -71,13 +71,11 @@ namespace Entidades
                     sb.AppendLine("----------------------------");
                     if (item is Perro)
                     {
-                       sb.AppendLine(((Perro)item).ToString());
-                        sb.AppendLine("-----------perro-----------------");
+                       sb.AppendLine(((Perro)item).Mostrar());
                     }
                     if (item is Gato)
                     {
-                        sb.AppendLine(((Gato)item).ToString());
-                        sb.AppendLine("-----------gato-----------------");
+                        sb.AppendLine(((Gato)item).Mostrar());
 
                     }
                     if (item is Conejo)
@@ -87,7 +85,7 @@ namespace Entidades
                     }
                     if (item is Hamster)
                     {
-                        sb.AppendLine(((Conejo)item).Mostrar());
+                        sb.AppendLine(((Hamster)item).Mostrar());
 
                     }
                 }

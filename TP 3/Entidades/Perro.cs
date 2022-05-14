@@ -42,7 +42,11 @@ namespace Entidades
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"Peso {this.Peso} Raza {this.Raza} Vacunado {this.Vacunado}");
+            sb.Append($"Peso {this.Peso} Raza {this.Raza}");
+            if (vacunado)
+            {
+                sb.Append($"Todas sus vacunas al dia");
+            }
             return sb.ToString();
         }
     }

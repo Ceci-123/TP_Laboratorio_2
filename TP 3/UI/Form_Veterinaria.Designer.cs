@@ -50,6 +50,7 @@
             // lbl_NombreVet
             // 
             this.lbl_NombreVet.AutoSize = true;
+            this.lbl_NombreVet.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_NombreVet.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.lbl_NombreVet.Location = new System.Drawing.Point(308, 18);
             this.lbl_NombreVet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -61,6 +62,7 @@
             // lbl_PacientesEnEspera
             // 
             this.lbl_PacientesEnEspera.AutoSize = true;
+            this.lbl_PacientesEnEspera.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_PacientesEnEspera.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_PacientesEnEspera.Location = new System.Drawing.Point(600, 79);
             this.lbl_PacientesEnEspera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -71,17 +73,19 @@
             // 
             // btn_AtenderProximo
             // 
+            this.btn_AtenderProximo.BackColor = System.Drawing.Color.LightCyan;
             this.btn_AtenderProximo.Location = new System.Drawing.Point(217, 157);
             this.btn_AtenderProximo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AtenderProximo.Name = "btn_AtenderProximo";
             this.btn_AtenderProximo.Size = new System.Drawing.Size(147, 95);
             this.btn_AtenderProximo.TabIndex = 2;
             this.btn_AtenderProximo.Text = "Atender Proximo";
-            this.btn_AtenderProximo.UseVisualStyleBackColor = true;
+            this.btn_AtenderProximo.UseVisualStyleBackColor = false;
             this.btn_AtenderProximo.Click += new System.EventHandler(this.btn_AtenderProximo_Click);
             // 
             // rchTxt_Info
             // 
+            this.rchTxt_Info.BackColor = System.Drawing.Color.LightCyan;
             this.rchTxt_Info.Location = new System.Drawing.Point(444, 157);
             this.rchTxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.rchTxt_Info.Name = "rchTxt_Info";
@@ -91,13 +95,14 @@
             // 
             // btn_AgregarPaciente
             // 
+            this.btn_AgregarPaciente.BackColor = System.Drawing.Color.LightCyan;
             this.btn_AgregarPaciente.Location = new System.Drawing.Point(33, 157);
             this.btn_AgregarPaciente.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AgregarPaciente.Name = "btn_AgregarPaciente";
             this.btn_AgregarPaciente.Size = new System.Drawing.Size(158, 95);
             this.btn_AgregarPaciente.TabIndex = 1;
             this.btn_AgregarPaciente.Text = "Agregar un Paciente";
-            this.btn_AgregarPaciente.UseVisualStyleBackColor = true;
+            this.btn_AgregarPaciente.UseVisualStyleBackColor = false;
             this.btn_AgregarPaciente.Click += new System.EventHandler(this.btn_AgregarPaciente_Click);
             // 
             // lbl_NombrePaciente
@@ -139,40 +144,44 @@
             // 
             // btn_Ok
             // 
+            this.btn_Ok.BackColor = System.Drawing.Color.LightCyan;
             this.btn_Ok.Location = new System.Drawing.Point(139, 448);
             this.btn_Ok.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Ok.Name = "btn_Ok";
             this.btn_Ok.Size = new System.Drawing.Size(96, 61);
             this.btn_Ok.TabIndex = 9;
             this.btn_Ok.Text = "OK";
-            this.btn_Ok.UseVisualStyleBackColor = true;
+            this.btn_Ok.UseVisualStyleBackColor = false;
             this.btn_Ok.Click += new System.EventHandler(this.btn_Ok_Click);
             // 
             // btn_CargaXML
             // 
+            this.btn_CargaXML.BackColor = System.Drawing.Color.LightCyan;
             this.btn_CargaXML.Location = new System.Drawing.Point(444, 448);
             this.btn_CargaXML.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargaXML.Name = "btn_CargaXML";
             this.btn_CargaXML.Size = new System.Drawing.Size(181, 61);
             this.btn_CargaXML.TabIndex = 3;
             this.btn_CargaXML.Text = "Cargar desde XML";
-            this.btn_CargaXML.UseVisualStyleBackColor = true;
+            this.btn_CargaXML.UseVisualStyleBackColor = false;
             this.btn_CargaXML.Click += new System.EventHandler(this.btn_CargaXML_Click);
             // 
             // btn_GuardarXml
             // 
+            this.btn_GuardarXml.BackColor = System.Drawing.Color.LightCyan;
             this.btn_GuardarXml.Location = new System.Drawing.Point(689, 448);
             this.btn_GuardarXml.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarXml.Name = "btn_GuardarXml";
             this.btn_GuardarXml.Size = new System.Drawing.Size(190, 61);
             this.btn_GuardarXml.TabIndex = 4;
             this.btn_GuardarXml.Text = "Guardar en XML";
-            this.btn_GuardarXml.UseVisualStyleBackColor = true;
+            this.btn_GuardarXml.UseVisualStyleBackColor = false;
             this.btn_GuardarXml.Click += new System.EventHandler(this.btn_GuardarXml_Click);
             // 
             // lbl_Hora
             // 
             this.lbl_Hora.AutoSize = true;
+            this.lbl_Hora.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_Hora.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Hora.Location = new System.Drawing.Point(33, 116);
             this.lbl_Hora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -184,6 +193,7 @@
             // lbl_mensajito
             // 
             this.lbl_mensajito.AutoSize = true;
+            this.lbl_mensajito.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_mensajito.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_mensajito.Location = new System.Drawing.Point(33, 79);
             this.lbl_mensajito.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

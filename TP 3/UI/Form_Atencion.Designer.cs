@@ -60,6 +60,7 @@
             // lbl_Atencion
             // 
             this.lbl_Atencion.AutoSize = true;
+            this.lbl_Atencion.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_Atencion.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Atencion.Location = new System.Drawing.Point(15, 34);
             this.lbl_Atencion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -70,6 +71,7 @@
             // 
             // num_edad
             // 
+            this.num_edad.BackColor = System.Drawing.Color.LightCyan;
             this.num_edad.Location = new System.Drawing.Point(166, 155);
             this.num_edad.Margin = new System.Windows.Forms.Padding(4);
             this.num_edad.Maximum = new decimal(new int[] {
@@ -84,6 +86,7 @@
             // lbl_edad
             // 
             this.lbl_edad.AutoSize = true;
+            this.lbl_edad.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_edad.Location = new System.Drawing.Point(63, 159);
             this.lbl_edad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_edad.Name = "lbl_edad";
@@ -94,17 +97,19 @@
             // chk_bx_vacunado
             // 
             this.chk_bx_vacunado.AutoSize = true;
+            this.chk_bx_vacunado.BackColor = System.Drawing.Color.LightCyan;
             this.chk_bx_vacunado.Location = new System.Drawing.Point(301, 155);
             this.chk_bx_vacunado.Margin = new System.Windows.Forms.Padding(4);
             this.chk_bx_vacunado.Name = "chk_bx_vacunado";
             this.chk_bx_vacunado.Size = new System.Drawing.Size(144, 22);
             this.chk_bx_vacunado.TabIndex = 4;
             this.chk_bx_vacunado.Text = "Esta vacunado?";
-            this.chk_bx_vacunado.UseVisualStyleBackColor = true;
+            this.chk_bx_vacunado.UseVisualStyleBackColor = false;
             // 
             // lbl_Alta
             // 
             this.lbl_Alta.AutoSize = true;
+            this.lbl_Alta.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_Alta.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Alta.Location = new System.Drawing.Point(15, 94);
             this.lbl_Alta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -116,6 +121,7 @@
             // lbl_Peso
             // 
             this.lbl_Peso.AutoSize = true;
+            this.lbl_Peso.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_Peso.Location = new System.Drawing.Point(63, 200);
             this.lbl_Peso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Peso.Name = "lbl_Peso";
@@ -126,6 +132,7 @@
             // lbl_raza
             // 
             this.lbl_raza.AutoSize = true;
+            this.lbl_raza.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_raza.Location = new System.Drawing.Point(64, 243);
             this.lbl_raza.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_raza.Name = "lbl_raza";
@@ -135,6 +142,7 @@
             // 
             // txt_raza
             // 
+            this.txt_raza.BackColor = System.Drawing.Color.LightCyan;
             this.txt_raza.Location = new System.Drawing.Point(166, 239);
             this.txt_raza.Margin = new System.Windows.Forms.Padding(4);
             this.txt_raza.Name = "txt_raza";
@@ -143,6 +151,7 @@
             // 
             // txt_pelaje
             // 
+            this.txt_pelaje.BackColor = System.Drawing.Color.LightCyan;
             this.txt_pelaje.Location = new System.Drawing.Point(166, 274);
             this.txt_pelaje.Margin = new System.Windows.Forms.Padding(4);
             this.txt_pelaje.Name = "txt_pelaje";
@@ -152,6 +161,7 @@
             // lbl_tipoAnimal
             // 
             this.lbl_tipoAnimal.AutoSize = true;
+            this.lbl_tipoAnimal.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_tipoAnimal.Location = new System.Drawing.Point(353, 34);
             this.lbl_tipoAnimal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tipoAnimal.Name = "lbl_tipoAnimal";
@@ -161,28 +171,31 @@
             // 
             // btn_ingresarFicha
             // 
+            this.btn_ingresarFicha.BackColor = System.Drawing.Color.LightCyan;
             this.btn_ingresarFicha.Location = new System.Drawing.Point(34, 322);
             this.btn_ingresarFicha.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ingresarFicha.Name = "btn_ingresarFicha";
             this.btn_ingresarFicha.Size = new System.Drawing.Size(436, 28);
             this.btn_ingresarFicha.TabIndex = 9;
             this.btn_ingresarFicha.Text = "Ingresar Ficha";
-            this.btn_ingresarFicha.UseVisualStyleBackColor = true;
+            this.btn_ingresarFicha.UseVisualStyleBackColor = false;
             this.btn_ingresarFicha.Click += new System.EventHandler(this.btn_ingresarFicha_Click);
             // 
             // btn_buscarPorId
             // 
+            this.btn_buscarPorId.BackColor = System.Drawing.Color.LightCyan;
             this.btn_buscarPorId.Location = new System.Drawing.Point(683, 85);
             this.btn_buscarPorId.Margin = new System.Windows.Forms.Padding(4);
             this.btn_buscarPorId.Name = "btn_buscarPorId";
             this.btn_buscarPorId.Size = new System.Drawing.Size(222, 28);
             this.btn_buscarPorId.TabIndex = 2;
             this.btn_buscarPorId.Text = "Buscar por Id";
-            this.btn_buscarPorId.UseVisualStyleBackColor = true;
+            this.btn_buscarPorId.UseVisualStyleBackColor = false;
             this.btn_buscarPorId.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // txt_devolverInfo
             // 
+            this.txt_devolverInfo.BackColor = System.Drawing.Color.LightCyan;
             this.txt_devolverInfo.Location = new System.Drawing.Point(560, 131);
             this.txt_devolverInfo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_devolverInfo.Name = "txt_devolverInfo";
@@ -192,50 +205,55 @@
             // 
             // btn_CargarJson
             // 
+            this.btn_CargarJson.BackColor = System.Drawing.Color.LightCyan;
             this.btn_CargarJson.Location = new System.Drawing.Point(34, 379);
             this.btn_CargarJson.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarJson.Name = "btn_CargarJson";
             this.btn_CargarJson.Size = new System.Drawing.Size(136, 75);
             this.btn_CargarJson.TabIndex = 10;
             this.btn_CargarJson.Text = "Cargar datos en formato Json";
-            this.btn_CargarJson.UseVisualStyleBackColor = true;
+            this.btn_CargarJson.UseVisualStyleBackColor = false;
             this.btn_CargarJson.Click += new System.EventHandler(this.btn_CargarJson_Click);
             // 
             // btn_CargarDBase
             // 
+            this.btn_CargarDBase.BackColor = System.Drawing.Color.LightCyan;
             this.btn_CargarDBase.Location = new System.Drawing.Point(190, 379);
             this.btn_CargarDBase.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarDBase.Name = "btn_CargarDBase";
             this.btn_CargarDBase.Size = new System.Drawing.Size(137, 75);
             this.btn_CargarDBase.TabIndex = 13;
             this.btn_CargarDBase.Text = "Cargar desde Base de datos";
-            this.btn_CargarDBase.UseVisualStyleBackColor = true;
+            this.btn_CargarDBase.UseVisualStyleBackColor = false;
             this.btn_CargarDBase.Click += new System.EventHandler(this.btn_CargarDBase_Click);
             // 
             // btn_GuardarJson
             // 
+            this.btn_GuardarJson.BackColor = System.Drawing.Color.LightCyan;
             this.btn_GuardarJson.Location = new System.Drawing.Point(335, 379);
             this.btn_GuardarJson.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarJson.Name = "btn_GuardarJson";
             this.btn_GuardarJson.Size = new System.Drawing.Size(130, 75);
             this.btn_GuardarJson.TabIndex = 12;
             this.btn_GuardarJson.Text = "Guardar datos desde formato Json";
-            this.btn_GuardarJson.UseVisualStyleBackColor = true;
+            this.btn_GuardarJson.UseVisualStyleBackColor = false;
             this.btn_GuardarJson.Click += new System.EventHandler(this.btn_GuardarJson_Click);
             // 
             // btn_listado
             // 
+            this.btn_listado.BackColor = System.Drawing.Color.LightCyan;
             this.btn_listado.Location = new System.Drawing.Point(662, 379);
             this.btn_listado.Margin = new System.Windows.Forms.Padding(4);
             this.btn_listado.Name = "btn_listado";
             this.btn_listado.Size = new System.Drawing.Size(243, 75);
             this.btn_listado.TabIndex = 14;
             this.btn_listado.Text = "Listado de todos los animales";
-            this.btn_listado.UseVisualStyleBackColor = true;
+            this.btn_listado.UseVisualStyleBackColor = false;
             this.btn_listado.Click += new System.EventHandler(this.btn_listado_Click);
             // 
             // txt_bx_busquedaPorId
             // 
+            this.txt_bx_busquedaPorId.BackColor = System.Drawing.Color.LightCyan;
             this.txt_bx_busquedaPorId.Location = new System.Drawing.Point(560, 91);
             this.txt_bx_busquedaPorId.Margin = new System.Windows.Forms.Padding(4);
             this.txt_bx_busquedaPorId.Name = "txt_bx_busquedaPorId";
@@ -244,6 +262,7 @@
             // 
             // numeric_peso
             // 
+            this.numeric_peso.BackColor = System.Drawing.Color.LightCyan;
             this.numeric_peso.Location = new System.Drawing.Point(166, 200);
             this.numeric_peso.Margin = new System.Windows.Forms.Padding(4);
             this.numeric_peso.Name = "numeric_peso";
@@ -253,6 +272,7 @@
             // lbl_Id
             // 
             this.lbl_Id.AutoSize = true;
+            this.lbl_Id.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_Id.Location = new System.Drawing.Point(353, 97);
             this.lbl_Id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Id.Name = "lbl_Id";
@@ -263,6 +283,7 @@
             // lbl_pelaje
             // 
             this.lbl_pelaje.AutoSize = true;
+            this.lbl_pelaje.BackColor = System.Drawing.Color.LightCyan;
             this.lbl_pelaje.Location = new System.Drawing.Point(63, 278);
             this.lbl_pelaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_pelaje.Name = "lbl_pelaje";
@@ -273,32 +294,35 @@
             // chk_paseo
             // 
             this.chk_paseo.AutoSize = true;
+            this.chk_paseo.BackColor = System.Drawing.Color.LightCyan;
             this.chk_paseo.Location = new System.Drawing.Point(300, 201);
             this.chk_paseo.Name = "chk_paseo";
             this.chk_paseo.Size = new System.Drawing.Size(170, 22);
             this.chk_paseo.TabIndex = 6;
             this.chk_paseo.Text = "Sale con paseador?";
-            this.chk_paseo.UseVisualStyleBackColor = true;
+            this.chk_paseo.UseVisualStyleBackColor = false;
             // 
             // btn_GuardarDBase
             // 
+            this.btn_GuardarDBase.BackColor = System.Drawing.Color.LightCyan;
             this.btn_GuardarDBase.Location = new System.Drawing.Point(473, 379);
             this.btn_GuardarDBase.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarDBase.Name = "btn_GuardarDBase";
             this.btn_GuardarDBase.Size = new System.Drawing.Size(133, 75);
             this.btn_GuardarDBase.TabIndex = 24;
             this.btn_GuardarDBase.Text = "Guardar datos en Base de Datos";
-            this.btn_GuardarDBase.UseVisualStyleBackColor = true;
+            this.btn_GuardarDBase.UseVisualStyleBackColor = false;
             this.btn_GuardarDBase.Click += new System.EventHandler(this.btn_GuardarDBase_Click);
             // 
             // btn_cerrarVentana
             // 
+            this.btn_cerrarVentana.BackColor = System.Drawing.Color.LightCyan;
             this.btn_cerrarVentana.Location = new System.Drawing.Point(335, 263);
             this.btn_cerrarVentana.Name = "btn_cerrarVentana";
             this.btn_cerrarVentana.Size = new System.Drawing.Size(172, 23);
             this.btn_cerrarVentana.TabIndex = 25;
             this.btn_cerrarVentana.Text = "Cerrar ventana";
-            this.btn_cerrarVentana.UseVisualStyleBackColor = true;
+            this.btn_cerrarVentana.UseVisualStyleBackColor = false;
             this.btn_cerrarVentana.Click += new System.EventHandler(this.btn_cerrarVentana_Click);
             // 
             // Form_Atencion

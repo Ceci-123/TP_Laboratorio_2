@@ -13,7 +13,8 @@ namespace Entidades
         {
 
         }
-        public Conejo(string nombre, int edad, string pelaje) : this(nombre, edad)
+        public Conejo(string nombre, int edad, 
+            string pelaje) : this(nombre, edad)
         {
             this.colorPelaje = pelaje;
         }
