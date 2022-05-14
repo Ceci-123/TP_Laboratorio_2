@@ -106,7 +106,7 @@ namespace Entidades
             return true;
         }
 
-        public bool ExportarListaAnimalesJson(List<Animal> lista)
+        public static bool GuardarListaAnimalesJson(List<Animal> lista)
         {
             return true;
         }
@@ -116,17 +116,17 @@ namespace Entidades
             return true;
         }
 
-        public bool ImportarListaAnimalesJson(List<Animal> lista)
+        public static bool CargarListaAnimalesJson(List<Animal> lista)
         {
             return true;
         }
 
-        public bool ImportarListaAnimalesDataBase(List<Animal> lista)
+        public static bool GuardarListaAnimalesDataBase(List<Animal> lista)
         {
             return true;
         }
 
-        public bool ExportarListaAnimalesDataBase(List<Animal> lista)
+        public static bool CargarListaAnimalesDataBase(List<Animal> lista)
         {
             return true;
         }

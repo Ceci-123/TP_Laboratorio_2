@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace UI
     {
         Paciente pacienteActual;
         Animal animalito;
+        bool resultado;
         public Form_Atencion(Paciente unPaciente)
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace UI
         {
             this.lbl_Atencion.Text = $"Atendiendo a {pacienteActual.Nombre}";
             this.lbl_tipoAnimal.Text = $"Es un {pacienteActual.TipoDeAnimal}";
-            
+            ReproducirLadrido();
             switch (pacienteActual.TipoDeAnimal.ToString())
             {
                 case "Conejo":
@@ -35,6 +37,8 @@ namespace UI
                     this.lbl_raza.Visible = false;
                     this.txt_raza.Visible = false;
                     this.numeric_peso.Visible = false;
+                    this.chk_bx_vacunado.Visible = false;
+                    this.chk_paseo.Visible = false;
                     break;
                 case "Hamster":
                     this.lbl_pelaje.Visible = false;
@@ -90,7 +94,7 @@ namespace UI
         private void RefrescarLista()
         {
             this.txt_devolverInfo.Text = null;
-            this.txt_devolverInfo.Text += Veterinaria.ListaAnimales;
+            this.txt_devolverInfo.Text += Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
         }
         private void btn_buscar_Click(object sender, EventArgs e)
         {
@@ -99,6 +103,66 @@ namespace UI
             if(animalito is not null)
             {
                 this.txt_devolverInfo.Text += animalito; 
+            }
+        }
+
+        private void ReproducirLadrido()
+        {
+
+            SoundPlayer sonido = new SoundPlayer(Properties.Resources.ladrido);
+            sonido.Play();
+
+        }
+
+        private void btn_CargarJson_Click(object sender, EventArgs e)
+        {
+            resultado = Veterinaria.CargarListaAnimalesJson(Veterinaria.ListaAnimales);
+            if (resultado)
+            {
+                MessageBox.Show("Lista cargada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo cargar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btn_GuardarJson_Click(object sender, EventArgs e)
+        {
+            resultado = Veterinaria.GuardarListaAnimalesJson(Veterinaria.ListaAnimales);
+            if (resultado)
+            {
+                MessageBox.Show("Lista guardada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo guardar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btn_CargarDBase_Click(object sender, EventArgs e)
+        {
+            resultado = Veterinaria.CargarListaAnimalesDataBase(Veterinaria.ListaAnimales);
+            if (resultado)
+            {
+                MessageBox.Show("Lista cargada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo cargar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btn_GuardarDBase_Click(object sender, EventArgs e)
+        {
+            resultado = Veterinaria.GuardarListaAnimalesDataBase(Veterinaria.ListaAnimales);
+            if (resultado)
+            {
+                MessageBox.Show("Lista guardada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo guardar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

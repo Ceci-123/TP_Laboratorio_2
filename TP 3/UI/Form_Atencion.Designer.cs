@@ -39,19 +39,19 @@
             this.txt_raza = new System.Windows.Forms.TextBox();
             this.txt_pelaje = new System.Windows.Forms.TextBox();
             this.lbl_tipoAnimal = new System.Windows.Forms.Label();
-            this.btn_ok = new System.Windows.Forms.Button();
-            this.btn_buscar = new System.Windows.Forms.Button();
+            this.btn_ingresarFicha = new System.Windows.Forms.Button();
+            this.btn_buscarPorId = new System.Windows.Forms.Button();
             this.txt_devolverInfo = new System.Windows.Forms.RichTextBox();
-            this.btn_ImportarJson = new System.Windows.Forms.Button();
-            this.btn_importarDBase = new System.Windows.Forms.Button();
-            this.btn_ExportarJson = new System.Windows.Forms.Button();
+            this.btn_CargarJson = new System.Windows.Forms.Button();
+            this.btn_CargarDBase = new System.Windows.Forms.Button();
+            this.btn_GuardarJson = new System.Windows.Forms.Button();
             this.btn_listado = new System.Windows.Forms.Button();
             this.txt_bx_busquedaPorId = new System.Windows.Forms.TextBox();
             this.numeric_peso = new System.Windows.Forms.NumericUpDown();
             this.lbl_Id = new System.Windows.Forms.Label();
             this.lbl_pelaje = new System.Windows.Forms.Label();
             this.chk_paseo = new System.Windows.Forms.CheckBox();
-            this.btn_ExportarDBase = new System.Windows.Forms.Button();
+            this.btn_GuardarDBase = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.num_edad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_peso)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.lbl_Atencion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Atencion.Name = "lbl_Atencion";
             this.lbl_Atencion.Size = new System.Drawing.Size(143, 23);
-            this.lbl_Atencion.TabIndex = 0;
+            this.lbl_Atencion.TabIndex = 20;
             this.lbl_Atencion.Text = "Atendiendo a";
             // 
             // num_edad
@@ -78,7 +78,7 @@
             0});
             this.num_edad.Name = "num_edad";
             this.num_edad.Size = new System.Drawing.Size(85, 22);
-            this.num_edad.TabIndex = 1;
+            this.num_edad.TabIndex = 3;
             // 
             // lbl_edad
             // 
@@ -87,7 +87,7 @@
             this.lbl_edad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_edad.Name = "lbl_edad";
             this.lbl_edad.Size = new System.Drawing.Size(46, 18);
-            this.lbl_edad.TabIndex = 2;
+            this.lbl_edad.TabIndex = 20;
             this.lbl_edad.Text = "Edad";
             // 
             // chk_bx_vacunado
@@ -97,7 +97,7 @@
             this.chk_bx_vacunado.Margin = new System.Windows.Forms.Padding(4);
             this.chk_bx_vacunado.Name = "chk_bx_vacunado";
             this.chk_bx_vacunado.Size = new System.Drawing.Size(144, 22);
-            this.chk_bx_vacunado.TabIndex = 3;
+            this.chk_bx_vacunado.TabIndex = 4;
             this.chk_bx_vacunado.Text = "Esta vacunado?";
             this.chk_bx_vacunado.UseVisualStyleBackColor = true;
             // 
@@ -109,7 +109,7 @@
             this.lbl_Alta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Alta.Name = "lbl_Alta";
             this.lbl_Alta.Size = new System.Drawing.Size(255, 23);
-            this.lbl_Alta.TabIndex = 4;
+            this.lbl_Alta.TabIndex = 20;
             this.lbl_Alta.Text = "Alta de ficha de paciente";
             // 
             // lbl_Peso
@@ -119,7 +119,7 @@
             this.lbl_Peso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Peso.Name = "lbl_Peso";
             this.lbl_Peso.Size = new System.Drawing.Size(42, 18);
-            this.lbl_Peso.TabIndex = 5;
+            this.lbl_Peso.TabIndex = 23;
             this.lbl_Peso.Text = "Peso";
             // 
             // lbl_raza
@@ -129,7 +129,7 @@
             this.lbl_raza.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_raza.Name = "lbl_raza";
             this.lbl_raza.Size = new System.Drawing.Size(45, 18);
-            this.lbl_raza.TabIndex = 6;
+            this.lbl_raza.TabIndex = 23;
             this.lbl_raza.Text = "Raza";
             // 
             // txt_raza
@@ -155,30 +155,30 @@
             this.lbl_tipoAnimal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tipoAnimal.Name = "lbl_tipoAnimal";
             this.lbl_tipoAnimal.Size = new System.Drawing.Size(142, 18);
-            this.lbl_tipoAnimal.TabIndex = 10;
+            this.lbl_tipoAnimal.TabIndex = 23;
             this.lbl_tipoAnimal.Text = "Tipo de Animalito";
             // 
-            // btn_ok
+            // btn_ingresarFicha
             // 
-            this.btn_ok.Location = new System.Drawing.Point(34, 322);
-            this.btn_ok.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ok.Name = "btn_ok";
-            this.btn_ok.Size = new System.Drawing.Size(436, 28);
-            this.btn_ok.TabIndex = 11;
-            this.btn_ok.Text = "Ingresar Ficha";
-            this.btn_ok.UseVisualStyleBackColor = true;
-            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
+            this.btn_ingresarFicha.Location = new System.Drawing.Point(34, 322);
+            this.btn_ingresarFicha.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ingresarFicha.Name = "btn_ingresarFicha";
+            this.btn_ingresarFicha.Size = new System.Drawing.Size(436, 28);
+            this.btn_ingresarFicha.TabIndex = 9;
+            this.btn_ingresarFicha.Text = "Ingresar Ficha";
+            this.btn_ingresarFicha.UseVisualStyleBackColor = true;
+            this.btn_ingresarFicha.Click += new System.EventHandler(this.btn_ok_Click);
             // 
-            // btn_buscar
+            // btn_buscarPorId
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(683, 85);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(222, 28);
-            this.btn_buscar.TabIndex = 12;
-            this.btn_buscar.Text = "Buscar por Id";
-            this.btn_buscar.UseVisualStyleBackColor = true;
-            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            this.btn_buscarPorId.Location = new System.Drawing.Point(683, 85);
+            this.btn_buscarPorId.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_buscarPorId.Name = "btn_buscarPorId";
+            this.btn_buscarPorId.Size = new System.Drawing.Size(222, 28);
+            this.btn_buscarPorId.TabIndex = 2;
+            this.btn_buscarPorId.Text = "Buscar por Id";
+            this.btn_buscarPorId.UseVisualStyleBackColor = true;
+            this.btn_buscarPorId.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // txt_devolverInfo
             // 
@@ -189,35 +189,38 @@
             this.txt_devolverInfo.TabIndex = 13;
             this.txt_devolverInfo.Text = "";
             // 
-            // btn_ImportarJson
+            // btn_CargarJson
             // 
-            this.btn_ImportarJson.Location = new System.Drawing.Point(34, 379);
-            this.btn_ImportarJson.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ImportarJson.Name = "btn_ImportarJson";
-            this.btn_ImportarJson.Size = new System.Drawing.Size(136, 75);
-            this.btn_ImportarJson.TabIndex = 14;
-            this.btn_ImportarJson.Text = "Importar datos en formato Json";
-            this.btn_ImportarJson.UseVisualStyleBackColor = true;
+            this.btn_CargarJson.Location = new System.Drawing.Point(34, 379);
+            this.btn_CargarJson.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CargarJson.Name = "btn_CargarJson";
+            this.btn_CargarJson.Size = new System.Drawing.Size(136, 75);
+            this.btn_CargarJson.TabIndex = 10;
+            this.btn_CargarJson.Text = "Cargar datos en formato Json";
+            this.btn_CargarJson.UseVisualStyleBackColor = true;
+            this.btn_CargarJson.Click += new System.EventHandler(this.btn_CargarJson_Click);
             // 
-            // btn_importarDBase
+            // btn_CargarDBase
             // 
-            this.btn_importarDBase.Location = new System.Drawing.Point(190, 379);
-            this.btn_importarDBase.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_importarDBase.Name = "btn_importarDBase";
-            this.btn_importarDBase.Size = new System.Drawing.Size(137, 75);
-            this.btn_importarDBase.TabIndex = 15;
-            this.btn_importarDBase.Text = "Importar a Base de datos";
-            this.btn_importarDBase.UseVisualStyleBackColor = true;
+            this.btn_CargarDBase.Location = new System.Drawing.Point(190, 379);
+            this.btn_CargarDBase.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CargarDBase.Name = "btn_CargarDBase";
+            this.btn_CargarDBase.Size = new System.Drawing.Size(137, 75);
+            this.btn_CargarDBase.TabIndex = 13;
+            this.btn_CargarDBase.Text = "Cargar desde Base de datos";
+            this.btn_CargarDBase.UseVisualStyleBackColor = true;
+            this.btn_CargarDBase.Click += new System.EventHandler(this.btn_CargarDBase_Click);
             // 
-            // btn_ExportarJson
+            // btn_GuardarJson
             // 
-            this.btn_ExportarJson.Location = new System.Drawing.Point(335, 379);
-            this.btn_ExportarJson.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ExportarJson.Name = "btn_ExportarJson";
-            this.btn_ExportarJson.Size = new System.Drawing.Size(130, 75);
-            this.btn_ExportarJson.TabIndex = 16;
-            this.btn_ExportarJson.Text = "Exportar datos desde formato Json";
-            this.btn_ExportarJson.UseVisualStyleBackColor = true;
+            this.btn_GuardarJson.Location = new System.Drawing.Point(335, 379);
+            this.btn_GuardarJson.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_GuardarJson.Name = "btn_GuardarJson";
+            this.btn_GuardarJson.Size = new System.Drawing.Size(130, 75);
+            this.btn_GuardarJson.TabIndex = 12;
+            this.btn_GuardarJson.Text = "Guardar datos desde formato Json";
+            this.btn_GuardarJson.UseVisualStyleBackColor = true;
+            this.btn_GuardarJson.Click += new System.EventHandler(this.btn_GuardarJson_Click);
             // 
             // btn_listado
             // 
@@ -225,7 +228,7 @@
             this.btn_listado.Margin = new System.Windows.Forms.Padding(4);
             this.btn_listado.Name = "btn_listado";
             this.btn_listado.Size = new System.Drawing.Size(243, 75);
-            this.btn_listado.TabIndex = 17;
+            this.btn_listado.TabIndex = 14;
             this.btn_listado.Text = "Listado de todos los animales";
             this.btn_listado.UseVisualStyleBackColor = true;
             // 
@@ -235,7 +238,7 @@
             this.txt_bx_busquedaPorId.Margin = new System.Windows.Forms.Padding(4);
             this.txt_bx_busquedaPorId.Name = "txt_bx_busquedaPorId";
             this.txt_bx_busquedaPorId.Size = new System.Drawing.Size(77, 22);
-            this.txt_bx_busquedaPorId.TabIndex = 19;
+            this.txt_bx_busquedaPorId.TabIndex = 1;
             // 
             // numeric_peso
             // 
@@ -243,7 +246,7 @@
             this.numeric_peso.Margin = new System.Windows.Forms.Padding(4);
             this.numeric_peso.Name = "numeric_peso";
             this.numeric_peso.Size = new System.Drawing.Size(85, 22);
-            this.numeric_peso.TabIndex = 20;
+            this.numeric_peso.TabIndex = 5;
             // 
             // lbl_Id
             // 
@@ -271,20 +274,21 @@
             this.chk_paseo.Location = new System.Drawing.Point(300, 201);
             this.chk_paseo.Name = "chk_paseo";
             this.chk_paseo.Size = new System.Drawing.Size(170, 22);
-            this.chk_paseo.TabIndex = 23;
+            this.chk_paseo.TabIndex = 6;
             this.chk_paseo.Text = "Sale con paseador?";
             this.chk_paseo.UseVisualStyleBackColor = true;
             // 
-            // btn_ExportarDBase
+            // btn_GuardarDBase
             // 
-            this.btn_ExportarDBase.BackgroundImage = global::UI.Properties.Resources.fondo;
-            this.btn_ExportarDBase.Location = new System.Drawing.Point(473, 379);
-            this.btn_ExportarDBase.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ExportarDBase.Name = "btn_ExportarDBase";
-            this.btn_ExportarDBase.Size = new System.Drawing.Size(133, 75);
-            this.btn_ExportarDBase.TabIndex = 24;
-            this.btn_ExportarDBase.Text = "Exportar datos a Base de Datos";
-            this.btn_ExportarDBase.UseVisualStyleBackColor = true;
+            this.btn_GuardarDBase.BackgroundImage = global::UI.Properties.Resources.fondo;
+            this.btn_GuardarDBase.Location = new System.Drawing.Point(473, 379);
+            this.btn_GuardarDBase.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_GuardarDBase.Name = "btn_GuardarDBase";
+            this.btn_GuardarDBase.Size = new System.Drawing.Size(133, 75);
+            this.btn_GuardarDBase.TabIndex = 24;
+            this.btn_GuardarDBase.Text = "Guardar datos en Base de Datos";
+            this.btn_GuardarDBase.UseVisualStyleBackColor = true;
+            this.btn_GuardarDBase.Click += new System.EventHandler(this.btn_GuardarDBase_Click);
             // 
             // Form_Atencion
             // 
@@ -292,19 +296,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UI.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(927, 479);
-            this.Controls.Add(this.btn_ExportarDBase);
+            this.Controls.Add(this.btn_GuardarDBase);
             this.Controls.Add(this.chk_paseo);
             this.Controls.Add(this.lbl_pelaje);
             this.Controls.Add(this.lbl_Id);
             this.Controls.Add(this.numeric_peso);
             this.Controls.Add(this.txt_bx_busquedaPorId);
             this.Controls.Add(this.btn_listado);
-            this.Controls.Add(this.btn_ExportarJson);
-            this.Controls.Add(this.btn_importarDBase);
-            this.Controls.Add(this.btn_ImportarJson);
+            this.Controls.Add(this.btn_GuardarJson);
+            this.Controls.Add(this.btn_CargarDBase);
+            this.Controls.Add(this.btn_CargarJson);
             this.Controls.Add(this.txt_devolverInfo);
-            this.Controls.Add(this.btn_buscar);
-            this.Controls.Add(this.btn_ok);
+            this.Controls.Add(this.btn_buscarPorId);
+            this.Controls.Add(this.btn_ingresarFicha);
             this.Controls.Add(this.lbl_tipoAnimal);
             this.Controls.Add(this.txt_pelaje);
             this.Controls.Add(this.txt_raza);
@@ -342,18 +346,18 @@
         private System.Windows.Forms.TextBox txt_raza;
         private System.Windows.Forms.TextBox txt_pelaje;
         private System.Windows.Forms.Label lbl_tipoAnimal;
-        private System.Windows.Forms.Button btn_ok;
-        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Button btn_ingresarFicha;
+        private System.Windows.Forms.Button btn_buscarPorId;
         private System.Windows.Forms.RichTextBox txt_devolverInfo;
-        private System.Windows.Forms.Button btn_ImportarJson;
-        private System.Windows.Forms.Button btn_importarDBase;
-        private System.Windows.Forms.Button btn_ExportarJson;
+        private System.Windows.Forms.Button btn_CargarJson;
+        private System.Windows.Forms.Button btn_CargarDBase;
+        private System.Windows.Forms.Button btn_GuardarJson;
         private System.Windows.Forms.Button btn_listado;
         private System.Windows.Forms.TextBox txt_bx_busquedaPorId;
         private System.Windows.Forms.NumericUpDown numeric_peso;
         private System.Windows.Forms.Label lbl_Id;
         private System.Windows.Forms.Label lbl_pelaje;
         private System.Windows.Forms.CheckBox chk_paseo;
-        private System.Windows.Forms.Button btn_ExportarDBase;
+        private System.Windows.Forms.Button btn_GuardarDBase;
     }
 }

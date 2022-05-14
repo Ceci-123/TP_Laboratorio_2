@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class Conejo :Animal
     {
-        private string colorPelaje;
+        public string colorPelaje;
         public Conejo(string nombre) : base(nombre)
         {
 

@@ -55,7 +55,7 @@
             this.lbl_NombreVet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NombreVet.Name = "lbl_NombreVet";
             this.lbl_NombreVet.Size = new System.Drawing.Size(188, 33);
-            this.lbl_NombreVet.TabIndex = 0;
+            this.lbl_NombreVet.TabIndex = 10;
             this.lbl_NombreVet.Text = "Veterinaria";
             // 
             // lbl_PacientesEnEspera
@@ -66,7 +66,7 @@
             this.lbl_PacientesEnEspera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_PacientesEnEspera.Name = "lbl_PacientesEnEspera";
             this.lbl_PacientesEnEspera.Size = new System.Drawing.Size(207, 23);
-            this.lbl_PacientesEnEspera.TabIndex = 1;
+            this.lbl_PacientesEnEspera.TabIndex = 10;
             this.lbl_PacientesEnEspera.Text = "Pacientes en Espera";
             // 
             // btn_AtenderProximo
@@ -86,7 +86,7 @@
             this.rchTxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.rchTxt_Info.Name = "rchTxt_Info";
             this.rchTxt_Info.Size = new System.Drawing.Size(435, 256);
-            this.rchTxt_Info.TabIndex = 3;
+            this.rchTxt_Info.TabIndex = 10;
             this.rchTxt_Info.Text = "";
             // 
             // btn_AgregarPaciente
@@ -95,7 +95,7 @@
             this.btn_AgregarPaciente.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AgregarPaciente.Name = "btn_AgregarPaciente";
             this.btn_AgregarPaciente.Size = new System.Drawing.Size(158, 95);
-            this.btn_AgregarPaciente.TabIndex = 4;
+            this.btn_AgregarPaciente.TabIndex = 1;
             this.btn_AgregarPaciente.Text = "Agregar un Paciente";
             this.btn_AgregarPaciente.UseVisualStyleBackColor = true;
             this.btn_AgregarPaciente.Click += new System.EventHandler(this.btn_AgregarPaciente_Click);
@@ -107,7 +107,7 @@
             this.lbl_NombrePaciente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NombrePaciente.Name = "lbl_NombrePaciente";
             this.lbl_NombrePaciente.Size = new System.Drawing.Size(164, 18);
-            this.lbl_NombrePaciente.TabIndex = 5;
+            this.lbl_NombrePaciente.TabIndex = 10;
             this.lbl_NombrePaciente.Text = "Nombre del Paciente";
             // 
             // txt_bx_nombre
@@ -116,7 +116,7 @@
             this.txt_bx_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_bx_nombre.Name = "txt_bx_nombre";
             this.txt_bx_nombre.Size = new System.Drawing.Size(154, 22);
-            this.txt_bx_nombre.TabIndex = 6;
+            this.txt_bx_nombre.TabIndex = 10;
             // 
             // lbl_TipoAnimal
             // 
@@ -125,7 +125,7 @@
             this.lbl_TipoAnimal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TipoAnimal.Name = "lbl_TipoAnimal";
             this.lbl_TipoAnimal.Size = new System.Drawing.Size(48, 18);
-            this.lbl_TipoAnimal.TabIndex = 7;
+            this.lbl_TipoAnimal.TabIndex = 10;
             this.lbl_TipoAnimal.Text = "Es un";
             // 
             // cmb_TipoAnimal
@@ -135,7 +135,7 @@
             this.cmb_TipoAnimal.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_TipoAnimal.Name = "cmb_TipoAnimal";
             this.cmb_TipoAnimal.Size = new System.Drawing.Size(154, 26);
-            this.cmb_TipoAnimal.TabIndex = 8;
+            this.cmb_TipoAnimal.TabIndex = 6;
             // 
             // btn_Ok
             // 
@@ -154,7 +154,7 @@
             this.btn_CargaXML.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargaXML.Name = "btn_CargaXML";
             this.btn_CargaXML.Size = new System.Drawing.Size(181, 61);
-            this.btn_CargaXML.TabIndex = 11;
+            this.btn_CargaXML.TabIndex = 3;
             this.btn_CargaXML.Text = "Cargar desde XML";
             this.btn_CargaXML.UseVisualStyleBackColor = true;
             this.btn_CargaXML.Click += new System.EventHandler(this.btn_CargaXML_Click);
@@ -165,7 +165,7 @@
             this.btn_GuardarXml.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarXml.Name = "btn_GuardarXml";
             this.btn_GuardarXml.Size = new System.Drawing.Size(190, 61);
-            this.btn_GuardarXml.TabIndex = 13;
+            this.btn_GuardarXml.TabIndex = 4;
             this.btn_GuardarXml.Text = "Guardar en XML";
             this.btn_GuardarXml.UseVisualStyleBackColor = true;
             this.btn_GuardarXml.Click += new System.EventHandler(this.btn_GuardarXml_Click);
@@ -178,7 +178,7 @@
             this.lbl_Hora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Hora.Name = "lbl_Hora";
             this.lbl_Hora.Size = new System.Drawing.Size(60, 23);
-            this.lbl_Hora.TabIndex = 14;
+            this.lbl_Hora.TabIndex = 10;
             this.lbl_Hora.Text = "Hora";
             // 
             // lbl_mensajito
@@ -189,7 +189,7 @@
             this.lbl_mensajito.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_mensajito.Name = "lbl_mensajito";
             this.lbl_mensajito.Size = new System.Drawing.Size(107, 23);
-            this.lbl_mensajito.TabIndex = 15;
+            this.lbl_mensajito.TabIndex = 10;
             this.lbl_mensajito.Text = "Mensajito";
             // 
             // pictureBox_Foto

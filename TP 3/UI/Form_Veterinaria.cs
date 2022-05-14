@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,6 +34,14 @@ namespace UI
             this.txt_bx_nombre.Visible = false;
             this.lbl_Hora.Text = DateTime.Now.ToString();
             this.lbl_mensajito.Text = ExtendTime.DiaSemana(DateTime.Now);
+            ReproducirLadrido();
+        }
+
+        private void ReproducirLadrido()
+        {
+           
+            SoundPlayer sonido = new SoundPlayer(Properties.Resources.ladrido);
+            sonido.Play();
             
         }
 
@@ -106,7 +115,7 @@ namespace UI
                Form frmAtencion = new Form_Atencion(pacienteActual);
                 if (frmAtencion.ShowDialog() == DialogResult.OK)
                 {
-                    //aqui codigo
+                    //todo
                 }
             }
             
