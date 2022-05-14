@@ -47,7 +47,7 @@ namespace Entidades
             return !(a1 == a2);
         }
 
-        public string Mostrar(Animal a)
+        public static string Mostrar(Animal a)
         {
             StringBuilder sb = new StringBuilder();
             sb.Append($"Nombre {a.Nombre} Id {a.Id} Edad {a.edad}");

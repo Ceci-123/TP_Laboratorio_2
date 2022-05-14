@@ -19,12 +19,12 @@ namespace Entidades
             this.vacunado = vacunado;
         }
 
-        public string Mostrar(Gato g)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append(base.Mostrar(g));
-            sb.Append($"");
-            return sb.ToString();
-        }
+        //public string Mostrar(Gato g)
+        //{
+        //    StringBuilder sb = new StringBuilder();
+        //    //sb.Append(base.Mostrar(g));
+        //    sb.Append($"");
+        //    return sb.ToString();
+        //}
     }
 }

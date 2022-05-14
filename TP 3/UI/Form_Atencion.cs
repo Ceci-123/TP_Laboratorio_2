@@ -102,6 +102,7 @@ namespace UI
             animalito = Veterinaria.BuscarAnimalPorId(aux,Veterinaria.ListaAnimales);
             if(animalito is not null)
             {
+                this.txt_devolverInfo.Text = String.Empty;
                 this.txt_devolverInfo.Text += animalito; 
             }
         }
@@ -179,9 +180,13 @@ namespace UI
             this.chk_bx_vacunado.Checked = false;
             this.chk_paseo.Checked = false;
             this.txt_pelaje.Text= String.Empty;
+            this.num_edad.Value = 0;
         }
 
-        
- 
+        private void btn_cerrarVentana_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

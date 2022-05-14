@@ -13,12 +13,12 @@ namespace Entidades
 
         }
 
-        public string Mostrar(Hamster h)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append(base.Mostrar(h));
-            sb.Append($"");
-            return sb.ToString();
-        }
+        //public string Mostrar(Hamster h)
+        //{
+        //    StringBuilder sb = new StringBuilder();
+        //    //sb.Append(base.Mostrar(h));
+        //    sb.Append($"");
+        //    return sb.ToString();
+        //}
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace Entidades
@@ -11,14 +10,17 @@ namespace Entidades
         private static Paseador<Perro> paseadorPerros;
         private static Paseador<Gato> paseadorGatos;
 
-        public static string Nombre 
+        public static string Nombre
         {
             get { return "Pequeñas Patitas"; }
-            
+
         }
 
-        public static Queue<Paciente> FilaDePacientes { get => filaDePacientes;
-            set => filaDePacientes = value;         }
+        public static Queue<Paciente> FilaDePacientes
+        {
+            get => filaDePacientes;
+            set => filaDePacientes = value;
+        }
 
         public static List<Animal> ListaAnimales
         {
@@ -49,11 +51,11 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
             foreach (Paciente item in filaDePacientes)
             {
-               sb.Append(item.Nombre+ " ");
-               sb.AppendLine(item.TipoDeAnimal.ToString());
-               sb.AppendLine("----------------------------");
+                sb.Append(item.Nombre + " ");
+                sb.AppendLine(item.TipoDeAnimal.ToString());
+                sb.AppendLine("----------------------------");
             }
-            return sb.ToString();   
+            return sb.ToString();
         }
 
         public static string MostrarLista(List<Animal> lista)
@@ -65,31 +67,23 @@ namespace Entidades
                 {
                     sb.AppendLine($"id de Registro {item.Id.ToString()}");
                     sb.Append(item.Nombre + " ");
-                    sb.AppendLine(item.Edad.ToString() + "años");
+                    sb.AppendLine(item.Edad.ToString() + " años");
+                    //sb.AppendLine(Animal.Mostrar(item));
                     sb.AppendLine("----------------------------");
                 }
             }
-            
-            
+
+
             return sb.ToString();
         }
 
         public static void AgregarAnimal(Animal unAnimal)
         {
-            if(unAnimal is not null)
+            if (unAnimal is not null)
             {
-                foreach (Animal item in ListaAnimales)
-                {
-                    if(item == unAnimal)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                       ListaAnimales.Add(unAnimal);
 
-                    }
-                }
+                ListaAnimales.Add(unAnimal);
+
             }
         }
 
@@ -98,7 +92,7 @@ namespace Entidades
             Animal aux = null;
             foreach (Animal item in lista)
             {
-                if(item.Id == id)
+                if (item.Id == id)
                 {
                     aux = item;
                     break;
@@ -139,15 +133,15 @@ namespace Entidades
         public static bool AgregarAPaseos(Animal a)
         {
             bool retorno = false;
-            if(a is not null)
+            if (a is not null)
             {
-                if(a is Perro)
+                if (a is Perro)
                 {
-                    //TODO
+                    paseadorPerros.AgregarALista((Perro)a, paseadorPerros.Lista);
                 }
-                if(a is Gato)
+                if (a is Gato)
                 {
-                    //TODO
+                    paseadorGatos.AgregarALista((Gato)a,paseadorGatos.Lista);
                 }
             }
             return retorno;

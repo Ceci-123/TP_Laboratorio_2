@@ -51,7 +51,7 @@
             // 
             this.lbl_NombreVet.AutoSize = true;
             this.lbl_NombreVet.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lbl_NombreVet.Location = new System.Drawing.Point(379, 22);
+            this.lbl_NombreVet.Location = new System.Drawing.Point(308, 18);
             this.lbl_NombreVet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NombreVet.Name = "lbl_NombreVet";
             this.lbl_NombreVet.Size = new System.Drawing.Size(188, 33);
@@ -197,7 +197,7 @@
             this.pictureBox_Foto.Image = global::UI.Properties.Resources.perroVeterinario;
             this.pictureBox_Foto.Location = new System.Drawing.Point(33, 271);
             this.pictureBox_Foto.Name = "pictureBox_Foto";
-            this.pictureBox_Foto.Size = new System.Drawing.Size(345, 155);
+            this.pictureBox_Foto.Size = new System.Drawing.Size(338, 155);
             this.pictureBox_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Foto.TabIndex = 16;
             this.pictureBox_Foto.TabStop = false;
@@ -206,7 +206,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::UI.Properties.Resources.fondo;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(907, 540);
             this.Controls.Add(this.pictureBox_Foto);
             this.Controls.Add(this.lbl_mensajito);

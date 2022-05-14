@@ -17,12 +17,12 @@ namespace Entidades
         {
             this.colorPelaje = pelaje;
         }
-        public string Mostrar(Conejo c)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append(base.Mostrar(c));
-            sb.Append($"Pelaje {c.colorPelaje}");
-            return sb.ToString();
-        }
+        //public string Mostrar(Conejo c)
+        //{
+        //    StringBuilder sb = new StringBuilder();
+        //    //sb.Append(base.Mostrar(c));
+        //    sb.Append($"Pelaje {c.colorPelaje}");
+        //    return sb.ToString();
+        //}
     }
 }

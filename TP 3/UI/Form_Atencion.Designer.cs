@@ -52,6 +52,7 @@
             this.lbl_pelaje = new System.Windows.Forms.Label();
             this.chk_paseo = new System.Windows.Forms.CheckBox();
             this.btn_GuardarDBase = new System.Windows.Forms.Button();
+            this.btn_cerrarVentana = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.num_edad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_peso)).BeginInit();
             this.SuspendLayout();
@@ -280,7 +281,6 @@
             // 
             // btn_GuardarDBase
             // 
-            this.btn_GuardarDBase.BackgroundImage = global::UI.Properties.Resources.fondo;
             this.btn_GuardarDBase.Location = new System.Drawing.Point(473, 379);
             this.btn_GuardarDBase.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarDBase.Name = "btn_GuardarDBase";
@@ -290,12 +290,23 @@
             this.btn_GuardarDBase.UseVisualStyleBackColor = true;
             this.btn_GuardarDBase.Click += new System.EventHandler(this.btn_GuardarDBase_Click);
             // 
+            // btn_cerrarVentana
+            // 
+            this.btn_cerrarVentana.Location = new System.Drawing.Point(335, 263);
+            this.btn_cerrarVentana.Name = "btn_cerrarVentana";
+            this.btn_cerrarVentana.Size = new System.Drawing.Size(172, 23);
+            this.btn_cerrarVentana.TabIndex = 25;
+            this.btn_cerrarVentana.Text = "Cerrar ventana";
+            this.btn_cerrarVentana.UseVisualStyleBackColor = true;
+            this.btn_cerrarVentana.Click += new System.EventHandler(this.btn_cerrarVentana_Click);
+            // 
             // Form_Atencion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::UI.Properties.Resources.fondo;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(927, 479);
+            this.Controls.Add(this.btn_cerrarVentana);
             this.Controls.Add(this.btn_GuardarDBase);
             this.Controls.Add(this.chk_paseo);
             this.Controls.Add(this.lbl_pelaje);
@@ -359,5 +370,6 @@
         private System.Windows.Forms.Label lbl_pelaje;
         private System.Windows.Forms.CheckBox chk_paseo;
         private System.Windows.Forms.Button btn_GuardarDBase;
+        private System.Windows.Forms.Button btn_cerrarVentana;
     }
 }
