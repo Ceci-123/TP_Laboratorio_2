@@ -1,13 +1,15 @@
-![imagen](https://thumbs.dreamstime.com/b/perro-de-la-huella-32918265.jpg)
+![imagen](https://cdn-icons-png.flaticon.com/128/6481/6481940.png)
 
 <h1 align="center">TP 3 - Junio de 2022</h1>
 
-# ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+# ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
-## Veterinaria **Pequeñas Patitas**
+## Veterinaria **Pequeñas Patitas** ❤
 
-> Es un sistema de atencion de pacientes en una veterinaria
-> En un primer formulario se agregan pacientes en espera de ser atendidos
+> Es un sistema de atencion de pacientes en una veterinaria.
+
+> En un primer formulario se agregan pacientes en espera de ser atendidos.
+
 > Al irse atendiendo cada paciente se lo ingresa en una ficha con sus datos y se le asigna un paseador, si asi lo desea.
 
 ⭐️ Temas vistos entre la clase 10 a 15
@@ -28,7 +30,7 @@
 
 ✅ Serializacion xml y json
 
-❤ Temas vistos entre la clase 15 a 20
+⭐️Temas vistos entre la clase 15 a 20
 
 ✅ sql
 ✅ conexion a data base

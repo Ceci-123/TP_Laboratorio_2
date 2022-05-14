@@ -60,7 +60,7 @@
             // 
             this.lbl_PacientesEnEspera.AutoSize = true;
             this.lbl_PacientesEnEspera.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_PacientesEnEspera.Location = new System.Drawing.Point(672, 79);
+            this.lbl_PacientesEnEspera.Location = new System.Drawing.Point(600, 79);
             this.lbl_PacientesEnEspera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_PacientesEnEspera.Name = "lbl_PacientesEnEspera";
             this.lbl_PacientesEnEspera.Size = new System.Drawing.Size(207, 23);
@@ -70,7 +70,7 @@
             // btn_AtenderProximo
             // 
             this.btn_AtenderProximo.Location = new System.Drawing.Point(217, 157);
-            this.btn_AtenderProximo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AtenderProximo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AtenderProximo.Name = "btn_AtenderProximo";
             this.btn_AtenderProximo.Size = new System.Drawing.Size(147, 95);
             this.btn_AtenderProximo.TabIndex = 2;
@@ -81,7 +81,7 @@
             // rchTxt_Info
             // 
             this.rchTxt_Info.Location = new System.Drawing.Point(444, 157);
-            this.rchTxt_Info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rchTxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.rchTxt_Info.Name = "rchTxt_Info";
             this.rchTxt_Info.Size = new System.Drawing.Size(435, 256);
             this.rchTxt_Info.TabIndex = 3;
@@ -90,7 +90,7 @@
             // btn_AgregarPaciente
             // 
             this.btn_AgregarPaciente.Location = new System.Drawing.Point(33, 157);
-            this.btn_AgregarPaciente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AgregarPaciente.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AgregarPaciente.Name = "btn_AgregarPaciente";
             this.btn_AgregarPaciente.Size = new System.Drawing.Size(158, 95);
             this.btn_AgregarPaciente.TabIndex = 4;
@@ -111,7 +111,7 @@
             // txt_bx_nombre
             // 
             this.txt_bx_nombre.Location = new System.Drawing.Point(217, 302);
-            this.txt_bx_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_bx_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_bx_nombre.Name = "txt_bx_nombre";
             this.txt_bx_nombre.Size = new System.Drawing.Size(154, 22);
             this.txt_bx_nombre.TabIndex = 6;
@@ -130,7 +130,7 @@
             // 
             this.cmb_TipoAnimal.FormattingEnabled = true;
             this.cmb_TipoAnimal.Location = new System.Drawing.Point(217, 367);
-            this.cmb_TipoAnimal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmb_TipoAnimal.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_TipoAnimal.Name = "cmb_TipoAnimal";
             this.cmb_TipoAnimal.Size = new System.Drawing.Size(154, 26);
             this.cmb_TipoAnimal.TabIndex = 8;
@@ -138,7 +138,7 @@
             // btn_Ok
             // 
             this.btn_Ok.Location = new System.Drawing.Point(139, 448);
-            this.btn_Ok.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Ok.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Ok.Name = "btn_Ok";
             this.btn_Ok.Size = new System.Drawing.Size(96, 61);
             this.btn_Ok.TabIndex = 9;
@@ -149,7 +149,7 @@
             // btn_CargaXML
             // 
             this.btn_CargaXML.Location = new System.Drawing.Point(444, 448);
-            this.btn_CargaXML.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CargaXML.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargaXML.Name = "btn_CargaXML";
             this.btn_CargaXML.Size = new System.Drawing.Size(181, 61);
             this.btn_CargaXML.TabIndex = 11;
@@ -159,7 +159,7 @@
             // btn_GuardarXml
             // 
             this.btn_GuardarXml.Location = new System.Drawing.Point(689, 448);
-            this.btn_GuardarXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_GuardarXml.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarXml.Name = "btn_GuardarXml";
             this.btn_GuardarXml.Size = new System.Drawing.Size(190, 61);
             this.btn_GuardarXml.TabIndex = 13;
@@ -209,7 +209,7 @@
             this.Controls.Add(this.lbl_NombreVet);
             this.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Veterinaria";
