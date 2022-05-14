@@ -82,14 +82,12 @@ namespace Entidades
                     }
                     if (item is Conejo)
                     {
-                        sb.AppendLine(((Conejo)item).ToString());
-                        sb.AppendLine("-----------conejo-----------------");
+                        sb.AppendLine(((Conejo)item).Mostrar());
 
                     }
                     if (item is Hamster)
                     {
-                        sb.AppendLine(((Conejo)item).ToString());
-                        sb.AppendLine("-----------hamster-----------------");
+                        sb.AppendLine(((Conejo)item).Mostrar());
 
                     }
                 }

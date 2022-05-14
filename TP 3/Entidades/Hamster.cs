@@ -8,17 +8,16 @@ namespace Entidades
 {
     public class Hamster :Animal
     {
-        public Hamster(string nombre) : base(nombre)
+        public Hamster(string nombre, int edad) : base(nombre, edad)
         {
 
         }
 
-        //public string Mostrar(Hamster h)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    //sb.Append(base.Mostrar(h));
-        //    sb.Append($"");
-        //    return sb.ToString();
-        //}
+        public string Mostrar()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"");
+            return sb.ToString();
+        }
     }
 }

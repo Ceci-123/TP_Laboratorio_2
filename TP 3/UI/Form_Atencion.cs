@@ -70,20 +70,20 @@ namespace UI
             switch (pacienteActual.TipoDeAnimal.ToString())
             {
                 case "Conejo":
-                    Veterinaria.AgregarAnimal(new Conejo(auxNombre,auxPelaje));
+                    Veterinaria.AgregarAnimal(new Conejo(auxNombre,auxEdad, auxPelaje));
                     break;
                 case "Perro":
-                    Perro p = new Perro(auxNombre, auxPeso, auxRaza, auxVacunado);
+                    Perro p = new Perro(auxNombre, auxEdad, auxPeso, auxRaza, auxVacunado);
                     Veterinaria.AgregarAnimal(p);
                     Veterinaria.AgregarAPaseos(p);
                     break;
                 case "Gato":
-                    Gato g = new Gato(auxNombre, auxVacunado);
+                    Gato g = new Gato(auxNombre, auxEdad, auxVacunado);
                     Veterinaria.AgregarAnimal(g);
                     Veterinaria.AgregarAPaseos(g);
                     break;
                 case "Hamster":
-                    Veterinaria.AgregarAnimal(new Hamster(auxNombre));
+                    Veterinaria.AgregarAnimal(new Hamster(auxNombre, auxEdad));
                     break;
 
             }

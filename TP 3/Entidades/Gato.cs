@@ -9,22 +9,25 @@ namespace Entidades
     public class Gato :Animal
     {
         public bool vacunado;
-        public Gato(string nombre) : base(nombre)
+        public Gato(string nombre, int edad) : base(nombre, edad)
         {
 
         }
 
-        public Gato(string nombre, bool vacunado) : this(nombre)
+        public Gato(string nombre, int edad, bool vacunado) : this(nombre, edad)
         {
             this.vacunado = vacunado;
         }
 
-        //public string Mostrar(Gato g)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    //sb.Append(base.Mostrar(g));
-        //    sb.Append($"");
-        //    return sb.ToString();
-        //}
+        public string Mostrar()
+        {
+            StringBuilder sb = new StringBuilder();
+            if (vacunado)
+            {
+                sb.Append($"Tiene sus vacunas al dia");
+
+            }
+            return sb.ToString();
+        }
     }
 }

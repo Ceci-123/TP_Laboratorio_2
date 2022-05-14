@@ -9,20 +9,19 @@ namespace Entidades
     public class Conejo :Animal
     {
         public string colorPelaje;
-        public Conejo(string nombre) : base(nombre)
+        public Conejo(string nombre, int edad) : base(nombre, edad)
         {
 
         }
-        public Conejo(string nombre, string pelaje) : this(nombre)
+        public Conejo(string nombre, int edad, string pelaje) : this(nombre, edad)
         {
             this.colorPelaje = pelaje;
         }
-        //public string Mostrar(Conejo c)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    //sb.Append(base.Mostrar(c));
-        //    sb.Append($"Pelaje {c.colorPelaje}");
-        //    return sb.ToString();
-        //}
+        public string Mostrar()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"Pelaje {this.colorPelaje}");
+            return sb.ToString();
+        }
     }
 }

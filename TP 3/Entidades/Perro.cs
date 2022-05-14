@@ -9,12 +9,12 @@ namespace Entidades
         private string raza;
         private bool vacunado;
 
-        public Perro(string nombre) : base(nombre)
+        public Perro(string nombre, int edad) : base(nombre, edad)
         {
 
         }
 
-        public Perro(string nombre, int peso, string raza, bool vacunado) :this(nombre)
+        public Perro(string nombre, int edad, int peso, string raza, bool vacunado) :this(nombre, edad)
         {
             this.peso = peso;
             this.raza = raza;
@@ -39,12 +39,11 @@ namespace Entidades
             return retorno;
         }
 
-        //public string Mostrar(Perro p)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    //sb.Append(base.Mostrar(p));
-        //    sb.Append($"Peso {p.Peso} Raza {p.Raza} Vacunado {p.Vacunado}");
-        //    return sb.ToString();
-        //}
+        public string Mostrar()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"Peso {this.Peso} Raza {this.Raza} Vacunado {this.Vacunado}");
+            return sb.ToString();
+        }
     }
 }

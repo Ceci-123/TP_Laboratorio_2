@@ -120,9 +120,10 @@ namespace UI
             if(pacienteActual is not null)
             {
                Form frmAtencion = new Form_Atencion(pacienteActual);
+                this.Hide();
                 if (frmAtencion.ShowDialog() == DialogResult.OK)
                 {
-                    //todo
+                    this.Show();
                 }
             }
             
