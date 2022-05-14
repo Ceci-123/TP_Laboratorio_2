@@ -48,11 +48,11 @@
             // lbl_NombreVet
             // 
             this.lbl_NombreVet.AutoSize = true;
-            this.lbl_NombreVet.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_NombreVet.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.lbl_NombreVet.Location = new System.Drawing.Point(379, 22);
             this.lbl_NombreVet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NombreVet.Name = "lbl_NombreVet";
-            this.lbl_NombreVet.Size = new System.Drawing.Size(148, 26);
+            this.lbl_NombreVet.Size = new System.Drawing.Size(188, 33);
             this.lbl_NombreVet.TabIndex = 0;
             this.lbl_NombreVet.Text = "Veterinaria";
             // 
@@ -170,7 +170,7 @@
             // 
             this.lbl_Hora.AutoSize = true;
             this.lbl_Hora.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Hora.Location = new System.Drawing.Point(404, 79);
+            this.lbl_Hora.Location = new System.Drawing.Point(33, 116);
             this.lbl_Hora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Hora.Name = "lbl_Hora";
             this.lbl_Hora.Size = new System.Drawing.Size(60, 23);

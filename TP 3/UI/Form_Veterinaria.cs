@@ -30,7 +30,8 @@ namespace UI
             this.lbl_TipoAnimal.Visible = false;
             this.cmb_TipoAnimal.Visible = false;
             this.txt_bx_nombre.Visible = false;
-            this.lbl_Hora.Text = DateTime.Now().ToString();
+            this.lbl_Hora.Text = DateTime.Now.ToString();
+            this.lbl_mensajito.Text = ExtendTime.DiaSemana(DateTime.Now);
             //RefrescarLista();
         }
 

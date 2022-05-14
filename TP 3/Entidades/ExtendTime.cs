@@ -8,10 +8,10 @@ namespace Entidades
 {
     public static class ExtendTime
     {
-        public static string HoraDelDia(this DateTime horario)
+        public static string DiaSemana(this DateTime dt)
         {
             StringBuilder sb = new StringBuilder(); 
-            switch (horario.DayOfWeek)
+            switch (dt.DayOfWeek)
             {
                 case DayOfWeek.Sunday:
                     sb.AppendLine("Buen domingo, hoy se descansa!!");
