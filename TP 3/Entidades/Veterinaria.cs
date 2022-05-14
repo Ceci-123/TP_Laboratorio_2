@@ -69,7 +69,7 @@ namespace Entidades
             return sb.ToString();
         }
 
-        public void AgregarAnimal(Animal unAnimal)
+        public static void AgregarAnimal(Animal unAnimal)
         {
             if(unAnimal is not null)
             {
@@ -88,7 +88,7 @@ namespace Entidades
             }
         }
 
-        public Animal BuscarAnimalPorId(int id, List<Animal> lista)
+        public static Animal BuscarAnimalPorId(int id, List<Animal> lista)
         {
             Animal aux = null;
             foreach (Animal item in lista)
@@ -101,7 +101,7 @@ namespace Entidades
             }
             return aux;
         }
-        public bool ExportarListaAnimalesXml(List<Animal> lista)
+        public static bool CargarListaAnimalesDesdeXml(List<Animal> lista)
         {
             return true;
         }
@@ -111,7 +111,7 @@ namespace Entidades
             return true;
         }
 
-        public bool ImportarListaAnimalesXml(List<Animal> lista)
+        public static bool GuardarListaAnimalesEnXml(List<Animal> lista)
         {
             return true;
         }
@@ -131,18 +131,18 @@ namespace Entidades
             return true;
         }
 
-        public bool AgregarAPaseos(Animal a)
+        public static bool AgregarAPaseos(Animal a)
         {
             bool retorno = false;
             if(a is not null)
             {
                 if(a is Perro)
                 {
-
+                    //TODO
                 }
                 if(a is Gato)
                 {
-
+                    //TODO
                 }
             }
             return retorno;

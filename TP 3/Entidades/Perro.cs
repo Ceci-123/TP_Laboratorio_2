@@ -14,6 +14,13 @@ namespace Entidades
 
         }
 
+        public Perro(string nombre, int peso, string raza, bool vacunado) :this(nombre)
+        {
+            this.peso = peso;
+            this.raza = raza;
+            this.vacunado = vacunado;
+        }
+
         public int Peso { get => peso; set => peso = value; }
         public string Raza { get => raza; set => raza = value; }
         public bool Vacunado { get => vacunado; set => vacunado = value; }

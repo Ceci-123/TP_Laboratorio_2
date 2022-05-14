@@ -13,6 +13,10 @@ namespace Entidades
         {
 
         }
+        public Conejo(string nombre, string pelaje) : this(nombre)
+        {
+            this.colorPelaje = pelaje;
+        }
         public string Mostrar(Conejo c)
         {
             StringBuilder sb = new StringBuilder();

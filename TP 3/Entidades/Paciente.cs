@@ -16,7 +16,7 @@ namespace Entidades
         private eAnimal tipoDeAnimal;
 
         public string Nombre { get => nombre; set => nombre = value; }
-        internal eAnimal TipoDeAnimal { get => tipoDeAnimal; }
+        public eAnimal TipoDeAnimal { get => tipoDeAnimal; }
 
         
         public Paciente(string nombre, eAnimal tipo)

@@ -8,10 +8,15 @@ namespace Entidades
 {
     public class Gato :Animal
     {
-
+        public bool vacunado;
         public Gato(string nombre) : base(nombre)
         {
 
+        }
+
+        public Gato(string nombre, bool vacunado) : this(nombre)
+        {
+            this.vacunado = vacunado;
         }
 
         public string Mostrar(Gato g)

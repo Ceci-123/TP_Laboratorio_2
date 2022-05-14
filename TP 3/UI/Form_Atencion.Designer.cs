@@ -178,6 +178,7 @@
             this.btn_buscar.TabIndex = 12;
             this.btn_buscar.Text = "Buscar por Id";
             this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // txt_devolverInfo
             // 
