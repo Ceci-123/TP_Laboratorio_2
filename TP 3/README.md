@@ -1,14 +1,14 @@
-![imagen](https://static5.depositphotos.com/1001911/395/v/600/depositphotos_3955235-stock-illustration-black-paw-print.jpg)
+![imagen](https://thumbs.dreamstime.com/b/perro-de-la-huella-32918265.jpg)
 
 <h1 align="center">TP 3 - Junio de 2022</h1>
 
-# ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+# ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
 ## Veterinaria **Pequeñas Patitas**
 
 > Es un sistema de atencion de pacientes en una veterinaria
 > En un primer formulario se agregan pacientes en espera de ser atendidos
-> Al irse atendiendo cada paciente se lo ingresa en una ficha con sus datos y se le asigna un paseador.
+> Al irse atendiendo cada paciente se lo ingresa en una ficha con sus datos y se le asigna un paseador, si asi lo desea.
 
 ⭐️ Temas vistos entre la clase 10 a 15
 

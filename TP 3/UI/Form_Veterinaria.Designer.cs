@@ -39,35 +39,40 @@
             this.lbl_TipoAnimal = new System.Windows.Forms.Label();
             this.cmb_TipoAnimal = new System.Windows.Forms.ComboBox();
             this.btn_Ok = new System.Windows.Forms.Button();
-            this.btn_Carga_Xml = new System.Windows.Forms.Button();
-            this.btn_CargaJson = new System.Windows.Forms.Button();
-            this.btn_GuardarJson = new System.Windows.Forms.Button();
+            this.btn_CargaXML = new System.Windows.Forms.Button();
             this.btn_GuardarXml = new System.Windows.Forms.Button();
+            this.lbl_Hora = new System.Windows.Forms.Label();
+            this.lbl_mensajito = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_NombreVet
             // 
             this.lbl_NombreVet.AutoSize = true;
-            this.lbl_NombreVet.Location = new System.Drawing.Point(261, 25);
+            this.lbl_NombreVet.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_NombreVet.Location = new System.Drawing.Point(379, 22);
+            this.lbl_NombreVet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NombreVet.Name = "lbl_NombreVet";
-            this.lbl_NombreVet.Size = new System.Drawing.Size(62, 15);
+            this.lbl_NombreVet.Size = new System.Drawing.Size(148, 26);
             this.lbl_NombreVet.TabIndex = 0;
             this.lbl_NombreVet.Text = "Veterinaria";
             // 
             // lbl_PacientesEnEspera
             // 
             this.lbl_PacientesEnEspera.AutoSize = true;
-            this.lbl_PacientesEnEspera.Location = new System.Drawing.Point(36, 91);
+            this.lbl_PacientesEnEspera.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_PacientesEnEspera.Location = new System.Drawing.Point(672, 79);
+            this.lbl_PacientesEnEspera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_PacientesEnEspera.Name = "lbl_PacientesEnEspera";
-            this.lbl_PacientesEnEspera.Size = new System.Drawing.Size(110, 15);
+            this.lbl_PacientesEnEspera.Size = new System.Drawing.Size(207, 23);
             this.lbl_PacientesEnEspera.TabIndex = 1;
             this.lbl_PacientesEnEspera.Text = "Pacientes en Espera";
             // 
             // btn_AtenderProximo
             // 
-            this.btn_AtenderProximo.Location = new System.Drawing.Point(39, 170);
+            this.btn_AtenderProximo.Location = new System.Drawing.Point(217, 157);
+            this.btn_AtenderProximo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_AtenderProximo.Name = "btn_AtenderProximo";
-            this.btn_AtenderProximo.Size = new System.Drawing.Size(114, 23);
+            this.btn_AtenderProximo.Size = new System.Drawing.Size(147, 95);
             this.btn_AtenderProximo.TabIndex = 2;
             this.btn_AtenderProximo.Text = "Atender Proximo";
             this.btn_AtenderProximo.UseVisualStyleBackColor = true;
@@ -75,17 +80,19 @@
             // 
             // rchTxt_Info
             // 
-            this.rchTxt_Info.Location = new System.Drawing.Point(332, 160);
+            this.rchTxt_Info.Location = new System.Drawing.Point(444, 157);
+            this.rchTxt_Info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rchTxt_Info.Name = "rchTxt_Info";
-            this.rchTxt_Info.Size = new System.Drawing.Size(100, 96);
+            this.rchTxt_Info.Size = new System.Drawing.Size(435, 256);
             this.rchTxt_Info.TabIndex = 3;
             this.rchTxt_Info.Text = "";
             // 
             // btn_AgregarPaciente
             // 
-            this.btn_AgregarPaciente.Location = new System.Drawing.Point(54, 288);
+            this.btn_AgregarPaciente.Location = new System.Drawing.Point(33, 157);
+            this.btn_AgregarPaciente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_AgregarPaciente.Name = "btn_AgregarPaciente";
-            this.btn_AgregarPaciente.Size = new System.Drawing.Size(123, 23);
+            this.btn_AgregarPaciente.Size = new System.Drawing.Size(158, 95);
             this.btn_AgregarPaciente.TabIndex = 4;
             this.btn_AgregarPaciente.Text = "Agregar un Paciente";
             this.btn_AgregarPaciente.UseVisualStyleBackColor = true;
@@ -94,91 +101,102 @@
             // lbl_NombrePaciente
             // 
             this.lbl_NombrePaciente.AutoSize = true;
-            this.lbl_NombrePaciente.Location = new System.Drawing.Point(213, 330);
+            this.lbl_NombrePaciente.Location = new System.Drawing.Point(33, 306);
+            this.lbl_NombrePaciente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NombrePaciente.Name = "lbl_NombrePaciente";
-            this.lbl_NombrePaciente.Size = new System.Drawing.Size(118, 15);
+            this.lbl_NombrePaciente.Size = new System.Drawing.Size(164, 18);
             this.lbl_NombrePaciente.TabIndex = 5;
             this.lbl_NombrePaciente.Text = "Nombre del Paciente";
             // 
             // txt_bx_nombre
             // 
-            this.txt_bx_nombre.Location = new System.Drawing.Point(340, 330);
+            this.txt_bx_nombre.Location = new System.Drawing.Point(217, 302);
+            this.txt_bx_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_bx_nombre.Name = "txt_bx_nombre";
-            this.txt_bx_nombre.Size = new System.Drawing.Size(100, 23);
+            this.txt_bx_nombre.Size = new System.Drawing.Size(154, 22);
             this.txt_bx_nombre.TabIndex = 6;
             // 
             // lbl_TipoAnimal
             // 
             this.lbl_TipoAnimal.AutoSize = true;
-            this.lbl_TipoAnimal.Location = new System.Drawing.Point(218, 381);
+            this.lbl_TipoAnimal.Location = new System.Drawing.Point(33, 375);
+            this.lbl_TipoAnimal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TipoAnimal.Name = "lbl_TipoAnimal";
-            this.lbl_TipoAnimal.Size = new System.Drawing.Size(35, 15);
+            this.lbl_TipoAnimal.Size = new System.Drawing.Size(48, 18);
             this.lbl_TipoAnimal.TabIndex = 7;
             this.lbl_TipoAnimal.Text = "Es un";
             // 
             // cmb_TipoAnimal
             // 
             this.cmb_TipoAnimal.FormattingEnabled = true;
-            this.cmb_TipoAnimal.Location = new System.Drawing.Point(345, 379);
+            this.cmb_TipoAnimal.Location = new System.Drawing.Point(217, 367);
+            this.cmb_TipoAnimal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmb_TipoAnimal.Name = "cmb_TipoAnimal";
-            this.cmb_TipoAnimal.Size = new System.Drawing.Size(121, 23);
+            this.cmb_TipoAnimal.Size = new System.Drawing.Size(154, 26);
             this.cmb_TipoAnimal.TabIndex = 8;
             // 
             // btn_Ok
             // 
-            this.btn_Ok.Location = new System.Drawing.Point(505, 347);
+            this.btn_Ok.Location = new System.Drawing.Point(139, 448);
+            this.btn_Ok.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Ok.Name = "btn_Ok";
-            this.btn_Ok.Size = new System.Drawing.Size(75, 23);
+            this.btn_Ok.Size = new System.Drawing.Size(96, 61);
             this.btn_Ok.TabIndex = 9;
             this.btn_Ok.Text = "OK";
             this.btn_Ok.UseVisualStyleBackColor = true;
             this.btn_Ok.Click += new System.EventHandler(this.btn_Ok_Click);
             // 
-            // btn_Carga_Xml
+            // btn_CargaXML
             // 
-            this.btn_Carga_Xml.Location = new System.Drawing.Point(561, 162);
-            this.btn_Carga_Xml.Name = "btn_Carga_Xml";
-            this.btn_Carga_Xml.Size = new System.Drawing.Size(75, 23);
-            this.btn_Carga_Xml.TabIndex = 10;
-            this.btn_Carga_Xml.Text = "Cargar desde xml";
-            this.btn_Carga_Xml.UseVisualStyleBackColor = true;
-            // 
-            // btn_CargaJson
-            // 
-            this.btn_CargaJson.Location = new System.Drawing.Point(564, 252);
-            this.btn_CargaJson.Name = "btn_CargaJson";
-            this.btn_CargaJson.Size = new System.Drawing.Size(75, 23);
-            this.btn_CargaJson.TabIndex = 11;
-            this.btn_CargaJson.Text = "Cargar desde Json";
-            this.btn_CargaJson.UseVisualStyleBackColor = true;
-            // 
-            // btn_GuardarJson
-            // 
-            this.btn_GuardarJson.Location = new System.Drawing.Point(546, 103);
-            this.btn_GuardarJson.Name = "btn_GuardarJson";
-            this.btn_GuardarJson.Size = new System.Drawing.Size(75, 23);
-            this.btn_GuardarJson.TabIndex = 12;
-            this.btn_GuardarJson.Text = "Guardar en Json";
-            this.btn_GuardarJson.UseVisualStyleBackColor = true;
+            this.btn_CargaXML.Location = new System.Drawing.Point(444, 448);
+            this.btn_CargaXML.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CargaXML.Name = "btn_CargaXML";
+            this.btn_CargaXML.Size = new System.Drawing.Size(181, 61);
+            this.btn_CargaXML.TabIndex = 11;
+            this.btn_CargaXML.Text = "Cargar desde XML";
+            this.btn_CargaXML.UseVisualStyleBackColor = true;
             // 
             // btn_GuardarXml
             // 
-            this.btn_GuardarXml.Location = new System.Drawing.Point(550, 66);
+            this.btn_GuardarXml.Location = new System.Drawing.Point(689, 448);
+            this.btn_GuardarXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_GuardarXml.Name = "btn_GuardarXml";
-            this.btn_GuardarXml.Size = new System.Drawing.Size(75, 23);
+            this.btn_GuardarXml.Size = new System.Drawing.Size(190, 61);
             this.btn_GuardarXml.TabIndex = 13;
             this.btn_GuardarXml.Text = "Guardar en XML";
             this.btn_GuardarXml.UseVisualStyleBackColor = true;
             // 
+            // lbl_Hora
+            // 
+            this.lbl_Hora.AutoSize = true;
+            this.lbl_Hora.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Hora.Location = new System.Drawing.Point(404, 79);
+            this.lbl_Hora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Hora.Name = "lbl_Hora";
+            this.lbl_Hora.Size = new System.Drawing.Size(60, 23);
+            this.lbl_Hora.TabIndex = 14;
+            this.lbl_Hora.Text = "Hora";
+            // 
+            // lbl_mensajito
+            // 
+            this.lbl_mensajito.AutoSize = true;
+            this.lbl_mensajito.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_mensajito.Location = new System.Drawing.Point(33, 79);
+            this.lbl_mensajito.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_mensajito.Name = "lbl_mensajito";
+            this.lbl_mensajito.Size = new System.Drawing.Size(107, 23);
+            this.lbl_mensajito.TabIndex = 15;
+            this.lbl_mensajito.Text = "Mensajito";
+            // 
             // Form_Veterinaria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(907, 540);
+            this.Controls.Add(this.lbl_mensajito);
+            this.Controls.Add(this.lbl_Hora);
             this.Controls.Add(this.btn_GuardarXml);
-            this.Controls.Add(this.btn_GuardarJson);
-            this.Controls.Add(this.btn_CargaJson);
-            this.Controls.Add(this.btn_Carga_Xml);
+            this.Controls.Add(this.btn_CargaXML);
             this.Controls.Add(this.btn_Ok);
             this.Controls.Add(this.cmb_TipoAnimal);
             this.Controls.Add(this.lbl_TipoAnimal);
@@ -189,7 +207,9 @@
             this.Controls.Add(this.btn_AtenderProximo);
             this.Controls.Add(this.lbl_PacientesEnEspera);
             this.Controls.Add(this.lbl_NombreVet);
+            this.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Veterinaria";
@@ -212,9 +232,9 @@
         private System.Windows.Forms.Label lbl_TipoAnimal;
         private System.Windows.Forms.ComboBox cmb_TipoAnimal;
         private System.Windows.Forms.Button btn_Ok;
-        private System.Windows.Forms.Button btn_Carga_Xml;
-        private System.Windows.Forms.Button btn_CargaJson;
-        private System.Windows.Forms.Button btn_GuardarJson;
+        private System.Windows.Forms.Button btn_CargaXML;
         private System.Windows.Forms.Button btn_GuardarXml;
+        private System.Windows.Forms.Label lbl_Hora;
+        private System.Windows.Forms.Label lbl_mensajito;
     }
 }
