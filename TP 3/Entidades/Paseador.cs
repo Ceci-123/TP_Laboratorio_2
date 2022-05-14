@@ -22,5 +22,20 @@ namespace Entidades
            this.nombrePaseador = nombre;
         }
 
+        public void AgregarALista(T t, List<T> lista)
+        {
+            foreach (T item in lista)
+            {
+                if (item.Id == t.Id)
+                {
+                    break;
+                }
+                else
+                {
+                   lista.Add(t);
+
+                }
+            }
+        }
     }
 }

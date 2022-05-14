@@ -8,9 +8,18 @@ namespace Entidades
 {
     public class Gato :Animal
     {
+
         public Gato(string nombre) : base(nombre)
         {
 
+        }
+
+        public string Mostrar(Gato g)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(base.Mostrar(g));
+            sb.Append($"");
+            return sb.ToString();
         }
     }
 }

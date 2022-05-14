@@ -1,8 +1,8 @@
-![imagen](https://nupec.com/wp-content/uploads/2020/07/Captura-de-pantalla-2020-07-24-a-las-17.33.44.png)
+![imagen](https://static5.depositphotos.com/1001911/395/v/600/depositphotos_3955235-stock-illustration-black-paw-print.jpg)
 
 <h1 align="center">TP 3 - Junio de 2022</h1>
 
-# \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+# ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
 ## Veterinaria **Pequeñas Patitas**
 
@@ -23,6 +23,8 @@
 ✅ Interfaces: vacunacion.
 
 ✅Se sobrecarga el == para saber si dos pacientes son iguales.
+
+✅ Se sobrecarga el operador + para agregar un paciente a la lista de atencion
 
 ✅ Serializacion xml y json
 

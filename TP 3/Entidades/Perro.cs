@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Entidades
 {
@@ -29,6 +30,14 @@ namespace Entidades
             }
 
             return retorno;
+        }
+
+        public string Mostrar(Perro p)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(base.Mostrar(p));
+            sb.Append($"Peso {p.Peso} Raza {p.Raza} Vacunado {p.Vacunado}");
+            return sb.ToString();
         }
     }
 }

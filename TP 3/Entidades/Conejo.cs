@@ -13,5 +13,12 @@ namespace Entidades
         {
 
         }
+        public string Mostrar(Conejo c)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(base.Mostrar(c));
+            sb.Append($"Pelaje {c.colorPelaje}");
+            return sb.ToString();
+        }
     }
 }
