@@ -113,7 +113,7 @@ namespace UI
         {
             try
             {
-                SoundPlayer sonido = new SoundPlayer(Properties.Resources.ladrido);
+                SoundPlayer sonido = new SoundPlayer(Properties.Resources.dogbark);
                 sonido.Play();
             }
             catch (Exception)

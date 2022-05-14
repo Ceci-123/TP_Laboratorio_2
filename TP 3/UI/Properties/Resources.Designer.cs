@@ -61,21 +61,21 @@ namespace UI.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream dogbark {
+            get {
+                return ResourceManager.GetStream("dogbark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap fondo {
             get {
                 object obj = ResourceManager.GetObject("fondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream ladrido {
-            get {
-                return ResourceManager.GetStream("ladrido", resourceCulture);
             }
         }
         
