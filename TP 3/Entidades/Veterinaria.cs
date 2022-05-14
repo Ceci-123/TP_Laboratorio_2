@@ -65,15 +65,35 @@ namespace Entidades
             {
                 foreach (Animal item in lista)
                 {
-                    sb.AppendLine($"id de Registro {item.Id.ToString()}");
+                    sb.Append($"id de Registro {item.Id.ToString()}");
                     sb.Append(item.Nombre + " ");
                     sb.AppendLine(item.Edad.ToString() + " años");
-                    //sb.AppendLine(Animal.Mostrar(item));
                     sb.AppendLine("----------------------------");
+                    if (item is Perro)
+                    {
+                       sb.AppendLine(((Perro)item).ToString());
+                        sb.AppendLine("-----------perro-----------------");
+                    }
+                    if (item is Gato)
+                    {
+                        sb.AppendLine(((Gato)item).ToString());
+                        sb.AppendLine("-----------gato-----------------");
+
+                    }
+                    if (item is Conejo)
+                    {
+                        sb.AppendLine(((Conejo)item).ToString());
+                        sb.AppendLine("-----------conejo-----------------");
+
+                    }
+                    if (item is Hamster)
+                    {
+                        sb.AppendLine(((Conejo)item).ToString());
+                        sb.AppendLine("-----------hamster-----------------");
+
+                    }
                 }
             }
-
-
             return sb.ToString();
         }
 
@@ -141,7 +161,7 @@ namespace Entidades
                 }
                 if (a is Gato)
                 {
-                    paseadorGatos.AgregarALista((Gato)a,paseadorGatos.Lista);
+                    paseadorGatos.AgregarALista((Gato)a, paseadorGatos.Lista);
                 }
             }
             return retorno;

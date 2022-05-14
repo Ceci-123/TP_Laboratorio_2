@@ -103,7 +103,9 @@ namespace UI
             if(animalito is not null)
             {
                 this.txt_devolverInfo.Text = String.Empty;
-                this.txt_devolverInfo.Text += animalito; 
+                this.txt_devolverInfo.Text = animalito.ToString();
+                this.txt_devolverInfo.Text = Animal.Mostrar(animalito);
+                this.txt_bx_busquedaPorId.Text = String.Empty;
             }
         }
 
@@ -187,6 +189,11 @@ namespace UI
         {
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void btn_listado_Click(object sender, EventArgs e)
+        {
+            RefrescarLista();
         }
     }
 }

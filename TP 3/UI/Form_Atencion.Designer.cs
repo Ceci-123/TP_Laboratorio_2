@@ -232,6 +232,7 @@
             this.btn_listado.TabIndex = 14;
             this.btn_listado.Text = "Listado de todos los animales";
             this.btn_listado.UseVisualStyleBackColor = true;
+            this.btn_listado.Click += new System.EventHandler(this.btn_listado_Click);
             // 
             // txt_bx_busquedaPorId
             // 
