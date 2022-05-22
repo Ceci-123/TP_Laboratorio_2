@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
+    [XmlInclude(typeof(Perro))]
+    [XmlInclude(typeof(Gato))]
+    [XmlInclude(typeof(Conejo))]
+    [XmlInclude(typeof(Hamster))]
     public class Animal
     {
         private string nombre;

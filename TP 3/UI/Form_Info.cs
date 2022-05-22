@@ -59,6 +59,7 @@ namespace UI
             if (Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales))
             {
                 MessageBox.Show("exitoso");
+                this.richtxt_Info.Text = Veterinaria.ListaAnimales.ToString();
             }
             else
             {
@@ -71,6 +72,7 @@ namespace UI
             if (Veterinaria.CargarListaAnimalesJson(Veterinaria.ListaAnimales))
             {
                 MessageBox.Show("exitoso");
+                this.richtxt_Info.Text = Veterinaria.ListaAnimales.ToString();   
             }
             else
             {

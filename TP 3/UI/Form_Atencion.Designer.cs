@@ -305,6 +305,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Atencion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pequeñas Patitas";
             this.Load += new System.EventHandler(this.Form_Atencion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.num_edad)).EndInit();
