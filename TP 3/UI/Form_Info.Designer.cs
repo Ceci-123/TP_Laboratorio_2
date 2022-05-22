@@ -40,19 +40,21 @@
             // 
             // btn_GuardarEnXml
             // 
+            this.btn_GuardarEnXml.BackColor = System.Drawing.Color.LightCyan;
             this.btn_GuardarEnXml.Location = new System.Drawing.Point(57, 30);
-            this.btn_GuardarEnXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_GuardarEnXml.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarEnXml.Name = "btn_GuardarEnXml";
             this.btn_GuardarEnXml.Size = new System.Drawing.Size(165, 121);
             this.btn_GuardarEnXml.TabIndex = 0;
             this.btn_GuardarEnXml.Text = "Guardar datos en Xml";
-            this.btn_GuardarEnXml.UseVisualStyleBackColor = true;
+            this.btn_GuardarEnXml.UseVisualStyleBackColor = false;
             this.btn_GuardarEnXml.Click += new System.EventHandler(this.btn_GuardarEnXml_Click);
             // 
             // richtxt_Info
             // 
+            this.richtxt_Info.BackColor = System.Drawing.Color.LightCyan;
             this.richtxt_Info.Location = new System.Drawing.Point(57, 343);
-            this.richtxt_Info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richtxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.richtxt_Info.Name = "richtxt_Info";
             this.richtxt_Info.Size = new System.Drawing.Size(610, 280);
             this.richtxt_Info.TabIndex = 1;
@@ -60,57 +62,62 @@
             // 
             // btn_CargarDesdeXml
             // 
+            this.btn_CargarDesdeXml.BackColor = System.Drawing.Color.LightCyan;
             this.btn_CargarDesdeXml.Location = new System.Drawing.Point(57, 194);
-            this.btn_CargarDesdeXml.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CargarDesdeXml.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarDesdeXml.Name = "btn_CargarDesdeXml";
             this.btn_CargarDesdeXml.Size = new System.Drawing.Size(165, 121);
             this.btn_CargarDesdeXml.TabIndex = 2;
             this.btn_CargarDesdeXml.Text = "Cargar datos desde Xml";
-            this.btn_CargarDesdeXml.UseVisualStyleBackColor = true;
+            this.btn_CargarDesdeXml.UseVisualStyleBackColor = false;
             this.btn_CargarDesdeXml.Click += new System.EventHandler(this.btn_CargarDesdeXml_Click);
             // 
             // btn_GuardarEnJson
             // 
+            this.btn_GuardarEnJson.BackColor = System.Drawing.Color.LightCyan;
             this.btn_GuardarEnJson.Location = new System.Drawing.Point(288, 30);
-            this.btn_GuardarEnJson.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_GuardarEnJson.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarEnJson.Name = "btn_GuardarEnJson";
             this.btn_GuardarEnJson.Size = new System.Drawing.Size(165, 121);
             this.btn_GuardarEnJson.TabIndex = 3;
             this.btn_GuardarEnJson.Text = "Guardar datos en Json";
-            this.btn_GuardarEnJson.UseVisualStyleBackColor = true;
+            this.btn_GuardarEnJson.UseVisualStyleBackColor = false;
             this.btn_GuardarEnJson.Click += new System.EventHandler(this.btn_GuardarEnJson_Click);
             // 
             // btn_CargarDesdeJson
             // 
+            this.btn_CargarDesdeJson.BackColor = System.Drawing.Color.LightCyan;
             this.btn_CargarDesdeJson.Location = new System.Drawing.Point(288, 194);
-            this.btn_CargarDesdeJson.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CargarDesdeJson.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarDesdeJson.Name = "btn_CargarDesdeJson";
             this.btn_CargarDesdeJson.Size = new System.Drawing.Size(165, 121);
             this.btn_CargarDesdeJson.TabIndex = 4;
             this.btn_CargarDesdeJson.Text = "Cargar datos desde Json";
-            this.btn_CargarDesdeJson.UseVisualStyleBackColor = true;
+            this.btn_CargarDesdeJson.UseVisualStyleBackColor = false;
             this.btn_CargarDesdeJson.Click += new System.EventHandler(this.btn_CargarDesdeJson_Click);
             // 
             // btn_GuardarEnDbase
             // 
+            this.btn_GuardarEnDbase.BackColor = System.Drawing.Color.LightCyan;
             this.btn_GuardarEnDbase.Location = new System.Drawing.Point(503, 30);
-            this.btn_GuardarEnDbase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_GuardarEnDbase.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarEnDbase.Name = "btn_GuardarEnDbase";
             this.btn_GuardarEnDbase.Size = new System.Drawing.Size(165, 121);
             this.btn_GuardarEnDbase.TabIndex = 5;
             this.btn_GuardarEnDbase.Text = "Guardar datos en base de datos";
-            this.btn_GuardarEnDbase.UseVisualStyleBackColor = true;
+            this.btn_GuardarEnDbase.UseVisualStyleBackColor = false;
             this.btn_GuardarEnDbase.Click += new System.EventHandler(this.btn_GuardarEnDbase_Click);
             // 
             // btn_CargarDesdeDbase
             // 
+            this.btn_CargarDesdeDbase.BackColor = System.Drawing.Color.LightCyan;
             this.btn_CargarDesdeDbase.Location = new System.Drawing.Point(503, 194);
-            this.btn_CargarDesdeDbase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CargarDesdeDbase.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarDesdeDbase.Name = "btn_CargarDesdeDbase";
             this.btn_CargarDesdeDbase.Size = new System.Drawing.Size(165, 121);
             this.btn_CargarDesdeDbase.TabIndex = 6;
             this.btn_CargarDesdeDbase.Text = "Cargar datos desde base de datos";
-            this.btn_CargarDesdeDbase.UseVisualStyleBackColor = true;
+            this.btn_CargarDesdeDbase.UseVisualStyleBackColor = false;
             this.btn_CargarDesdeDbase.Click += new System.EventHandler(this.btn_CargarDesdeDbase_Click);
             // 
             // Form_Info
@@ -129,7 +136,7 @@
             this.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Info";

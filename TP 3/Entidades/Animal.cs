@@ -22,7 +22,10 @@ namespace Entidades
             
             nextId = 1;
         }
+        public Animal()
+        {
 
+        }
         public Animal(string nombre, int edad)
         {
             this.nombre = nombre;

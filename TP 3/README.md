@@ -30,7 +30,7 @@
 
 ✅ Serializacion xml y json: Se guarda y se recupera la informacion de los pacientes desde esos dos formatos.
 
-todo imprimir lista de paseos, vacunacion, completar el metodo, interfaz falta agregar, form info falta
+todo imprimir lista de paseos, vacunacion: completar el metodo, interfaz falta agregar algo mas, form info falta todo, documentar, falta paseos algo mas
 
 ⭐️Temas vistos entre la clase 15 a 20
 

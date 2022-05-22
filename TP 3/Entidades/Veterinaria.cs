@@ -53,7 +53,6 @@ namespace Entidades
             {
                 sb.Append(item.Nombre + " ");
                 sb.AppendLine(item.TipoDeAnimal.ToString());
-                sb.AppendLine("----------------------------");
             }
             return sb.ToString();
         }
@@ -68,7 +67,6 @@ namespace Entidades
                     sb.Append($"id de Registro {item.Id.ToString()}");
                     sb.Append(item.Nombre + " ");
                     sb.AppendLine(item.Edad.ToString() + " años");
-                    sb.AppendLine("----------------------------");
                     if (item is Perro)
                     {
                         sb.AppendLine(((Perro)item).Mostrar());

@@ -78,7 +78,7 @@ namespace UI
                     Veterinaria.AgregarAPaseos(p);
                     break;
                 case "Gato":
-                    Gato g = new Gato(auxNombre, auxEdad, auxVacunado);
+                    Gato g = new Gato(auxNombre, auxEdad, auxVacunado, auxRaza);
                     Veterinaria.AgregarAnimal(g);
                     Veterinaria.AgregarAPaseos(g);
                     break;
