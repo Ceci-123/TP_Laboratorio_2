@@ -143,5 +143,10 @@ namespace UI
         {
             RefrescarLista();
         }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();    
+        }
     }
 }

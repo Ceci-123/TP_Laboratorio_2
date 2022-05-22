@@ -38,6 +38,7 @@
             this.btn_CargarDesdeDbase = new System.Windows.Forms.Button();
             this.btn_PaseoPerruno = new System.Windows.Forms.Button();
             this.btn_PaseoGatuno = new System.Windows.Forms.Button();
+            this.btn_Salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_GuardarEnXml
@@ -58,7 +59,7 @@
             this.richtxt_Info.Location = new System.Drawing.Point(25, 338);
             this.richtxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.richtxt_Info.Name = "richtxt_Info";
-            this.richtxt_Info.Size = new System.Drawing.Size(768, 280);
+            this.richtxt_Info.Size = new System.Drawing.Size(671, 280);
             this.richtxt_Info.TabIndex = 1;
             this.richtxt_Info.Text = "";
             // 
@@ -146,12 +147,25 @@
             this.btn_PaseoGatuno.UseVisualStyleBackColor = false;
             this.btn_PaseoGatuno.Click += new System.EventHandler(this.btn_PaseoGatuno_Click);
             // 
+            // btn_Salir
+            // 
+            this.btn_Salir.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btn_Salir.Location = new System.Drawing.Point(704, 338);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(92, 280);
+            this.btn_Salir.TabIndex = 9;
+            this.btn_Salir.Text = "Cerrar App";
+            this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
             // Form_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UI.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(818, 653);
+            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_PaseoGatuno);
             this.Controls.Add(this.btn_PaseoPerruno);
             this.Controls.Add(this.btn_CargarDesdeDbase);
@@ -185,5 +199,6 @@
         private System.Windows.Forms.Button btn_CargarDesdeDbase;
         private System.Windows.Forms.Button btn_PaseoPerruno;
         private System.Windows.Forms.Button btn_PaseoGatuno;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }

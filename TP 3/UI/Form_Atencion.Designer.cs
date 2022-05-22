@@ -49,6 +49,7 @@
             this.lbl_pelaje = new System.Windows.Forms.Label();
             this.chk_paseo = new System.Windows.Forms.CheckBox();
             this.btn_cerrarVentana = new System.Windows.Forms.Button();
+            this.btn_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.num_edad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_peso)).BeginInit();
             this.SuspendLayout();
@@ -267,11 +268,23 @@
             this.btn_cerrarVentana.BackColor = System.Drawing.Color.LightCyan;
             this.btn_cerrarVentana.Location = new System.Drawing.Point(25, 379);
             this.btn_cerrarVentana.Name = "btn_cerrarVentana";
-            this.btn_cerrarVentana.Size = new System.Drawing.Size(454, 75);
+            this.btn_cerrarVentana.Size = new System.Drawing.Size(327, 75);
             this.btn_cerrarVentana.TabIndex = 25;
             this.btn_cerrarVentana.Text = "Regresar al formulario anterior";
             this.btn_cerrarVentana.UseVisualStyleBackColor = false;
             this.btn_cerrarVentana.Click += new System.EventHandler(this.btn_cerrarVentana_Click);
+            // 
+            // btn_Salir
+            // 
+            this.btn_Salir.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btn_Salir.Location = new System.Drawing.Point(375, 379);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(158, 75);
+            this.btn_Salir.TabIndex = 26;
+            this.btn_Salir.Text = "Salir de la App ";
+            this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // Form_Atencion
             // 
@@ -279,6 +292,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(927, 479);
+            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_cerrarVentana);
             this.Controls.Add(this.chk_paseo);
             this.Controls.Add(this.lbl_pelaje);
@@ -337,5 +351,6 @@
         private System.Windows.Forms.Label lbl_pelaje;
         private System.Windows.Forms.CheckBox chk_paseo;
         private System.Windows.Forms.Button btn_cerrarVentana;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }

@@ -109,5 +109,10 @@ namespace UI
             this.richtxt_Info.Text = String.Empty;
             this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.Lista.ToString());
         }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

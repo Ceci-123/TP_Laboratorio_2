@@ -43,6 +43,7 @@
             this.lbl_Hora = new System.Windows.Forms.Label();
             this.lbl_mensajito = new System.Windows.Forms.Label();
             this.pictureBox_Foto = new System.Windows.Forms.PictureBox();
+            this.btn_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,6 +200,18 @@
             this.pictureBox_Foto.TabIndex = 16;
             this.pictureBox_Foto.TabStop = false;
             // 
+            // btn_Salir
+            // 
+            this.btn_Salir.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btn_Salir.Location = new System.Drawing.Point(677, 466);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(202, 61);
+            this.btn_Salir.TabIndex = 17;
+            this.btn_Salir.Text = "Salir";
+            this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
             // Form_Veterinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -206,6 +219,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(907, 540);
+            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.pictureBox_Foto);
             this.Controls.Add(this.lbl_mensajito);
             this.Controls.Add(this.lbl_Hora);
@@ -252,5 +266,6 @@
         private System.Windows.Forms.Label lbl_Hora;
         private System.Windows.Forms.Label lbl_mensajito;
         private System.Windows.Forms.PictureBox pictureBox_Foto;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }

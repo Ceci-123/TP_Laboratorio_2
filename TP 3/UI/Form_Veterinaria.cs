@@ -135,5 +135,10 @@ namespace UI
             Form_Info frm = new Form_Info();
             frm.Show();
         }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
