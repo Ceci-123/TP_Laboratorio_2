@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Entidades
 {
-    public class Perro : Animal, IVacunable
+    public class Perro : Animal, IVacunable, IPaseable
     {
         private int peso;
         private string raza;
@@ -52,6 +52,11 @@ namespace Entidades
         }
 
         public bool Vacunacion()
+        {
+            return true;
+        }
+
+        public bool Pasear()
         {
             return true;
         }

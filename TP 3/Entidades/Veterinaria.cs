@@ -95,7 +95,6 @@ namespace Entidades
         {
             if (unAnimal is not null)
             {
-
                 ListaAnimales.Add(unAnimal);
 
             }
@@ -114,12 +113,12 @@ namespace Entidades
             }
             return aux;
         }
-        public static bool CargarFilaAnimalesDesdeXml(Queue<Paciente> fila)
+        public static bool CargarAnimalesDesdeXml(List<Animal> lista)
         {
             bool retorno = false;
             try
             {
-                fila.Enqueue(ClassSerializadora.LeerDesdeXml());
+                lista = ClassSerializadora.LeerDesdeXml();
                 retorno = true;
             }
             catch (System.Exception)
@@ -127,45 +126,39 @@ namespace Entidades
 
                 retorno = false;
             }
-
-
             return retorno;
         }
 
         public static bool GuardarListaAnimalesJson(List<Animal> lista)
         {
             bool retorno = false;
-            foreach (Animal item in lista)
+            try
             {
-                try
-                {
-                    ClassSerializadora.EscribirAJson(item);
-                    retorno = true;
-                }
-                catch (System.Exception)
-                {
-
-                    retorno = false;
-                }
+                ClassSerializadora.EscribirAJson(lista);
+                retorno = true;
             }
+            catch (System.Exception)
+            {
+                retorno = false;
+            }
+
             return retorno;
         }
 
-        public static bool GuardarFilaAnimalesEnXml(Queue<Paciente> fila)
+        public static bool GuardarAnimalesEnXml(List<Animal>lista)
         {
             bool retorno = false;
-            foreach (Paciente item in fila)
-            {
+            
                 try
                 {
-                    ClassSerializadora.EscribirAXml(item);
+                    ClassSerializadora.EscribirAXml(lista);
                     retorno = true;
                 }
                 catch (System.Exception)
                 {
                     retorno = false;
                 }
-            }
+            
 
             return retorno;
         }
@@ -175,7 +168,7 @@ namespace Entidades
             bool retorno = false;
             try
             {
-                lista.Add(ClassSerializadora.LeerDesdeJson());
+                lista = ClassSerializadora.LeerDesdeJson();
                 retorno = true;
             }
             catch (System.Exception)

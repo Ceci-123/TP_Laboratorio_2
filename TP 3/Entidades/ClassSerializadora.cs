@@ -19,7 +19,7 @@ namespace Entidades
             path += @"\ArchivosSerializacion\";
         }
 
-        public static void EscribirAXml(Paciente animalito)
+        public static void EscribirAXml(List<Animal> lista)
         {
             string nombreArchivo = path + "SerializacionXml"  + ".xml";
             try
@@ -31,8 +31,8 @@ namespace Entidades
 
                 using (StreamWriter streamWriter = new StreamWriter(nombreArchivo))
                 {
-                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(Paciente));
-                    xmlSerializer.Serialize(streamWriter, animalito);
+                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Animal>));
+                    xmlSerializer.Serialize(streamWriter, lista);
                 }
 
             }
@@ -43,11 +43,11 @@ namespace Entidades
         }
 
 
-        public static Paciente LeerDesdeXml()
+        public static List<Animal> LeerDesdeXml()
         {
             string archivo = string.Empty;
             string informacionRecuperada = string.Empty;
-            Paciente animalito = null;
+            List<Animal> animalitos = null;
             try
             {
 
@@ -65,18 +65,17 @@ namespace Entidades
 
                     if (archivo != null)
                     {
-
                         using (StreamReader sr = new StreamReader(archivo))
                         {
 
-                            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Paciente));
-                            animalito = (Paciente)xmlSerializer.Deserialize(sr);
+                            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Animal>));
+                            animalitos = (List<Animal>)xmlSerializer.Deserialize(sr);
 
                         }
                     }
                 }
 
-                return animalito;
+                return animalitos;
             }
             catch (Exception e)
             {
@@ -85,7 +84,7 @@ namespace Entidades
 
         }
 
-        public static void EscribirAJson(Animal animalito)
+        public static void EscribirAJson(List<Animal> lista)
         {
             string nombreArchivo = path + "SerializacionJson" + ".JSON";
 
@@ -97,7 +96,7 @@ namespace Entidades
                 }
 
 
-                File.WriteAllText(nombreArchivo, JsonSerializer.Serialize(animalito));
+                File.WriteAllText(nombreArchivo, JsonSerializer.Serialize(lista));
 
             }
             catch (Exception e)
@@ -106,11 +105,11 @@ namespace Entidades
             }
         }
 
-        public static Animal LeerDesdeJson()
+        public static List<Animal> LeerDesdeJson()
         {
             string archivo = string.Empty;
             string informacionRecuperada = string.Empty;
-            Animal datosRecuperados = default;
+            List<Animal> datosRecuperados = default;
             try
             {
 
@@ -128,7 +127,7 @@ namespace Entidades
 
                     if (archivo != null)
                     {
-                        datosRecuperados = JsonSerializer.Deserialize<Animal>(File.ReadAllText(archivo));
+                        datosRecuperados = JsonSerializer.Deserialize<List<Animal>>(File.ReadAllText(archivo));
                     }
                 }
 

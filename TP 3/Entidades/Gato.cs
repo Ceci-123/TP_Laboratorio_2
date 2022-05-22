@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Gato :Animal, IVacunable
+    public class Gato :Animal, IVacunable, IPaseable
     {
         public bool vacunado;
         public string raza;
@@ -36,6 +36,10 @@ namespace Entidades
         }
 
         public bool Vacunacion()
+        {
+            return true;
+        }
+        public bool Pasear()
         {
             return true;
         }
