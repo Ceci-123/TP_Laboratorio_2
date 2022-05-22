@@ -59,7 +59,7 @@ namespace UI
             if (Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales))
             {
                 MessageBox.Show("exitoso");
-                this.richtxt_Info.Text = Veterinaria.ListaAnimales.ToString();
+                RefrescarLista();
             }
             else
             {
@@ -72,7 +72,7 @@ namespace UI
             if (Veterinaria.CargarListaAnimalesJson(Veterinaria.ListaAnimales))
             {
                 MessageBox.Show("exitoso");
-                this.richtxt_Info.Text = Veterinaria.ListaAnimales.ToString();   
+                RefrescarLista();  
             }
             else
             {
@@ -90,6 +90,12 @@ namespace UI
             //{
             //    MessageBox.Show("fallo");
             //}
+        }
+
+        private void RefrescarLista()
+        {
+            this.richtxt_Info.Text = String.Empty;
+            this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
         }
     }
 }

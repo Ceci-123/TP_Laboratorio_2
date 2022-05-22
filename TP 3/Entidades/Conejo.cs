@@ -26,8 +26,8 @@ namespace Entidades
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Conejo");
-            sb.Append($"Pelaje {this.colorPelaje}");
+            sb.Append("Conejo");
+            sb.AppendLine($"Pelaje {this.colorPelaje}");
             return sb.ToString();
         }
     }
