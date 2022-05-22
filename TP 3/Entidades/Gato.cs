@@ -11,6 +11,10 @@ namespace Entidades
         public bool vacunado;
         public string raza;
 
+        public Gato()
+        {
+
+        }
         public Gato(string nombre, int edad) : base(nombre, edad)
         {
 

@@ -8,6 +8,10 @@ namespace Entidades
 {
     public class Hamster :Animal
     {
+        public Hamster()
+        {
+
+        }
         public Hamster(string nombre, int edad) : base(nombre, edad)
         {
 
