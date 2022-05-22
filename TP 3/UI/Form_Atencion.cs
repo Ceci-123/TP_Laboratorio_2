@@ -123,58 +123,7 @@ namespace UI
 
         }
 
-        private void btn_CargarJson_Click(object sender, EventArgs e)
-        {
-            resultado = Veterinaria.CargarListaAnimalesJson(Veterinaria.ListaAnimales);
-            if (resultado)
-            {
-                MessageBox.Show("Lista cargada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo cargar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void btn_GuardarJson_Click(object sender, EventArgs e)
-        {
-            resultado = Veterinaria.GuardarListaAnimalesJson(Veterinaria.ListaAnimales);
-            if (resultado)
-            {
-                MessageBox.Show("Lista guardada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo guardar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void btn_CargarDBase_Click(object sender, EventArgs e)
-        {
-            resultado = Veterinaria.CargarListaAnimalesDataBase(Veterinaria.ListaAnimales);
-            if (resultado)
-            {
-                MessageBox.Show("Lista cargada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo cargar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void btn_GuardarDBase_Click(object sender, EventArgs e)
-        {
-            resultado = Veterinaria.GuardarListaAnimalesDataBase(Veterinaria.ListaAnimales);
-            if (resultado)
-            {
-                MessageBox.Show("Lista guardada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo guardar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
+       
         private void LimpiarCampos()
         {
             this.numeric_peso.Value = 0;

@@ -39,8 +39,7 @@
             this.lbl_TipoAnimal = new System.Windows.Forms.Label();
             this.cmb_TipoAnimal = new System.Windows.Forms.ComboBox();
             this.btn_Ok = new System.Windows.Forms.Button();
-            this.btn_CargaXML = new System.Windows.Forms.Button();
-            this.btn_GuardarXml = new System.Windows.Forms.Button();
+            this.btn_Informacion = new System.Windows.Forms.Button();
             this.lbl_Hora = new System.Windows.Forms.Label();
             this.lbl_mensajito = new System.Windows.Forms.Label();
             this.pictureBox_Foto = new System.Windows.Forms.PictureBox();
@@ -89,7 +88,7 @@
             this.rchTxt_Info.Location = new System.Drawing.Point(444, 157);
             this.rchTxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.rchTxt_Info.Name = "rchTxt_Info";
-            this.rchTxt_Info.Size = new System.Drawing.Size(435, 256);
+            this.rchTxt_Info.Size = new System.Drawing.Size(435, 283);
             this.rchTxt_Info.TabIndex = 10;
             this.rchTxt_Info.Text = "";
             // 
@@ -101,7 +100,7 @@
             this.btn_AgregarPaciente.Name = "btn_AgregarPaciente";
             this.btn_AgregarPaciente.Size = new System.Drawing.Size(158, 95);
             this.btn_AgregarPaciente.TabIndex = 1;
-            this.btn_AgregarPaciente.Text = "Agregar un Paciente";
+            this.btn_AgregarPaciente.Text = "Agregar un Paciente a la fila";
             this.btn_AgregarPaciente.UseVisualStyleBackColor = false;
             this.btn_AgregarPaciente.Click += new System.EventHandler(this.btn_AgregarPaciente_Click);
             // 
@@ -126,7 +125,7 @@
             // lbl_TipoAnimal
             // 
             this.lbl_TipoAnimal.AutoSize = true;
-            this.lbl_TipoAnimal.Location = new System.Drawing.Point(33, 375);
+            this.lbl_TipoAnimal.Location = new System.Drawing.Point(33, 346);
             this.lbl_TipoAnimal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TipoAnimal.Name = "lbl_TipoAnimal";
             this.lbl_TipoAnimal.Size = new System.Drawing.Size(48, 18);
@@ -136,7 +135,7 @@
             // cmb_TipoAnimal
             // 
             this.cmb_TipoAnimal.FormattingEnabled = true;
-            this.cmb_TipoAnimal.Location = new System.Drawing.Point(217, 367);
+            this.cmb_TipoAnimal.Location = new System.Drawing.Point(217, 338);
             this.cmb_TipoAnimal.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_TipoAnimal.Name = "cmb_TipoAnimal";
             this.cmb_TipoAnimal.Size = new System.Drawing.Size(154, 26);
@@ -145,38 +144,26 @@
             // btn_Ok
             // 
             this.btn_Ok.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_Ok.Location = new System.Drawing.Point(139, 448);
+            this.btn_Ok.Location = new System.Drawing.Point(33, 378);
             this.btn_Ok.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Ok.Name = "btn_Ok";
-            this.btn_Ok.Size = new System.Drawing.Size(96, 61);
+            this.btn_Ok.Size = new System.Drawing.Size(338, 35);
             this.btn_Ok.TabIndex = 9;
             this.btn_Ok.Text = "OK";
             this.btn_Ok.UseVisualStyleBackColor = false;
             this.btn_Ok.Click += new System.EventHandler(this.btn_Ok_Click);
             // 
-            // btn_CargaXML
+            // btn_Informacion
             // 
-            this.btn_CargaXML.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_CargaXML.Location = new System.Drawing.Point(444, 448);
-            this.btn_CargaXML.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_CargaXML.Name = "btn_CargaXML";
-            this.btn_CargaXML.Size = new System.Drawing.Size(181, 61);
-            this.btn_CargaXML.TabIndex = 3;
-            this.btn_CargaXML.Text = "Cargar desde XML";
-            this.btn_CargaXML.UseVisualStyleBackColor = false;
-            this.btn_CargaXML.Click += new System.EventHandler(this.btn_CargaXML_Click);
-            // 
-            // btn_GuardarXml
-            // 
-            this.btn_GuardarXml.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_GuardarXml.Location = new System.Drawing.Point(689, 448);
-            this.btn_GuardarXml.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_GuardarXml.Name = "btn_GuardarXml";
-            this.btn_GuardarXml.Size = new System.Drawing.Size(190, 61);
-            this.btn_GuardarXml.TabIndex = 4;
-            this.btn_GuardarXml.Text = "Guardar en XML";
-            this.btn_GuardarXml.UseVisualStyleBackColor = false;
-            this.btn_GuardarXml.Click += new System.EventHandler(this.btn_GuardarXml_Click);
+            this.btn_Informacion.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Informacion.Location = new System.Drawing.Point(217, 466);
+            this.btn_Informacion.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Informacion.Name = "btn_Informacion";
+            this.btn_Informacion.Size = new System.Drawing.Size(416, 61);
+            this.btn_Informacion.TabIndex = 3;
+            this.btn_Informacion.Text = "Archivos de informacion";
+            this.btn_Informacion.UseVisualStyleBackColor = false;
+            this.btn_Informacion.Click += new System.EventHandler(this.btn_Informacion_Click);
             // 
             // lbl_Hora
             // 
@@ -205,9 +192,9 @@
             // pictureBox_Foto
             // 
             this.pictureBox_Foto.Image = global::UI.Properties.Resources.perroVeterinario;
-            this.pictureBox_Foto.Location = new System.Drawing.Point(33, 271);
+            this.pictureBox_Foto.Location = new System.Drawing.Point(26, 285);
             this.pictureBox_Foto.Name = "pictureBox_Foto";
-            this.pictureBox_Foto.Size = new System.Drawing.Size(338, 155);
+            this.pictureBox_Foto.Size = new System.Drawing.Size(354, 155);
             this.pictureBox_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_Foto.TabIndex = 16;
             this.pictureBox_Foto.TabStop = false;
@@ -222,8 +209,7 @@
             this.Controls.Add(this.pictureBox_Foto);
             this.Controls.Add(this.lbl_mensajito);
             this.Controls.Add(this.lbl_Hora);
-            this.Controls.Add(this.btn_GuardarXml);
-            this.Controls.Add(this.btn_CargaXML);
+            this.Controls.Add(this.btn_Informacion);
             this.Controls.Add(this.btn_Ok);
             this.Controls.Add(this.cmb_TipoAnimal);
             this.Controls.Add(this.lbl_TipoAnimal);
@@ -235,11 +221,13 @@
             this.Controls.Add(this.lbl_PacientesEnEspera);
             this.Controls.Add(this.lbl_NombreVet);
             this.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Veterinaria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pequeñas Patitas";
             this.Load += new System.EventHandler(this.Form_Veterinaria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Foto)).EndInit();
@@ -260,8 +248,7 @@
         private System.Windows.Forms.Label lbl_TipoAnimal;
         private System.Windows.Forms.ComboBox cmb_TipoAnimal;
         private System.Windows.Forms.Button btn_Ok;
-        private System.Windows.Forms.Button btn_CargaXML;
-        private System.Windows.Forms.Button btn_GuardarXml;
+        private System.Windows.Forms.Button btn_Informacion;
         private System.Windows.Forms.Label lbl_Hora;
         private System.Windows.Forms.Label lbl_mensajito;
         private System.Windows.Forms.PictureBox pictureBox_Foto;

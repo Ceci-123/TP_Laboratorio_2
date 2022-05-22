@@ -129,31 +129,11 @@ namespace UI
             
         }
 
-        private void btn_CargaXML_Click(object sender, EventArgs e)
+        
+        private void btn_Informacion_Click(object sender, EventArgs e)
         {
-          resultado = Veterinaria.CargarFilaAnimalesDesdeXml(Veterinaria.FilaDePacientes);
-            if (resultado)
-            {
-                RefrescarListaYSumar();
-                MessageBox.Show("Fila de pacientes cargada correctamente", "Carga XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo cargar la fila de pacientes ", "Carga XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void btn_GuardarXml_Click(object sender, EventArgs e)
-        {
-            resultado = Veterinaria.GuardarFilaAnimalesEnXml(Veterinaria.FilaDePacientes);
-            if (resultado)
-            {
-                MessageBox.Show("Fila de pacientes guardada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se pudo guardar la fila de pacientes", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            Form_Info frm = new Form_Info();
+            frm.Show();
         }
     }
 }

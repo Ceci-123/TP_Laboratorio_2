@@ -42,16 +42,12 @@
             this.btn_ingresarFicha = new System.Windows.Forms.Button();
             this.btn_buscarPorId = new System.Windows.Forms.Button();
             this.txt_devolverInfo = new System.Windows.Forms.RichTextBox();
-            this.btn_CargarJson = new System.Windows.Forms.Button();
-            this.btn_CargarDBase = new System.Windows.Forms.Button();
-            this.btn_GuardarJson = new System.Windows.Forms.Button();
             this.btn_listado = new System.Windows.Forms.Button();
             this.txt_bx_busquedaPorId = new System.Windows.Forms.TextBox();
             this.numeric_peso = new System.Windows.Forms.NumericUpDown();
             this.lbl_Id = new System.Windows.Forms.Label();
             this.lbl_pelaje = new System.Windows.Forms.Label();
             this.chk_paseo = new System.Windows.Forms.CheckBox();
-            this.btn_GuardarDBase = new System.Windows.Forms.Button();
             this.btn_cerrarVentana = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.num_edad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_peso)).BeginInit();
@@ -98,7 +94,7 @@
             // 
             this.chk_bx_vacunado.AutoSize = true;
             this.chk_bx_vacunado.BackColor = System.Drawing.Color.LightCyan;
-            this.chk_bx_vacunado.Location = new System.Drawing.Point(301, 155);
+            this.chk_bx_vacunado.Location = new System.Drawing.Point(353, 220);
             this.chk_bx_vacunado.Margin = new System.Windows.Forms.Padding(4);
             this.chk_bx_vacunado.Name = "chk_bx_vacunado";
             this.chk_bx_vacunado.Size = new System.Drawing.Size(144, 22);
@@ -203,51 +199,15 @@
             this.txt_devolverInfo.TabIndex = 13;
             this.txt_devolverInfo.Text = "";
             // 
-            // btn_CargarJson
-            // 
-            this.btn_CargarJson.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_CargarJson.Location = new System.Drawing.Point(34, 379);
-            this.btn_CargarJson.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_CargarJson.Name = "btn_CargarJson";
-            this.btn_CargarJson.Size = new System.Drawing.Size(136, 75);
-            this.btn_CargarJson.TabIndex = 10;
-            this.btn_CargarJson.Text = "Cargar datos desde formato Json";
-            this.btn_CargarJson.UseVisualStyleBackColor = false;
-            this.btn_CargarJson.Click += new System.EventHandler(this.btn_CargarJson_Click);
-            // 
-            // btn_CargarDBase
-            // 
-            this.btn_CargarDBase.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_CargarDBase.Location = new System.Drawing.Point(190, 379);
-            this.btn_CargarDBase.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_CargarDBase.Name = "btn_CargarDBase";
-            this.btn_CargarDBase.Size = new System.Drawing.Size(137, 75);
-            this.btn_CargarDBase.TabIndex = 13;
-            this.btn_CargarDBase.Text = "Cargar desde Base de datos";
-            this.btn_CargarDBase.UseVisualStyleBackColor = false;
-            this.btn_CargarDBase.Click += new System.EventHandler(this.btn_CargarDBase_Click);
-            // 
-            // btn_GuardarJson
-            // 
-            this.btn_GuardarJson.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_GuardarJson.Location = new System.Drawing.Point(335, 379);
-            this.btn_GuardarJson.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_GuardarJson.Name = "btn_GuardarJson";
-            this.btn_GuardarJson.Size = new System.Drawing.Size(130, 75);
-            this.btn_GuardarJson.TabIndex = 12;
-            this.btn_GuardarJson.Text = "Guardar datos en formato Json";
-            this.btn_GuardarJson.UseVisualStyleBackColor = false;
-            this.btn_GuardarJson.Click += new System.EventHandler(this.btn_GuardarJson_Click);
-            // 
             // btn_listado
             // 
             this.btn_listado.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_listado.Location = new System.Drawing.Point(662, 379);
+            this.btn_listado.Location = new System.Drawing.Point(560, 379);
             this.btn_listado.Margin = new System.Windows.Forms.Padding(4);
             this.btn_listado.Name = "btn_listado";
-            this.btn_listado.Size = new System.Drawing.Size(243, 75);
+            this.btn_listado.Size = new System.Drawing.Size(345, 75);
             this.btn_listado.TabIndex = 14;
-            this.btn_listado.Text = "Listado de todos los animales";
+            this.btn_listado.Text = "Listado de todos los animales ingresados";
             this.btn_listado.UseVisualStyleBackColor = false;
             this.btn_listado.Click += new System.EventHandler(this.btn_listado_Click);
             // 
@@ -295,31 +255,19 @@
             // 
             this.chk_paseo.AutoSize = true;
             this.chk_paseo.BackColor = System.Drawing.Color.LightCyan;
-            this.chk_paseo.Location = new System.Drawing.Point(300, 201);
+            this.chk_paseo.Location = new System.Drawing.Point(325, 274);
             this.chk_paseo.Name = "chk_paseo";
             this.chk_paseo.Size = new System.Drawing.Size(170, 22);
             this.chk_paseo.TabIndex = 6;
             this.chk_paseo.Text = "Sale con paseador?";
             this.chk_paseo.UseVisualStyleBackColor = false;
             // 
-            // btn_GuardarDBase
-            // 
-            this.btn_GuardarDBase.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_GuardarDBase.Location = new System.Drawing.Point(473, 379);
-            this.btn_GuardarDBase.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_GuardarDBase.Name = "btn_GuardarDBase";
-            this.btn_GuardarDBase.Size = new System.Drawing.Size(133, 75);
-            this.btn_GuardarDBase.TabIndex = 24;
-            this.btn_GuardarDBase.Text = "Guardar datos en Base de Datos";
-            this.btn_GuardarDBase.UseVisualStyleBackColor = false;
-            this.btn_GuardarDBase.Click += new System.EventHandler(this.btn_GuardarDBase_Click);
-            // 
             // btn_cerrarVentana
             // 
             this.btn_cerrarVentana.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_cerrarVentana.Location = new System.Drawing.Point(335, 229);
+            this.btn_cerrarVentana.Location = new System.Drawing.Point(25, 379);
             this.btn_cerrarVentana.Name = "btn_cerrarVentana";
-            this.btn_cerrarVentana.Size = new System.Drawing.Size(172, 78);
+            this.btn_cerrarVentana.Size = new System.Drawing.Size(454, 75);
             this.btn_cerrarVentana.TabIndex = 25;
             this.btn_cerrarVentana.Text = "Regresar al formulario anterior";
             this.btn_cerrarVentana.UseVisualStyleBackColor = false;
@@ -332,16 +280,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(927, 479);
             this.Controls.Add(this.btn_cerrarVentana);
-            this.Controls.Add(this.btn_GuardarDBase);
             this.Controls.Add(this.chk_paseo);
             this.Controls.Add(this.lbl_pelaje);
             this.Controls.Add(this.lbl_Id);
             this.Controls.Add(this.numeric_peso);
             this.Controls.Add(this.txt_bx_busquedaPorId);
             this.Controls.Add(this.btn_listado);
-            this.Controls.Add(this.btn_GuardarJson);
-            this.Controls.Add(this.btn_CargarDBase);
-            this.Controls.Add(this.btn_CargarJson);
             this.Controls.Add(this.txt_devolverInfo);
             this.Controls.Add(this.btn_buscarPorId);
             this.Controls.Add(this.btn_ingresarFicha);
@@ -385,16 +329,12 @@
         private System.Windows.Forms.Button btn_ingresarFicha;
         private System.Windows.Forms.Button btn_buscarPorId;
         private System.Windows.Forms.RichTextBox txt_devolverInfo;
-        private System.Windows.Forms.Button btn_CargarJson;
-        private System.Windows.Forms.Button btn_CargarDBase;
-        private System.Windows.Forms.Button btn_GuardarJson;
         private System.Windows.Forms.Button btn_listado;
         private System.Windows.Forms.TextBox txt_bx_busquedaPorId;
         private System.Windows.Forms.NumericUpDown numeric_peso;
         private System.Windows.Forms.Label lbl_Id;
         private System.Windows.Forms.Label lbl_pelaje;
         private System.Windows.Forms.CheckBox chk_paseo;
-        private System.Windows.Forms.Button btn_GuardarDBase;
         private System.Windows.Forms.Button btn_cerrarVentana;
     }
 }

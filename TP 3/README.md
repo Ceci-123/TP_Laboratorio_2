@@ -28,9 +28,9 @@
 
 ✅ Se sobrecarga el operador + para agregar un paciente a la lista de atencion
 
-✅ Serializacion xml y json: En el formulario de atencion se serializa a xml la fila de pacientes a ser atendidos, y tambien puede recuperarse una fila de pacientes anterior. En el formulario de veterinaria, se guarda o se recupera la informacion en formato Json, de los animalitos que ya estan ingresados en la veterinaria.
+✅ Serializacion xml y json: Se guarda y se recupera la informacion de los pacientes desde esos dos formatos.
 
-todo imprimir lista de paseos, vacunacion, completar el metodo
+todo imprimir lista de paseos, vacunacion, completar el metodo, interfaz falta agregar, form info falta
 
 ⭐️Temas vistos entre la clase 15 a 20
 
