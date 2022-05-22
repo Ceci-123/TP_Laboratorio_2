@@ -36,12 +36,14 @@
             this.btn_CargarDesdeJson = new System.Windows.Forms.Button();
             this.btn_GuardarEnDbase = new System.Windows.Forms.Button();
             this.btn_CargarDesdeDbase = new System.Windows.Forms.Button();
+            this.btn_PaseoPerruno = new System.Windows.Forms.Button();
+            this.btn_PaseoGatuno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_GuardarEnXml
             // 
             this.btn_GuardarEnXml.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_GuardarEnXml.Location = new System.Drawing.Point(57, 30);
+            this.btn_GuardarEnXml.Location = new System.Drawing.Point(25, 30);
             this.btn_GuardarEnXml.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarEnXml.Name = "btn_GuardarEnXml";
             this.btn_GuardarEnXml.Size = new System.Drawing.Size(165, 121);
@@ -53,17 +55,17 @@
             // richtxt_Info
             // 
             this.richtxt_Info.BackColor = System.Drawing.Color.LightCyan;
-            this.richtxt_Info.Location = new System.Drawing.Point(57, 343);
+            this.richtxt_Info.Location = new System.Drawing.Point(25, 338);
             this.richtxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.richtxt_Info.Name = "richtxt_Info";
-            this.richtxt_Info.Size = new System.Drawing.Size(610, 280);
+            this.richtxt_Info.Size = new System.Drawing.Size(768, 280);
             this.richtxt_Info.TabIndex = 1;
             this.richtxt_Info.Text = "";
             // 
             // btn_CargarDesdeXml
             // 
             this.btn_CargarDesdeXml.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_CargarDesdeXml.Location = new System.Drawing.Point(57, 194);
+            this.btn_CargarDesdeXml.Location = new System.Drawing.Point(25, 179);
             this.btn_CargarDesdeXml.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarDesdeXml.Name = "btn_CargarDesdeXml";
             this.btn_CargarDesdeXml.Size = new System.Drawing.Size(165, 121);
@@ -75,7 +77,7 @@
             // btn_GuardarEnJson
             // 
             this.btn_GuardarEnJson.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_GuardarEnJson.Location = new System.Drawing.Point(288, 30);
+            this.btn_GuardarEnJson.Location = new System.Drawing.Point(226, 30);
             this.btn_GuardarEnJson.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarEnJson.Name = "btn_GuardarEnJson";
             this.btn_GuardarEnJson.Size = new System.Drawing.Size(165, 121);
@@ -87,7 +89,7 @@
             // btn_CargarDesdeJson
             // 
             this.btn_CargarDesdeJson.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_CargarDesdeJson.Location = new System.Drawing.Point(288, 194);
+            this.btn_CargarDesdeJson.Location = new System.Drawing.Point(226, 179);
             this.btn_CargarDesdeJson.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarDesdeJson.Name = "btn_CargarDesdeJson";
             this.btn_CargarDesdeJson.Size = new System.Drawing.Size(165, 121);
@@ -99,7 +101,7 @@
             // btn_GuardarEnDbase
             // 
             this.btn_GuardarEnDbase.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_GuardarEnDbase.Location = new System.Drawing.Point(503, 30);
+            this.btn_GuardarEnDbase.Location = new System.Drawing.Point(427, 30);
             this.btn_GuardarEnDbase.Margin = new System.Windows.Forms.Padding(4);
             this.btn_GuardarEnDbase.Name = "btn_GuardarEnDbase";
             this.btn_GuardarEnDbase.Size = new System.Drawing.Size(165, 121);
@@ -111,7 +113,7 @@
             // btn_CargarDesdeDbase
             // 
             this.btn_CargarDesdeDbase.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_CargarDesdeDbase.Location = new System.Drawing.Point(503, 194);
+            this.btn_CargarDesdeDbase.Location = new System.Drawing.Point(427, 179);
             this.btn_CargarDesdeDbase.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CargarDesdeDbase.Name = "btn_CargarDesdeDbase";
             this.btn_CargarDesdeDbase.Size = new System.Drawing.Size(165, 121);
@@ -120,12 +122,38 @@
             this.btn_CargarDesdeDbase.UseVisualStyleBackColor = false;
             this.btn_CargarDesdeDbase.Click += new System.EventHandler(this.btn_CargarDesdeDbase_Click);
             // 
+            // btn_PaseoPerruno
+            // 
+            this.btn_PaseoPerruno.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_PaseoPerruno.Location = new System.Drawing.Point(628, 30);
+            this.btn_PaseoPerruno.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_PaseoPerruno.Name = "btn_PaseoPerruno";
+            this.btn_PaseoPerruno.Size = new System.Drawing.Size(165, 121);
+            this.btn_PaseoPerruno.TabIndex = 7;
+            this.btn_PaseoPerruno.Text = "Paseo Perruno";
+            this.btn_PaseoPerruno.UseVisualStyleBackColor = false;
+            this.btn_PaseoPerruno.Click += new System.EventHandler(this.btn_PaseoPerruno_Click);
+            // 
+            // btn_PaseoGatuno
+            // 
+            this.btn_PaseoGatuno.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_PaseoGatuno.Location = new System.Drawing.Point(628, 179);
+            this.btn_PaseoGatuno.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_PaseoGatuno.Name = "btn_PaseoGatuno";
+            this.btn_PaseoGatuno.Size = new System.Drawing.Size(165, 121);
+            this.btn_PaseoGatuno.TabIndex = 8;
+            this.btn_PaseoGatuno.Text = "Paseo Gatuno";
+            this.btn_PaseoGatuno.UseVisualStyleBackColor = false;
+            this.btn_PaseoGatuno.Click += new System.EventHandler(this.btn_PaseoGatuno_Click);
+            // 
             // Form_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UI.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(735, 653);
+            this.ClientSize = new System.Drawing.Size(818, 653);
+            this.Controls.Add(this.btn_PaseoGatuno);
+            this.Controls.Add(this.btn_PaseoPerruno);
             this.Controls.Add(this.btn_CargarDesdeDbase);
             this.Controls.Add(this.btn_GuardarEnDbase);
             this.Controls.Add(this.btn_CargarDesdeJson);
@@ -155,5 +183,7 @@
         private System.Windows.Forms.Button btn_CargarDesdeJson;
         private System.Windows.Forms.Button btn_GuardarEnDbase;
         private System.Windows.Forms.Button btn_CargarDesdeDbase;
+        private System.Windows.Forms.Button btn_PaseoPerruno;
+        private System.Windows.Forms.Button btn_PaseoGatuno;
     }
 }

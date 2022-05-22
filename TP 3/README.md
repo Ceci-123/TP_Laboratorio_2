@@ -32,7 +32,7 @@
 
 ✅ Hay tres formularios, un Form Veterinaria, que recibe pacientes y los enfila para ser atendidos. Un Form Atencion donde se atiende a los animalitos y se los ingresa en una ficha a la base de datos de la veterinaria. Y por ultimo un Form de Informacion desde donde se maneja la informacion desde y hasta los archivos.
 
-todo imprimir lista de paseos, vacunacion: completar el metodo, interfaz falta agregar algo mas, form info falta todo, documentar, falta paseos algo mas, interfaz ipaseable y todo el boton de cerrado de la app
+todo interfaz falta agregar algo mas, documentar, el boton de cerrado de la app
 
 ⭐️Temas vistos entre la clase 15 a 20
 

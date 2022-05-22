@@ -1,13 +1,6 @@
 ﻿using Entidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UI
@@ -55,12 +48,12 @@ namespace UI
                     break;
 
             }
-                       
+
         }
 
         private void btn_ingresarFicha_Click(object sender, EventArgs e)
         {
-           string auxNombre = pacienteActual.Nombre;
+            string auxNombre = pacienteActual.Nombre;
             string auxPelaje = this.txt_pelaje.Text;
             int auxEdad = (int)this.num_edad.Value;
             int auxPeso = (int)this.numeric_peso.Value;
@@ -70,17 +63,23 @@ namespace UI
             switch (pacienteActual.TipoDeAnimal.ToString())
             {
                 case "Conejo":
-                    Veterinaria.AgregarAnimal(new Conejo(auxNombre,auxEdad, auxPelaje));
+                    Veterinaria.AgregarAnimal(new Conejo(auxNombre, auxEdad, auxPelaje));
                     break;
                 case "Perro":
                     Perro p = new Perro(auxNombre, auxEdad, auxPeso, auxRaza, auxVacunado);
                     Veterinaria.AgregarAnimal(p);
-                    Veterinaria.AgregarAPaseos(p);
+                    if (auxPaseo)
+                    {
+                        Veterinaria.AgregarAPaseos(p);
+                    }
                     break;
                 case "Gato":
                     Gato g = new Gato(auxNombre, auxEdad, auxVacunado, auxRaza);
                     Veterinaria.AgregarAnimal(g);
-                    Veterinaria.AgregarAPaseos(g);
+                    if (auxPaseo)
+                    {
+                        Veterinaria.AgregarAPaseos(g);
+                    }
                     break;
                 case "Hamster":
                     Veterinaria.AgregarAnimal(new Hamster(auxNombre, auxEdad));
@@ -99,8 +98,8 @@ namespace UI
         private void btn_buscar_Click(object sender, EventArgs e)
         {
             int aux = int.Parse(this.txt_bx_busquedaPorId.Text);
-            animalito = Veterinaria.BuscarAnimalPorId(aux,Veterinaria.ListaAnimales);
-            if(animalito is not null)
+            animalito = Veterinaria.BuscarAnimalPorId(aux, Veterinaria.ListaAnimales);
+            if (animalito is not null)
             {
                 this.txt_devolverInfo.Text = String.Empty;
                 this.txt_devolverInfo.Text = animalito.ToString();
@@ -123,14 +122,14 @@ namespace UI
 
         }
 
-       
+
         private void LimpiarCampos()
         {
             this.numeric_peso.Value = 0;
             this.txt_raza.Text = String.Empty;
             this.chk_bx_vacunado.Checked = false;
             this.chk_paseo.Checked = false;
-            this.txt_pelaje.Text= String.Empty;
+            this.txt_pelaje.Text = String.Empty;
             this.num_edad.Value = 0;
         }
 

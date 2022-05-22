@@ -97,5 +97,17 @@ namespace UI
             this.richtxt_Info.Text = String.Empty;
             this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
         }
+
+        private void btn_PaseoPerruno_Click(object sender, EventArgs e)
+        {
+            this.richtxt_Info.Text = String.Empty;
+            this.richtxt_Info.Text = (Veterinaria.PaseoPerruno.Lista.ToString());
+        }
+
+        private void btn_PaseoGatuno_Click(object sender, EventArgs e)
+        {
+            this.richtxt_Info.Text = String.Empty;
+            this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.Lista.ToString());
+        }
     }
 }
