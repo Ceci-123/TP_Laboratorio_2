@@ -25,13 +25,17 @@ namespace Entidades
             this.tipoDeAnimal = tipo;
             
         }
-
-        public static Queue<Paciente> operator +(Paciente unPaciente, Queue<Paciente> listado)
+        public Paciente()
         {
-            Queue<Paciente> retorno = listado;
-            if (unPaciente is not null && listado is not null)
+
+        }
+
+        public static Queue<Paciente> operator +(Paciente unPaciente, Queue<Paciente> colaPacientes)
+        {
+            Queue<Paciente> retorno = colaPacientes;
+            if (unPaciente is not null && colaPacientes is not null)
             {
-                listado.Enqueue(unPaciente);
+                colaPacientes.Enqueue(unPaciente);
             }
             return retorno;
         }

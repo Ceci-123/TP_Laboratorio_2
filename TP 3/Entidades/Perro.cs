@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Entidades
 {
-    public class Perro : Animal
+    public class Perro : Animal, IVacunable
     {
         private int peso;
         private string raza;
@@ -48,6 +48,11 @@ namespace Entidades
                 sb.Append($"Todas sus vacunas al dia");
             }
             return sb.ToString();
+        }
+
+        public bool Vacunacion()
+        {
+            return true;
         }
     }
 }

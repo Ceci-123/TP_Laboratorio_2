@@ -131,27 +131,28 @@ namespace UI
 
         private void btn_CargaXML_Click(object sender, EventArgs e)
         {
-          resultado = Veterinaria.CargarListaAnimalesDesdeXml(Veterinaria.ListaAnimales);
+          resultado = Veterinaria.CargarFilaAnimalesDesdeXml(Veterinaria.FilaDePacientes);
             if (resultado)
             {
-                MessageBox.Show("Lista cargada correctamente", "Carga XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefrescarListaYSumar();
+                MessageBox.Show("Fila de pacientes cargada correctamente", "Carga XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("No se pudo cargar la lista", "Carga XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No se pudo cargar la fila de pacientes ", "Carga XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void btn_GuardarXml_Click(object sender, EventArgs e)
         {
-            resultado = Veterinaria.GuardarListaAnimalesEnXml(Veterinaria.ListaAnimales);
+            resultado = Veterinaria.GuardarFilaAnimalesEnXml(Veterinaria.FilaDePacientes);
             if (resultado)
             {
-                MessageBox.Show("Lista guardada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Fila de pacientes guardada correctamente", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("No se pudo guardar la lista", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No se pudo guardar la fila de pacientes", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

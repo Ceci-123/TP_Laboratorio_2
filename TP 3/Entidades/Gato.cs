@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Gato :Animal
+    public class Gato :Animal, IVacunable
     {
         public bool vacunado;
         public Gato(string nombre, int edad) : base(nombre, edad)
@@ -28,6 +28,11 @@ namespace Entidades
 
             }
             return sb.ToString();
+        }
+
+        public bool Vacunacion()
+        {
+            return true;
         }
     }
 }

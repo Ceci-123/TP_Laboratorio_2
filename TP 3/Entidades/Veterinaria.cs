@@ -71,7 +71,7 @@ namespace Entidades
                     sb.AppendLine("----------------------------");
                     if (item is Perro)
                     {
-                       sb.AppendLine(((Perro)item).Mostrar());
+                        sb.AppendLine(((Perro)item).Mostrar());
                     }
                     if (item is Gato)
                     {
@@ -116,24 +116,75 @@ namespace Entidades
             }
             return aux;
         }
-        public static bool CargarListaAnimalesDesdeXml(List<Animal> lista)
+        public static bool CargarFilaAnimalesDesdeXml(Queue<Paciente> fila)
         {
-            return true;
+            bool retorno = false;
+            try
+            {
+                fila.Enqueue(ClassSerializadora.LeerDesdeXml());
+                retorno = true;
+            }
+            catch (System.Exception)
+            {
+
+                retorno = false;
+            }
+
+
+            return retorno;
         }
 
         public static bool GuardarListaAnimalesJson(List<Animal> lista)
         {
-            return true;
+            bool retorno = false;
+            foreach (Animal item in lista)
+            {
+                try
+                {
+                    ClassSerializadora.EscribirAJson(item);
+                    retorno = true;
+                }
+                catch (System.Exception)
+                {
+
+                    retorno = false;
+                }
+            }
+            return retorno;
         }
 
-        public static bool GuardarListaAnimalesEnXml(List<Animal> lista)
+        public static bool GuardarFilaAnimalesEnXml(Queue<Paciente> fila)
         {
-            return true;
+            bool retorno = false;
+            foreach (Paciente item in fila)
+            {
+                try
+                {
+                    ClassSerializadora.EscribirAXml(item);
+                    retorno = true;
+                }
+                catch (System.Exception)
+                {
+                    retorno = false;
+                }
+            }
+
+            return retorno;
         }
 
         public static bool CargarListaAnimalesJson(List<Animal> lista)
         {
-            return true;
+            bool retorno = false;
+            try
+            {
+                lista.Add(ClassSerializadora.LeerDesdeJson());
+                retorno = true;
+            }
+            catch (System.Exception)
+            {
+                retorno = false;
+            }
+            return retorno;
         }
 
         public static bool GuardarListaAnimalesDataBase(List<Animal> lista)
