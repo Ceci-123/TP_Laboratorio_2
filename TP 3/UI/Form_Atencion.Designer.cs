@@ -211,7 +211,7 @@
             this.btn_CargarJson.Name = "btn_CargarJson";
             this.btn_CargarJson.Size = new System.Drawing.Size(136, 75);
             this.btn_CargarJson.TabIndex = 10;
-            this.btn_CargarJson.Text = "Cargar datos en formato Json";
+            this.btn_CargarJson.Text = "Cargar datos desde formato Json";
             this.btn_CargarJson.UseVisualStyleBackColor = false;
             this.btn_CargarJson.Click += new System.EventHandler(this.btn_CargarJson_Click);
             // 
@@ -235,7 +235,7 @@
             this.btn_GuardarJson.Name = "btn_GuardarJson";
             this.btn_GuardarJson.Size = new System.Drawing.Size(130, 75);
             this.btn_GuardarJson.TabIndex = 12;
-            this.btn_GuardarJson.Text = "Guardar datos desde formato Json";
+            this.btn_GuardarJson.Text = "Guardar datos en formato Json";
             this.btn_GuardarJson.UseVisualStyleBackColor = false;
             this.btn_GuardarJson.Click += new System.EventHandler(this.btn_GuardarJson_Click);
             // 
@@ -317,11 +317,11 @@
             // btn_cerrarVentana
             // 
             this.btn_cerrarVentana.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_cerrarVentana.Location = new System.Drawing.Point(335, 263);
+            this.btn_cerrarVentana.Location = new System.Drawing.Point(335, 229);
             this.btn_cerrarVentana.Name = "btn_cerrarVentana";
-            this.btn_cerrarVentana.Size = new System.Drawing.Size(172, 23);
+            this.btn_cerrarVentana.Size = new System.Drawing.Size(172, 78);
             this.btn_cerrarVentana.TabIndex = 25;
-            this.btn_cerrarVentana.Text = "Cerrar ventana";
+            this.btn_cerrarVentana.Text = "Regresar al formulario anterior";
             this.btn_cerrarVentana.UseVisualStyleBackColor = false;
             this.btn_cerrarVentana.Click += new System.EventHandler(this.btn_cerrarVentana_Click);
             // 
