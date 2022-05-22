@@ -39,6 +39,12 @@ namespace Entidades
             nextId++;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador == para saber si un animal es igual a otro
+        /// </summary>
+        /// <param name="a1">Primer animal a comparar</param>
+        /// <param name="a2">Segundo animal a comparar</param>
+        /// <returns></returns>
         public static bool operator ==(Animal a1, Animal a2)
         {
             bool retorno = false;
@@ -51,11 +57,23 @@ namespace Entidades
             }
             return retorno;
         }
+
+        /// <summary>
+        /// Sobrecarga del operador != para saber si un animal es igual a otro
+        /// </summary>
+        /// <param name="a1">Primer animal a comparar</param>
+        /// <param name="a2">Segundo animal a comparar</param>
+        /// <returns></returns>
         public static bool operator !=(Animal a1, Animal a2)
         {
             return !(a1 == a2);
         }
 
+        /// <summary>
+        /// Muestra los datos de un animal
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static string Mostrar(Animal a)
         {
             StringBuilder sb = new StringBuilder();

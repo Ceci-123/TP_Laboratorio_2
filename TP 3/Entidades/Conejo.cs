@@ -18,11 +18,15 @@ namespace Entidades
         {
 
         }
-        public Conejo(string nombre, int edad, 
-            string pelaje) : this(nombre, edad)
+        public Conejo(string nombre, int edad, string pelaje) : this(nombre, edad)
         {
             this.colorPelaje = pelaje;
         }
+
+        /// <summary>
+        /// Muestra los datos de un conejo
+        /// </summary>
+        /// <returns></returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

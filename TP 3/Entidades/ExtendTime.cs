@@ -8,6 +8,11 @@ namespace Entidades
 {
     public static class ExtendTime
     {
+        /// <summary>
+        /// Se extiende la clase DateTime devolviendo un string diferente segun que dia de la semana es hoy
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <returns></returns>
         public static string DiaSemana(this DateTime dt)
         {
             StringBuilder sb = new StringBuilder(); 

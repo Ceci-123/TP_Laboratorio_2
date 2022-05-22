@@ -26,6 +26,10 @@ namespace Entidades
             this.raza = raza;
         }
 
+        /// <summary>
+        /// Muestra los datos de un gato
+        /// </summary>
+        /// <returns></returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -39,10 +43,19 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public bool Vacunacion()
         {
             return true;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public bool Pasear()
         {
             return true;

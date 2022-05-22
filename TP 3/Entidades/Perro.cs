@@ -30,6 +30,10 @@ namespace Entidades
         public string Raza { get => raza; set => raza = value; }
         public bool Vacunado { get => vacunado; set => vacunado = value; }
 
+        /// <summary>
+        /// Verifica si el perro tiene su ficha completa con todos los datos
+        /// </summary>
+        /// <returns>Un booleano</returns>
         public bool FichaCompleta()
         {
             bool retorno = false;
@@ -44,6 +48,10 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// Muestra los datos de un perro
+        /// </summary>
+        /// <returns></returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -56,11 +64,19 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public bool Vacunacion()
         {
             return true;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public bool Pasear()
         {
             return true;

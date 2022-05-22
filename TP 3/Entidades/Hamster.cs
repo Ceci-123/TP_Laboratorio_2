@@ -17,6 +17,10 @@ namespace Entidades
 
         }
 
+        /// <summary>
+        /// Muestra los datos de un hamster
+        /// </summary>
+        /// <returns></returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

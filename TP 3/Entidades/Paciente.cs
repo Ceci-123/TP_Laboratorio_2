@@ -30,6 +30,12 @@ namespace Entidades
 
         }
 
+        /// <summary>
+        /// Sobrecarga del operador + para agregar un paciente a la queue
+        /// </summary>
+        /// <param name="unPaciente">Paciente a agregar</param>
+        /// <param name="colaPacientes">Fila donde se agrega el paciente</param>
+        /// <returns></returns>
         public static Queue<Paciente> operator +(Paciente unPaciente, Queue<Paciente> colaPacientes)
         {
             Queue<Paciente> retorno = colaPacientes;

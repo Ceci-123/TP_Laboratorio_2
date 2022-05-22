@@ -22,6 +22,11 @@ namespace Entidades
            this.nombrePaseador = nombre;
         }
 
+        /// <summary>
+        /// Agrega un objeto de tipo T a la lista de paseos
+        /// </summary>
+        /// <param name="t">El objeto a agregar</param>
+        /// <param name="lista">La lista donde se agrega el objeto</param>
         public void AgregarALista(T t, List<T> lista)
         {
             foreach (T item in lista)

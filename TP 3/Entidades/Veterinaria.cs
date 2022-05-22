@@ -10,6 +10,9 @@ namespace Entidades
         private static Paseador<Perro> paseadorPerros;
         private static Paseador<Gato> paseadorGatos;
 
+        /// <summary>
+        /// Devuelve el nombre de la Veterinaria
+        /// </summary>
         public static string Nombre
         {
             get { return "Pequeñas Patitas"; }
@@ -46,6 +49,11 @@ namespace Entidades
             paseadorGatos = new Paseador<Gato>("Paseo Gatuno");
         }
 
+        /// <summary>
+        /// Muestra la queue de pacientes por atender
+        /// </summary>
+        /// <param name="filaDePacientes"> la queue a mostrar</param>
+        /// <returns></returns>
         public static string MostrarFila(Queue<Paciente> filaDePacientes)
         {
             StringBuilder sb = new StringBuilder();
@@ -57,6 +65,11 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Muestra la lista de animales
+        /// </summary>
+        /// <param name="lista">la lista a mostrar</param>
+        /// <returns></returns>
         public static string MostrarLista(List<Animal> lista)
         {
             StringBuilder sb = new StringBuilder();
@@ -91,6 +104,10 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Agrega un animal a la lista de animales
+        /// </summary>
+        /// <param name="unAnimal">el animal a agregar</param>
         public static void AgregarAnimal(Animal unAnimal)
         {
             if (unAnimal is not null)
@@ -100,6 +117,12 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Busca un animal en la lista de animales por su id
+        /// </summary>
+        /// <param name="id">El id a encontrar</param>
+        /// <param name="lista"> La lista donde se busca</param>
+        /// <returns></returns>
         public static Animal BuscarAnimalPorId(int id, List<Animal> lista)
         {
             Animal aux = null;
@@ -113,6 +136,12 @@ namespace Entidades
             }
             return aux;
         }
+
+        /// <summary>
+        /// Llama a la clase serializadora para cargar la lista de animales desde un archivo de datos Xml
+        /// </summary>
+        /// <param name="lista">La lista donde se cargan los datos</param>
+        /// <returns></returns>
         public static bool CargarAnimalesDesdeXml(List<Animal> lista)
         {
             bool retorno = false;
@@ -129,6 +158,11 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// Llama a la clase serializadora para guardar la lista de animales en un archivo en formato Json
+        /// </summary>
+        /// <param name="lista">La lista a guardar</param>
+        /// <returns></returns>
         public static bool GuardarListaAnimalesJson(List<Animal> lista)
         {
             bool retorno = false;
@@ -145,6 +179,11 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// Llama a la clase serializadora para guardar una lista de animales en un archivo en formato Xml
+        /// </summary>
+        /// <param name="lista">La lista a guardar</param>
+        /// <returns></returns>
         public static bool GuardarAnimalesEnXml(List<Animal>lista)
         {
             bool retorno = false;
@@ -163,6 +202,11 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// Llama a la clase serializadora para cargar un archivo en formato Json a la lista de animales de la veterinaria
+        /// </summary>
+        /// <param name="lista">La lista donde guardar los datos</param>
+        /// <returns></returns>
         public static bool CargarListaAnimalesJson(List<Animal> lista)
         {
             bool retorno = false;
@@ -178,16 +222,31 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// Llama a la clase serializadora para guardar la lista de animales en una base de datos
+        /// </summary>
+        /// <param name="lista">La lista a guardar</param>
+        /// <returns></returns>
         public static bool GuardarListaAnimalesDataBase(List<Animal> lista)
         {
             return true;
         }
 
+        /// <summary>
+        /// Llama a la clase serializadora para cargar la lista de animales de la veterinaria desde una base de datos
+        /// </summary>
+        /// <param name="lista">La lista donde se guardan los datos</param>
+        /// <returns></returns>
         public static bool CargarListaAnimalesDataBase(List<Animal> lista)
         {
             return true;
         }
 
+        /// <summary>
+        /// Se agrega un animal a la lista de paseos de su especie
+        /// </summary>
+        /// <param name="a">El animal a agregar</param>
+        /// <returns></returns>
         public static bool AgregarAPaseos(Animal a)
         {
             bool retorno = false;

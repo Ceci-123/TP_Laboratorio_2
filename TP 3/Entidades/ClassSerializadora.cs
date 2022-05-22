@@ -19,6 +19,11 @@ namespace Entidades
             path += @"\ArchivosSerializacion\";
         }
 
+        /// <summary>
+        /// Escribe una lista en un archivo de formato Xml
+        /// </summary>
+        /// <param name="lista">La lista a escribir</param>
+        /// <exception cref="Exception"></exception>
         public static void EscribirAXml(List<Animal> lista)
         {
             string nombreArchivo = path + "SerializacionXml"  + ".xml";
@@ -42,7 +47,11 @@ namespace Entidades
             }
         }
 
-
+        /// <summary>
+        /// Lee datos desde un archivo de formato Xml y los guarda en una lista
+        /// </summary>
+        /// <param name="lista">La lista donde guardar los datos</param>
+        /// <exception cref="Exception"></exception>
         public static List<Animal> LeerDesdeXml()
         {
             string archivo = string.Empty;
@@ -84,6 +93,11 @@ namespace Entidades
 
         }
 
+        /// <summary>
+        /// Escribe los datos de la lista en un archivo de formato Json
+        /// </summary>
+        /// <param name="lista">La lista donde se leen los datos</param>
+        /// <exception cref="Exception"></exception>
         public static void EscribirAJson(List<Animal> lista)
         {
             string nombreArchivo = path + "SerializacionJson" + ".JSON";
@@ -105,6 +119,11 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Guarda en una lista los datos que lee desde un archivo Json
+        /// </summary>
+        /// <returns>La lista con los datos cargados</returns>
+        /// <exception cref="Exception"></exception>
         public static List<Animal> LeerDesdeJson()
         {
             string archivo = string.Empty;
