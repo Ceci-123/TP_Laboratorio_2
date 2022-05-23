@@ -30,7 +30,7 @@ namespace Entidades
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("Conejo");
+            sb.AppendLine("Conejo");
             sb.AppendLine($"Pelaje {this.colorPelaje}");
             return sb.ToString();
         }

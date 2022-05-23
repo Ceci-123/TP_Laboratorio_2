@@ -22,11 +22,11 @@ namespace UI
         {
             if (Veterinaria.GuardarAnimalesEnXml(Veterinaria.ListaAnimales))
             {
-                MessageBox.Show("exitoso");
+                MessageBox.Show("Datos guardados exitosamente", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("fallo");
+                MessageBox.Show("Ocurrio un error al guardar los datos", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             } 
         }
 
@@ -34,11 +34,11 @@ namespace UI
         {
             if (Veterinaria.GuardarListaAnimalesJson(Veterinaria.ListaAnimales))
             {
-                MessageBox.Show("exitoso");
+                MessageBox.Show("Datos guardados exitosamente","Persistencia de datos",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("fallo");
+                MessageBox.Show("Ocurrio un error al guardar los datos", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -47,7 +47,7 @@ namespace UI
             //if ()
             //{
             //    MessageBox.Show("exitoso");
-            //}
+            //} message, title, buttons, MessageBoxIcon.Warning
             //else
             //{
             //    MessageBox.Show("fallo");

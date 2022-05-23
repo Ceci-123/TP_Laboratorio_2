@@ -34,7 +34,7 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Gato");
-            sb.AppendLine(this.raza);
+            sb.Append(this.raza);
             if (vacunado)
             {
                 sb.Append($"Tiene sus vacunas al dia");
