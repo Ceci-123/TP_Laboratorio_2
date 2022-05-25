@@ -49,7 +49,7 @@
             this.btn_GuardarEnXml.Name = "btn_GuardarEnXml";
             this.btn_GuardarEnXml.Size = new System.Drawing.Size(165, 121);
             this.btn_GuardarEnXml.TabIndex = 0;
-            this.btn_GuardarEnXml.Text = "Guardar datos en Xml";
+            this.btn_GuardarEnXml.Text = "Guardar datos de pacientes en Xml";
             this.btn_GuardarEnXml.UseVisualStyleBackColor = false;
             this.btn_GuardarEnXml.Click += new System.EventHandler(this.btn_GuardarEnXml_Click);
             // 
@@ -71,7 +71,7 @@
             this.btn_CargarDesdeXml.Name = "btn_CargarDesdeXml";
             this.btn_CargarDesdeXml.Size = new System.Drawing.Size(165, 121);
             this.btn_CargarDesdeXml.TabIndex = 2;
-            this.btn_CargarDesdeXml.Text = "Cargar datos desde Xml";
+            this.btn_CargarDesdeXml.Text = "Cargar datos de pacientes desde Xml";
             this.btn_CargarDesdeXml.UseVisualStyleBackColor = false;
             this.btn_CargarDesdeXml.Click += new System.EventHandler(this.btn_CargarDesdeXml_Click);
             // 
@@ -83,7 +83,7 @@
             this.btn_GuardarEnJson.Name = "btn_GuardarEnJson";
             this.btn_GuardarEnJson.Size = new System.Drawing.Size(165, 121);
             this.btn_GuardarEnJson.TabIndex = 3;
-            this.btn_GuardarEnJson.Text = "Guardar datos en Json";
+            this.btn_GuardarEnJson.Text = "Guardar datos de paseos perrunos en Json";
             this.btn_GuardarEnJson.UseVisualStyleBackColor = false;
             this.btn_GuardarEnJson.Click += new System.EventHandler(this.btn_GuardarEnJson_Click);
             // 
@@ -95,7 +95,7 @@
             this.btn_CargarDesdeJson.Name = "btn_CargarDesdeJson";
             this.btn_CargarDesdeJson.Size = new System.Drawing.Size(165, 121);
             this.btn_CargarDesdeJson.TabIndex = 4;
-            this.btn_CargarDesdeJson.Text = "Cargar datos desde Json";
+            this.btn_CargarDesdeJson.Text = "Recuperar datos de paseos perrunos desde Json";
             this.btn_CargarDesdeJson.UseVisualStyleBackColor = false;
             this.btn_CargarDesdeJson.Click += new System.EventHandler(this.btn_CargarDesdeJson_Click);
             // 
@@ -131,7 +131,7 @@
             this.btn_PaseoPerruno.Name = "btn_PaseoPerruno";
             this.btn_PaseoPerruno.Size = new System.Drawing.Size(165, 121);
             this.btn_PaseoPerruno.TabIndex = 7;
-            this.btn_PaseoPerruno.Text = "Paseo Perruno";
+            this.btn_PaseoPerruno.Text = "Mostrar Paseos Perrunos";
             this.btn_PaseoPerruno.UseVisualStyleBackColor = false;
             this.btn_PaseoPerruno.Click += new System.EventHandler(this.btn_PaseoPerruno_Click);
             // 
@@ -143,7 +143,7 @@
             this.btn_PaseoGatuno.Name = "btn_PaseoGatuno";
             this.btn_PaseoGatuno.Size = new System.Drawing.Size(165, 121);
             this.btn_PaseoGatuno.TabIndex = 8;
-            this.btn_PaseoGatuno.Text = "Paseo Gatuno";
+            this.btn_PaseoGatuno.Text = "Mostrar Paseos Gatunos";
             this.btn_PaseoGatuno.UseVisualStyleBackColor = false;
             this.btn_PaseoGatuno.Click += new System.EventHandler(this.btn_PaseoGatuno_Click);
             // 

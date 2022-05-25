@@ -32,7 +32,7 @@ namespace UI
 
         private void btn_GuardarEnJson_Click(object sender, EventArgs e)
         {
-            if (Veterinaria.GuardarListaAnimalesJson(Veterinaria.ListaAnimales))
+            if (Veterinaria.GuardarListaAnimalesJson(Veterinaria.PaseoPerruno))
             {
                 MessageBox.Show("Datos guardados exitosamente","Persistencia de datos",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -62,15 +62,8 @@ namespace UI
 
         private void btn_CargarDesdeJson_Click(object sender, EventArgs e)
         {
-            //this.richtxt_Info.Text = Veterinaria.CargarListaAnimalesJson(Veterinaria.ListaAnimales);
-            //{
-            //    MessageBox.Show("exitoso");
-            //    RefrescarLista();  
-            //}
-            //else
-            //{
-            //    MessageBox.Show("fallo");
-            //}
+          this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).Lista.ToString();
+            
         }
 
         private void btn_CargarDesdeDbase_Click(object sender, EventArgs e)

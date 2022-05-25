@@ -141,7 +141,7 @@ namespace Entidades
         /// Llama a la clase serializadora para cargar la lista de animales desde un archivo de datos Xml
         /// </summary>
         /// <param name="lista">La lista donde se cargan los datos</param>
-        /// <returns></returns>
+        /// <returns>La lista cargada</returns>
         public static List<Animal> CargarAnimalesDesdeXml(List<Animal> lista)
         {
             try
@@ -162,7 +162,7 @@ namespace Entidades
         /// </summary>
         /// <param name="lista">La lista a guardar</param>
         /// <returns></returns>
-        public static bool GuardarListaAnimalesJson(List<Animal> lista)
+        public static bool GuardarListaAnimalesJson(Paseador<Perro> lista)
         {
             bool retorno = false;
             try
@@ -206,19 +206,17 @@ namespace Entidades
         /// </summary>
         /// <param name="lista">La lista donde guardar los datos</param>
         /// <returns></returns>
-        public static bool CargarListaAnimalesJson(List<Animal> lista)
+        public static Paseador<Perro> CargarListaAnimalesJson(Paseador<Perro> paseo)
         {
-            bool retorno = false;
             try
             {
-                lista = ClassSerializadora.LeerDesdeJson();
-                retorno = true;
+               paseo.Lista = ClassSerializadora.LeerDesdeJson();
             }
             catch (System.Exception)
             {
-                retorno = false;
+                return paseo;
             }
-            return retorno;
+            return paseo;
         }
 
         /// <summary>

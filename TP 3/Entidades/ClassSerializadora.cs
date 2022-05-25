@@ -98,7 +98,7 @@ namespace Entidades
         /// </summary>
         /// <param name="lista">La lista donde se leen los datos</param>
         /// <exception cref="Exception"></exception>
-        public static void EscribirAJson(List<Animal> lista)
+        public static void EscribirAJson(Paseador<Perro> lista)
         {
             string nombreArchivo = path + "SerializacionJson" + ".JSON";
 
@@ -124,11 +124,11 @@ namespace Entidades
         /// </summary>
         /// <returns>La lista con los datos cargados</returns>
         /// <exception cref="Exception"></exception>
-        public static List<Animal> LeerDesdeJson()
+        public static List<Perro> LeerDesdeJson()
         {
             string archivo = string.Empty;
             string informacionRecuperada = string.Empty;
-            List<Animal> datosRecuperados = default;
+            List<Perro> datosRecuperados = default;
             try
             {
 
@@ -146,7 +146,7 @@ namespace Entidades
 
                     if (archivo != null)
                     {
-                        datosRecuperados = JsonSerializer.Deserialize<List<Animal>>(File.ReadAllText(archivo));
+                        datosRecuperados = JsonSerializer.Deserialize<List<Perro>>(File.ReadAllText(archivo));
                     }
                 }
 
