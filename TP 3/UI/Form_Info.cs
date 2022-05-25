@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entidades;
+using System;
 using System.Windows.Forms;
-using Entidades;
 
 namespace UI
 {
@@ -27,14 +20,14 @@ namespace UI
             else
             {
                 MessageBox.Show("Ocurrio un error al guardar los datos", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            } 
+            }
         }
 
         private void btn_GuardarEnJson_Click(object sender, EventArgs e)
         {
             if (Veterinaria.GuardarListaAnimalesJson(Veterinaria.PaseoPerruno))
             {
-                MessageBox.Show("Datos guardados exitosamente","Persistencia de datos",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Datos guardados exitosamente", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -50,19 +43,19 @@ namespace UI
         private void btn_CargarDesdeXml_Click(object sender, EventArgs e)
         {
             this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales));
-           
+
         }
 
         private void btn_CargarDesdeJson_Click(object sender, EventArgs e)
         {
-          this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).MostrarListaPaseos();
-            
+            this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).MostrarListaPaseos();
+
         }
 
         private void btn_CargarDesdeDbase_Click(object sender, EventArgs e)
         {
-           MessageBox.Show("Proximamente");
-          
+            MessageBox.Show("Proximamente");
+
         }
 
         private void RefrescarLista()

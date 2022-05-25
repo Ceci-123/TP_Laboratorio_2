@@ -37,7 +37,7 @@ namespace Entidades
             sb.Append(this.raza);
             if (vacunado)
             {
-                sb.Append($"Tiene sus vacunas al dia");
+                sb.Append($" Todas sus vacunas al dia");
 
             }
             return sb.ToString();

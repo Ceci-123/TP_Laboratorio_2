@@ -1,6 +1,7 @@
 ﻿using Entidades;
 using System;
 using System.Media;
+using System.Text;
 using System.Windows.Forms;
 
 namespace UI
@@ -103,11 +104,36 @@ namespace UI
             animalito = Veterinaria.BuscarAnimalPorId(aux, Veterinaria.ListaAnimales);
             if (animalito is not null)
             {
-                this.txt_devolverInfo.Text = String.Empty;
-                //this.txt_devolverInfo.Text = animalito.ToString();
-                this.txt_devolverInfo.Text = Animal.Mostrar(animalito);
                 this.txt_bx_busquedaPorId.Text = String.Empty;
+                MostrarAnimalitoPorId(animalito);
+               
             }
+        }
+
+        private void MostrarAnimalitoPorId(Animal animalito)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(animalito.Nombre);
+            sb.Append(animalito.Id);
+            
+            if(animalito.GetType() == typeof(Perro))
+            {
+               sb.AppendLine(((Perro)animalito).Mostrar());
+            }
+            if (animalito.GetType() == typeof(Gato))
+            {
+                sb.AppendLine(((Gato)animalito).Mostrar());
+            }
+            if (animalito.GetType() == typeof(Conejo))
+            {
+                sb.AppendLine(((Conejo)animalito).Mostrar());
+            }
+            if (animalito.GetType() == typeof(Hamster))
+            {
+                sb.AppendLine(((Hamster)animalito).Mostrar());
+            }
+            this.txt_devolverInfo.Text = String.Empty;
+            this.txt_devolverInfo.Text = sb.ToString();
         }
 
         private void ReproducirLadrido()
