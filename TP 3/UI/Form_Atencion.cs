@@ -40,6 +40,8 @@ namespace UI
                     this.lbl_raza.Visible = false;
                     this.txt_raza.Visible = false;
                     this.numeric_peso.Visible = false;
+                    this.chk_bx_vacunado.Visible = false;
+                    this.chk_paseo.Visible = false;
                     break;
                 case "Perro":
                 case "Gato":
@@ -102,7 +104,7 @@ namespace UI
             if (animalito is not null)
             {
                 this.txt_devolverInfo.Text = String.Empty;
-                this.txt_devolverInfo.Text = animalito.ToString();
+                //this.txt_devolverInfo.Text = animalito.ToString();
                 this.txt_devolverInfo.Text = Animal.Mostrar(animalito);
                 this.txt_bx_busquedaPorId.Text = String.Empty;
             }

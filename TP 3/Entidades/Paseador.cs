@@ -29,18 +29,27 @@ namespace Entidades
         /// <param name="lista">La lista donde se agrega el objeto</param>
         public void AgregarALista(T t, List<T> lista)
         {
-            foreach (T item in lista)
+           if(t is not null && lista is not null)
             {
-                if (item.Id == t.Id)
-                {
-                    break;
-                }
-                else
-                {
-                   lista.Add(t);
+               lista.Add(t);
 
-                }
             }
+
+            
+        }
+
+        /// <summary>
+        /// Muestra la lista de paseos
+        /// </summary>
+        /// <returns>Un string con los datos de la lista</returns>
+        public string MostrarListaPaseos()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (T item in this.lista)
+            {
+                sb.AppendLine($"Nombre {item.Nombre} Edad {item.Edad} ");
+            }
+            return sb.ToString();
         }
     }
 }

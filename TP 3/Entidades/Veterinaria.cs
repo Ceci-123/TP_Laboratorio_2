@@ -244,10 +244,9 @@ namespace Entidades
         /// </summary>
         /// <param name="a">El animal a agregar</param>
         /// <returns></returns>
-        public static bool AgregarAPaseos(Animal a)
+        public static void AgregarAPaseos(Animal a)
         {
-            bool retorno = false;
-            if (a is not null)
+           if (a is not null)
             {
                 if (a is Perro)
                 {
@@ -258,7 +257,7 @@ namespace Entidades
                     paseadorGatos.AgregarALista((Gato)a, paseadorGatos.Lista);
                 }
             }
-            return retorno;
+           
         }
     }
 }

@@ -44,14 +44,7 @@ namespace UI
 
         private void btn_GuardarEnDbase_Click(object sender, EventArgs e)
         {
-            //if ()
-            //{
-            //    MessageBox.Show("exitoso");
-            //} message, title, buttons, MessageBoxIcon.Warning
-            //else
-            //{
-            //    MessageBox.Show("fallo");
-            //}
+            MessageBox.Show("Proximamente");
         }
 
         private void btn_CargarDesdeXml_Click(object sender, EventArgs e)
@@ -62,20 +55,14 @@ namespace UI
 
         private void btn_CargarDesdeJson_Click(object sender, EventArgs e)
         {
-          this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).Lista.ToString();
+          this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).MostrarListaPaseos();
             
         }
 
         private void btn_CargarDesdeDbase_Click(object sender, EventArgs e)
         {
-            //if ()
-            //{
-            //    MessageBox.Show("exitoso");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("fallo");
-            //}
+           MessageBox.Show("Proximamente");
+          
         }
 
         private void RefrescarLista()
@@ -87,13 +74,13 @@ namespace UI
         private void btn_PaseoPerruno_Click(object sender, EventArgs e)
         {
             this.richtxt_Info.Text = String.Empty;
-            this.richtxt_Info.Text = (Veterinaria.PaseoPerruno.Lista.ToString());
+            this.richtxt_Info.Text = (Veterinaria.PaseoPerruno.MostrarListaPaseos());
         }
 
         private void btn_PaseoGatuno_Click(object sender, EventArgs e)
         {
             this.richtxt_Info.Text = String.Empty;
-            this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.Lista.ToString());
+            this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.MostrarListaPaseos());
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
