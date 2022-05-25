@@ -6,11 +6,13 @@
 
 ## Veterinaria **Pequeñas Patitas** ❤
 
-> Es un sistema de atencion de pacientes en una veterinaria.
+> Sistema de atencion de pacientes.
 
-> En un primer formulario se agregan pacientes en espera de ser atendidos.
+> Es un nuevo dia en Pequeñas Patitas. En el primer formulario se van agregando los pacientes que llegan, en espera de ser atendidos.
 
-> Al irse atendiendo cada paciente se lo ingresa en una ficha con sus datos y se le asigna un paseador, si asi lo desea.
+> Al irse atendiendo cada paciente se le ingresa en una ficha con sus datos y se lo asigna a los paseos, si asi lo desea.
+
+> Hay un formulario de manejo de datos donde puede guardarse y recuperarse la informacion en distintos formatos.
 
 ## ⭐️ Temas vistos entre la clase 10 a 15
 
@@ -28,11 +30,9 @@
 
 ✅ Se sobrecarga el operador + para agregar un paciente a la lista de atencion
 
-✅ Serializacion xml y json: Se guarda y se recupera la informacion de los pacientes desde esos dos formatos.
+✅ Serializacion xml y json: Se guarda y se recupera la informacion de los pacientes desde esos dos formatos. En xml el listado de todos los pacientes de la veterinaria y en json los paseos perrunos y gatunos (porque en Pequeñas Patitas los gatos tambien pasean!).
 
 ✅ Hay tres formularios, un Form Veterinaria, que recibe pacientes y los enfila para ser atendidos. Un Form Atencion donde se atiende a los animalitos y se los ingresa en una ficha a la base de datos de la veterinaria. Y por ultimo un Form de Informacion desde donde se maneja la informacion desde y hasta los archivos.
-
-todo: interfaz falta agregar algo mas, y en los paseos
 
 ⭐️Temas vistos entre la clase 15 a 20
 

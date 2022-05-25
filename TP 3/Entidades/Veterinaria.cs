@@ -142,20 +142,19 @@ namespace Entidades
         /// </summary>
         /// <param name="lista">La lista donde se cargan los datos</param>
         /// <returns></returns>
-        public static bool CargarAnimalesDesdeXml(List<Animal> lista)
+        public static List<Animal> CargarAnimalesDesdeXml(List<Animal> lista)
         {
-            bool retorno = false;
             try
             {
                 lista = ClassSerializadora.LeerDesdeXml();
-                retorno = true;
+
             }
             catch (System.Exception)
             {
+                return lista;
 
-                retorno = false;
             }
-            return retorno;
+            return lista;
         }
 
         /// <summary>
@@ -184,20 +183,20 @@ namespace Entidades
         /// </summary>
         /// <param name="lista">La lista a guardar</param>
         /// <returns></returns>
-        public static bool GuardarAnimalesEnXml(List<Animal>lista)
+        public static bool GuardarAnimalesEnXml(List<Animal> lista)
         {
             bool retorno = false;
-            
-                try
-                {
-                    ClassSerializadora.EscribirAXml(lista);
-                    retorno = true;
-                }
-                catch (System.Exception)
-                {
-                    retorno = false;
-                }
-            
+
+            try
+            {
+                ClassSerializadora.EscribirAXml(lista);
+                retorno = true;
+            }
+            catch (System.Exception)
+            {
+                retorno = false;
+            }
+
 
             return retorno;
         }

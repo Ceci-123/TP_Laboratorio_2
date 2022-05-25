@@ -56,28 +56,21 @@ namespace UI
 
         private void btn_CargarDesdeXml_Click(object sender, EventArgs e)
         {
-            if (Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales))
-            {
-                MessageBox.Show("exitoso");
-                RefrescarLista();
-            }
-            else
-            {
-                MessageBox.Show("fallo");
-            }
+            this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales));
+           
         }
 
         private void btn_CargarDesdeJson_Click(object sender, EventArgs e)
         {
-            if (Veterinaria.CargarListaAnimalesJson(Veterinaria.ListaAnimales))
-            {
-                MessageBox.Show("exitoso");
-                RefrescarLista();  
-            }
-            else
-            {
-                MessageBox.Show("fallo");
-            }
+            //this.richtxt_Info.Text = Veterinaria.CargarListaAnimalesJson(Veterinaria.ListaAnimales);
+            //{
+            //    MessageBox.Show("exitoso");
+            //    RefrescarLista();  
+            //}
+            //else
+            //{
+            //    MessageBox.Show("fallo");
+            //}
         }
 
         private void btn_CargarDesdeDbase_Click(object sender, EventArgs e)
