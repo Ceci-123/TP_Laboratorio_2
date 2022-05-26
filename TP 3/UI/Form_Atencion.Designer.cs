@@ -85,7 +85,7 @@
             // 
             this.lbl_edad.AutoSize = true;
             this.lbl_edad.BackColor = System.Drawing.Color.LightCyan;
-            this.lbl_edad.Location = new System.Drawing.Point(63, 159);
+            this.lbl_edad.Location = new System.Drawing.Point(25, 155);
             this.lbl_edad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_edad.Name = "lbl_edad";
             this.lbl_edad.Size = new System.Drawing.Size(46, 18);
@@ -96,11 +96,11 @@
             // 
             this.chk_bx_vacunado.AutoSize = true;
             this.chk_bx_vacunado.BackColor = System.Drawing.Color.LightCyan;
-            this.chk_bx_vacunado.Location = new System.Drawing.Point(353, 220);
+            this.chk_bx_vacunado.Location = new System.Drawing.Point(360, 212);
             this.chk_bx_vacunado.Margin = new System.Windows.Forms.Padding(4);
             this.chk_bx_vacunado.Name = "chk_bx_vacunado";
             this.chk_bx_vacunado.Size = new System.Drawing.Size(144, 22);
-            this.chk_bx_vacunado.TabIndex = 4;
+            this.chk_bx_vacunado.TabIndex = 6;
             this.chk_bx_vacunado.Text = "Esta vacunado?";
             this.chk_bx_vacunado.UseVisualStyleBackColor = false;
             // 
@@ -120,7 +120,7 @@
             // 
             this.lbl_Peso.AutoSize = true;
             this.lbl_Peso.BackColor = System.Drawing.Color.LightCyan;
-            this.lbl_Peso.Location = new System.Drawing.Point(63, 200);
+            this.lbl_Peso.Location = new System.Drawing.Point(25, 200);
             this.lbl_Peso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Peso.Name = "lbl_Peso";
             this.lbl_Peso.Size = new System.Drawing.Size(42, 18);
@@ -131,7 +131,7 @@
             // 
             this.lbl_raza.AutoSize = true;
             this.lbl_raza.BackColor = System.Drawing.Color.LightCyan;
-            this.lbl_raza.Location = new System.Drawing.Point(64, 243);
+            this.lbl_raza.Location = new System.Drawing.Point(25, 242);
             this.lbl_raza.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_raza.Name = "lbl_raza";
             this.lbl_raza.Size = new System.Drawing.Size(45, 18);
@@ -170,11 +170,11 @@
             // btn_ingresarFicha
             // 
             this.btn_ingresarFicha.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_ingresarFicha.Location = new System.Drawing.Point(34, 322);
+            this.btn_ingresarFicha.Location = new System.Drawing.Point(25, 322);
             this.btn_ingresarFicha.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ingresarFicha.Name = "btn_ingresarFicha";
-            this.btn_ingresarFicha.Size = new System.Drawing.Size(436, 28);
-            this.btn_ingresarFicha.TabIndex = 9;
+            this.btn_ingresarFicha.Size = new System.Drawing.Size(479, 28);
+            this.btn_ingresarFicha.TabIndex = 10;
             this.btn_ingresarFicha.Text = "Ingresar Ficha";
             this.btn_ingresarFicha.UseVisualStyleBackColor = false;
             this.btn_ingresarFicha.Click += new System.EventHandler(this.btn_ingresarFicha_Click);
@@ -208,7 +208,7 @@
             this.btn_listado.Margin = new System.Windows.Forms.Padding(4);
             this.btn_listado.Name = "btn_listado";
             this.btn_listado.Size = new System.Drawing.Size(345, 75);
-            this.btn_listado.TabIndex = 14;
+            this.btn_listado.TabIndex = 13;
             this.btn_listado.Text = "Listado de todos los animales ingresados";
             this.btn_listado.UseVisualStyleBackColor = false;
             this.btn_listado.Click += new System.EventHandler(this.btn_listado_Click);
@@ -246,7 +246,7 @@
             // 
             this.lbl_pelaje.AutoSize = true;
             this.lbl_pelaje.BackColor = System.Drawing.Color.LightCyan;
-            this.lbl_pelaje.Location = new System.Drawing.Point(63, 278);
+            this.lbl_pelaje.Location = new System.Drawing.Point(25, 278);
             this.lbl_pelaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_pelaje.Name = "lbl_pelaje";
             this.lbl_pelaje.Size = new System.Drawing.Size(98, 18);
@@ -257,10 +257,10 @@
             // 
             this.chk_paseo.AutoSize = true;
             this.chk_paseo.BackColor = System.Drawing.Color.LightCyan;
-            this.chk_paseo.Location = new System.Drawing.Point(325, 274);
+            this.chk_paseo.Location = new System.Drawing.Point(334, 274);
             this.chk_paseo.Name = "chk_paseo";
             this.chk_paseo.Size = new System.Drawing.Size(170, 22);
-            this.chk_paseo.TabIndex = 6;
+            this.chk_paseo.TabIndex = 9;
             this.chk_paseo.Text = "Sale con paseador?";
             this.chk_paseo.UseVisualStyleBackColor = false;
             // 
@@ -270,7 +270,7 @@
             this.btn_cerrarVentana.Location = new System.Drawing.Point(25, 379);
             this.btn_cerrarVentana.Name = "btn_cerrarVentana";
             this.btn_cerrarVentana.Size = new System.Drawing.Size(327, 75);
-            this.btn_cerrarVentana.TabIndex = 25;
+            this.btn_cerrarVentana.TabIndex = 11;
             this.btn_cerrarVentana.Text = "Regresar al formulario anterior";
             this.btn_cerrarVentana.UseVisualStyleBackColor = false;
             this.btn_cerrarVentana.Click += new System.EventHandler(this.btn_cerrarVentana_Click);
@@ -282,7 +282,7 @@
             this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(158, 75);
-            this.btn_Salir.TabIndex = 26;
+            this.btn_Salir.TabIndex = 12;
             this.btn_Salir.Text = "Salir de la App ";
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
@@ -290,10 +290,10 @@
             // chk_AplicarVacuna
             // 
             this.chk_AplicarVacuna.AutoSize = true;
-            this.chk_AplicarVacuna.Location = new System.Drawing.Point(346, 168);
+            this.chk_AplicarVacuna.Location = new System.Drawing.Point(325, 156);
             this.chk_AplicarVacuna.Name = "chk_AplicarVacuna";
             this.chk_AplicarVacuna.Size = new System.Drawing.Size(179, 22);
-            this.chk_AplicarVacuna.TabIndex = 27;
+            this.chk_AplicarVacuna.TabIndex = 4;
             this.chk_AplicarVacuna.Text = "Aplicar Antirrabica";
             this.chk_AplicarVacuna.UseVisualStyleBackColor = true;
             // 
