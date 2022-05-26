@@ -50,6 +50,7 @@
             this.chk_paseo = new System.Windows.Forms.CheckBox();
             this.btn_cerrarVentana = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.chk_AplicarVacuna = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.num_edad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_peso)).BeginInit();
             this.SuspendLayout();
@@ -286,12 +287,23 @@
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
+            // chk_AplicarVacuna
+            // 
+            this.chk_AplicarVacuna.AutoSize = true;
+            this.chk_AplicarVacuna.Location = new System.Drawing.Point(346, 168);
+            this.chk_AplicarVacuna.Name = "chk_AplicarVacuna";
+            this.chk_AplicarVacuna.Size = new System.Drawing.Size(179, 22);
+            this.chk_AplicarVacuna.TabIndex = 27;
+            this.chk_AplicarVacuna.Text = "Aplicar Antirrabica";
+            this.chk_AplicarVacuna.UseVisualStyleBackColor = true;
+            // 
             // Form_Atencion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(927, 479);
+            this.Controls.Add(this.chk_AplicarVacuna);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_cerrarVentana);
             this.Controls.Add(this.chk_paseo);
@@ -352,5 +364,6 @@
         private System.Windows.Forms.CheckBox chk_paseo;
         private System.Windows.Forms.Button btn_cerrarVentana;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.CheckBox chk_AplicarVacuna;
     }
 }

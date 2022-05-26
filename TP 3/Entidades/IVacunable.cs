@@ -8,6 +8,6 @@ namespace Entidades
 {
     internal interface IVacunable
     {
-        bool Vacunacion();
+        void AplicarVacuna();
     }
 }

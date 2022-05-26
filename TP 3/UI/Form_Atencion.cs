@@ -33,6 +33,7 @@ namespace UI
                     this.numeric_peso.Visible = false;
                     this.chk_bx_vacunado.Visible = false;
                     this.chk_paseo.Visible = false;
+                    this.chk_AplicarVacuna.Visible = false;
                     break;
                 case "Hamster":
                     this.lbl_pelaje.Visible = false;
@@ -43,6 +44,7 @@ namespace UI
                     this.numeric_peso.Visible = false;
                     this.chk_bx_vacunado.Visible = false;
                     this.chk_paseo.Visible = false;
+                    this.chk_AplicarVacuna.Visible = false;
                     break;
                 case "Perro":
                 case "Gato":
@@ -63,6 +65,7 @@ namespace UI
             string auxRaza = this.txt_raza.Text;
             bool auxVacunado = this.chk_bx_vacunado.Checked;
             bool auxPaseo = this.chk_paseo.Checked;
+            bool auxAntirrabica = this.chk_AplicarVacuna.Checked;
             switch (pacienteActual.TipoDeAnimal.ToString())
             {
                 case "Conejo":
@@ -75,6 +78,10 @@ namespace UI
                     {
                         Veterinaria.AgregarAPaseos(p);
                     }
+                    if (auxAntirrabica)
+                    {
+                        p.AplicarVacuna();
+                    }
                     break;
                 case "Gato":
                     Gato g = new Gato(auxNombre, auxEdad, auxVacunado, auxRaza);
@@ -82,6 +89,10 @@ namespace UI
                     if (auxPaseo)
                     {
                         Veterinaria.AgregarAPaseos(g);
+                    }
+                    if (auxAntirrabica)
+                    {
+                        g.AplicarVacuna();
                     }
                     break;
                 case "Hamster":

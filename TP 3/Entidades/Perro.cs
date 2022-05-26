@@ -68,9 +68,9 @@ namespace Entidades
         /// 
         /// </summary>
         /// <returns></returns>
-        public bool Vacunacion()
+        public void AplicarVacuna()
         {
-            return true;
+            Veterinaria.CantidadVacunasPerrunas++;
         }
 
         /// <summary>

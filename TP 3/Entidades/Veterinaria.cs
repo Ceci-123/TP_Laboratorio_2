@@ -9,6 +9,8 @@ namespace Entidades
         private static List<Animal> listaAnimales;
         private static Paseador<Perro> paseadorPerros;
         private static Paseador<Gato> paseadorGatos;
+        private static int cantidadVacunasPerrunas;
+        private static int cantidadVacunasGatunas;
 
         /// <summary>
         /// Devuelve el nombre de la Veterinaria
@@ -40,6 +42,8 @@ namespace Entidades
             get => paseadorGatos;
             set => paseadorGatos = value;
         }
+        public static int CantidadVacunasPerrunas { get => cantidadVacunasPerrunas; set => cantidadVacunasPerrunas = value; }
+        public static int CantidadVacunasGatunas { get => cantidadVacunasGatunas; set => cantidadVacunasGatunas = value; }
 
         static Veterinaria()
         {
@@ -47,6 +51,8 @@ namespace Entidades
             listaAnimales = new List<Animal>();
             paseadorPerros = new Paseador<Perro>("Paseo Perruno");
             paseadorGatos = new Paseador<Gato>("Paseo Gatuno");
+            cantidadVacunasGatunas = 0;
+            cantidadVacunasPerrunas = 0;
         }
 
         /// <summary>
