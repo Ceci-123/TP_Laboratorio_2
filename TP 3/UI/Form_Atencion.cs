@@ -104,11 +104,16 @@ namespace UI
             RefrescarLista();
         }
 
+        /// <summary>
+        /// Muestra la lista de animales de la veterinaria
+        /// </summary>
         private void RefrescarLista()
         {
             this.txt_devolverInfo.Text = String.Empty;
             this.txt_devolverInfo.Text = Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
         }
+
+
         private void btn_buscar_Click(object sender, EventArgs e)
         {
             int aux = int.Parse(this.txt_bx_busquedaPorId.Text);
@@ -161,7 +166,9 @@ namespace UI
 
         }
 
-
+        /// <summary>
+        /// Coloca los campos con su contenido vacio
+        /// </summary>
         private void LimpiarCampos()
         {
             this.numeric_peso.Value = 0;
