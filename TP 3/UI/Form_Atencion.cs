@@ -10,7 +10,8 @@ namespace UI
     {
         Paciente pacienteActual;
         Animal animalito;
-        bool resultado;
+        bool bandera;
+
         public Form_Atencion(Paciente unPaciente)
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace UI
             this.lbl_Atencion.Text = $"Atendiendo a {pacienteActual.Nombre}";
             this.lbl_tipoAnimal.Text = $"Es un {pacienteActual.TipoDeAnimal}";
             ReproducirLadrido();
+            bandera = false;
             switch (pacienteActual.TipoDeAnimal.ToString())
             {
                 case "Conejo":
@@ -58,50 +60,81 @@ namespace UI
 
         private void btn_ingresarFicha_Click(object sender, EventArgs e)
         {
-            string auxNombre = pacienteActual.Nombre;
-            string auxPelaje = this.txt_pelaje.Text;
-            int auxEdad = (int)this.num_edad.Value;
-            int auxPeso = (int)this.numeric_peso.Value;
-            string auxRaza = this.txt_raza.Text;
-            bool auxVacunado = this.chk_bx_vacunado.Checked;
-            bool auxPaseo = this.chk_paseo.Checked;
-            bool auxAntirrabica = this.chk_AplicarVacuna.Checked;
-            switch (pacienteActual.TipoDeAnimal.ToString())
+            if (bandera)
             {
-                case "Conejo":
-                    Veterinaria.AgregarAnimal(new Conejo(auxNombre, auxEdad, auxPelaje));
-                    break;
-                case "Perro":
-                    Perro p = new Perro(auxNombre, auxEdad, auxPeso, auxRaza, auxVacunado);
-                    Veterinaria.AgregarAnimal(p);
-                    if (auxPaseo)
+                MessageBox.Show("Ya ingresaste este animalito", "Error");
+            }
+            else
+            {
+                try
+                {
+                    string auxNombre = pacienteActual.Nombre;
+                    string auxPelaje = this.txt_pelaje.Text;
+                    int auxEdad = (int)this.num_edad.Value;
+                    int auxPeso = (int)this.numeric_peso.Value;
+                    string auxRaza = this.txt_raza.Text;
+                    bool auxVacunado = this.chk_bx_vacunado.Checked;
+                    bool auxPaseo = this.chk_paseo.Checked;
+                    bool auxAntirrabica = this.chk_AplicarVacuna.Checked;
+
+                    if (auxEdad == 0 || auxPeso == 0)
                     {
-                        Veterinaria.AgregarAPaseos(p);
+                        MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
                     }
-                    if (auxAntirrabica)
+                    else
                     {
-                        p.AplicarVacuna();
+                        switch (pacienteActual.TipoDeAnimal.ToString())
+                        {
+                            case "Conejo":
+                                Veterinaria.AgregarAnimal(new Conejo(auxNombre, auxEdad, auxPelaje));
+                                bandera = true;
+                                break;
+                            case "Perro":
+                                Perro p = new Perro(auxNombre, auxEdad, auxPeso, auxRaza, auxVacunado);
+                                bandera = true;
+                                Veterinaria.AgregarAnimal(p);
+                                if (auxPaseo)
+                                {
+                                    Veterinaria.AgregarAPaseos(p);
+                                }
+                                if (auxAntirrabica)
+                                {
+                                    p.AplicarVacuna();
+                                }
+                                break;
+                            case "Gato":
+                                Gato g = new Gato(auxNombre, auxEdad, auxVacunado, auxRaza);
+                                bandera = true;
+                                Veterinaria.AgregarAnimal(g);
+                                if (auxPaseo)
+                                {
+                                    Veterinaria.AgregarAPaseos(g);
+                                }
+                                if (auxAntirrabica)
+                                {
+                                    g.AplicarVacuna();
+                                }
+                                break;
+                            case "Hamster":
+                                Veterinaria.AgregarAnimal(new Hamster(auxNombre, auxEdad));
+                                bandera = true;
+                                break;
+                        }
+                        LimpiarCampos();
+                        RefrescarLista();
                     }
-                    break;
-                case "Gato":
-                    Gato g = new Gato(auxNombre, auxEdad, auxVacunado, auxRaza);
-                    Veterinaria.AgregarAnimal(g);
-                    if (auxPaseo)
-                    {
-                        Veterinaria.AgregarAPaseos(g);
-                    }
-                    if (auxAntirrabica)
-                    {
-                        g.AplicarVacuna();
-                    }
-                    break;
-                case "Hamster":
-                    Veterinaria.AgregarAnimal(new Hamster(auxNombre, auxEdad));
-                    break;
+                    
+                }
+
+
+                catch (Exception)
+                {
+                    MessageBox.Show("Ocurrio un error");
+                }
 
             }
-            LimpiarCampos();
-            RefrescarLista();
+
+        
         }
 
         /// <summary>
@@ -116,14 +149,22 @@ namespace UI
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            int aux = int.Parse(this.txt_bx_busquedaPorId.Text);
-            animalito = Veterinaria.BuscarAnimalPorId(aux, Veterinaria.ListaAnimales);
-            if (animalito is not null)
+            try
             {
-                this.txt_bx_busquedaPorId.Text = String.Empty;
-                MostrarAnimalitoPorId(animalito);
-               
+                int aux = int.Parse(this.txt_bx_busquedaPorId.Text);
+                animalito = Veterinaria.BuscarAnimalPorId(aux, Veterinaria.ListaAnimales);
+                if (animalito is not null)
+                {
+                    this.txt_bx_busquedaPorId.Text = String.Empty;
+                    MostrarAnimalitoPorId(animalito);
+
+                }
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocurrio un error");
+            }
+
         }
 
         private void MostrarAnimalitoPorId(Animal animalito)
@@ -131,10 +172,10 @@ namespace UI
             StringBuilder sb = new StringBuilder();
             sb.Append(animalito.Nombre);
             sb.Append(animalito.Id);
-            
-            if(animalito.GetType() == typeof(Perro))
+
+            if (animalito.GetType() == typeof(Perro))
             {
-               sb.AppendLine(((Perro)animalito).Mostrar());
+                sb.AppendLine(((Perro)animalito).Mostrar());
             }
             if (animalito.GetType() == typeof(Gato))
             {
@@ -192,7 +233,7 @@ namespace UI
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            Application.Exit();    
+            Application.Exit();
         }
     }
 }

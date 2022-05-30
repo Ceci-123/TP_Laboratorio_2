@@ -44,3 +44,9 @@ C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\n
 C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\ref\UI.dll
 C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.Properties.Resources.resources
 C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\obj\Debug\net5.0-windows\UI.Form_Info.resources
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\UI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

@@ -22,7 +22,7 @@ namespace Entidades
                     sb.AppendLine("Buen domingo, hoy se descansa!!");
                     break;
                 case DayOfWeek.Monday:
-                    sb.AppendLine("Que tengas un hermoso lunes, vamos que empieza la semana!!");
+                    sb.AppendLine("Que tengas un hermoso lunes,empieza la semana!!");
                     break;
                 case DayOfWeek.Tuesday:
                     sb.AppendLine("Martes, que tengas un buen dia!!");

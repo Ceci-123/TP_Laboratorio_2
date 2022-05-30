@@ -16,7 +16,6 @@ namespace UI
     {
         private int cantidadEsperando = 0;
         private Paciente? pacienteActual = null;
-        private bool resultado;
         public Form_Veterinaria()
         {
             InitializeComponent();
@@ -64,19 +63,29 @@ namespace UI
 
         private void btn_Ok_Click(object sender, EventArgs e)
         {
-            if(!String.IsNullOrEmpty(this.txt_bx_nombre.Text)
+            try
+            {
+                if (!String.IsNullOrEmpty(this.txt_bx_nombre.Text)
                 && this.cmb_TipoAnimal is not null)
-            {
-                pacienteActual = new Paciente(this.txt_bx_nombre.Text,(Paciente.eAnimal)this.cmb_TipoAnimal.SelectedItem);
-                Veterinaria.FilaDePacientes = pacienteActual + Veterinaria.FilaDePacientes;
-                RefrescarListaYSumar();
-                this.txt_bx_nombre.Text = "";
-                this.cmb_TipoAnimal.Text = "";
+                {
+                    pacienteActual = new Paciente(this.txt_bx_nombre.Text, (Paciente.eAnimal)this.cmb_TipoAnimal.SelectedItem);
+                    Veterinaria.FilaDePacientes = pacienteActual + Veterinaria.FilaDePacientes;
+                    RefrescarListaYSumar();
+                    this.txt_bx_nombre.Text = "";
+                    this.cmb_TipoAnimal.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("debe completar los campos");
+                }
+
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("debe completar los campos");
+
+                MessageBox.Show("Ocurrio un error");
             }
+            
         }
 
         private void RefrescarListaYSumar()
