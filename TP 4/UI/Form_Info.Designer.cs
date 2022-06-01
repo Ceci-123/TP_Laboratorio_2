@@ -107,7 +107,7 @@
             this.btn_GuardarEnDbase.Name = "btn_GuardarEnDbase";
             this.btn_GuardarEnDbase.Size = new System.Drawing.Size(165, 121);
             this.btn_GuardarEnDbase.TabIndex = 3;
-            this.btn_GuardarEnDbase.Text = "Consulta Base de Datos del Instituto de Zoonosis";
+            this.btn_GuardarEnDbase.Text = "Enviar datos al Instituto de Zoonosis";
             this.btn_GuardarEnDbase.UseVisualStyleBackColor = false;
             this.btn_GuardarEnDbase.Click += new System.EventHandler(this.btn_GuardarEnDbase_Click);
             // 
@@ -119,7 +119,7 @@
             this.btn_CargarDesdeDbase.Name = "btn_CargarDesdeDbase";
             this.btn_CargarDesdeDbase.Size = new System.Drawing.Size(165, 121);
             this.btn_CargarDesdeDbase.TabIndex = 7;
-            this.btn_CargarDesdeDbase.Text = "Enviar datos al Instituto de Zoonosis";
+            this.btn_CargarDesdeDbase.Text = "Consulta Base de datos del Instituto de Zoonosis";
             this.btn_CargarDesdeDbase.UseVisualStyleBackColor = false;
             this.btn_CargarDesdeDbase.Click += new System.EventHandler(this.btn_CargarDesdeDbase_Click);
             // 
