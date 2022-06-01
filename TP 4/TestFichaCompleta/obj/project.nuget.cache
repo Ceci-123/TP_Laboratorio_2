@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DDshFvm4fFapE5YWYyfm0cgTt3TKLr7k5k5Tivjw7zitmsc62lZN5ttHbSYyIpd+lN3LKF0GQ3ZwWxDMz99YZw==",
+  "dgSpecHash": "4QcPVwt3Epx+X8Tb9cOkFda8PSAqLHxFTT4P9FgWuz5mCF93KPwvmjQUlXeggLN+MzxxV1eFD3rGAWu3fKHAYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\abril2022 repo github\\TP_Laboratorio_2\\TP 3\\TestFichaCompleta\\TestFichaCompleta.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\abril2022 repo github\\TP_Laboratorio_2\\TP 4\\TestFichaCompleta\\TestFichaCompleta.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

@@ -37,7 +37,8 @@ namespace UI
 
         private void btn_GuardarEnDbase_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proximamente");
+           // MessageBox.Show("Proximamente");
+            VacunacionDao.EnviarData(1, DateTime.Now, Veterinaria.CantidadVacunasPerrunas, Veterinaria.CantidadVacunasGatunas); ;
         }
 
         private void btn_CargarDesdeXml_Click(object sender, EventArgs e)
@@ -54,8 +55,7 @@ namespace UI
 
         private void btn_CargarDesdeDbase_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proximamente");
-
+            MessageBox.Show($"vacuna perro {VacunacionDao.ConsultaAntirrabica(true)} vacuna gato {VacunacionDao.ConsultaAntirrabica(false)}");
         }
 
         private void RefrescarLista()

@@ -36,7 +36,7 @@
 
 ⭐️Temas vistos entre la clase 15 a 20
 
-✅ conexion a data base
+✅ conexion a data base: Se envian datos sobre la vacunacion canina y felina a la base de datos de zoonosis. Tambien se recupera desde esa base de datos el total de vacunas aplicadas por la Veterinaria.
 ✅ delegados
 ✅ expresiones lambda
 ✅ multi hilo y concurrencia
