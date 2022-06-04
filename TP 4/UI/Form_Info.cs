@@ -6,9 +6,11 @@ namespace UI
 {
     public partial class Form_Info : Form
     {
+        bool bandera;
         public Form_Info()
         {
             InitializeComponent();
+            bandera = false;
         }
 
         private void btn_GuardarEnXml_Click(object sender, EventArgs e)
@@ -25,37 +27,89 @@ namespace UI
 
         private void btn_GuardarEnJson_Click(object sender, EventArgs e)
         {
-            if (Veterinaria.GuardarListaAnimalesJson(Veterinaria.PaseoPerruno))
+            try
             {
-                MessageBox.Show("Datos guardados exitosamente", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (Veterinaria.GuardarListaAnimalesJson(Veterinaria.PaseoPerruno))
+                {
+                    MessageBox.Show("Datos guardados exitosamente", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Ocurrio un error al guardar los datos", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Ocurrio un error al guardar los datos", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ocurrio un error", "Guardado de datos");
             }
         }
 
         private void btn_GuardarEnDbase_Click(object sender, EventArgs e)
         {
-           // MessageBox.Show("Proximamente");
-            VacunacionDao.EnviarData(1, DateTime.Now, Veterinaria.CantidadVacunasPerrunas, Veterinaria.CantidadVacunasGatunas); ;
+            if (!bandera)
+            {
+
+
+                try
+                {
+                    VacunacionDao.EnviarData(1, DateTime.Now, Veterinaria.CantidadVacunasPerrunas, Veterinaria.CantidadVacunasGatunas); ;
+                    MessageBox.Show("Datos enviados corrextamente", "Envio datos a Zoonosis");
+                    bandera = true;
+
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Ocurrio un error", "Envio datos a Zoonosis");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya se enviaron los datos de vacunacion hoy", "Envio datos a Zoonosis");
+            }
         }
 
         private void btn_CargarDesdeXml_Click(object sender, EventArgs e)
         {
-            this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales));
+            try
+            {
+                this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales));
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocurrio un error", "Carga de datos");
+            }
 
         }
 
         private void btn_CargarDesdeJson_Click(object sender, EventArgs e)
         {
-            this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).MostrarListaPaseos();
+            try
+            {
+                this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).MostrarListaPaseos();
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocurrio un error", "Carga de datos");
+            }
 
         }
 
         private void btn_CargarDesdeDbase_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"vacuna perro {VacunacionDao.ConsultaAntirrabica(true)} vacuna gato {VacunacionDao.ConsultaAntirrabica(false)}");
+            try
+            {
+                this.richtxt_Info.Text = $"Vacunas antirrabicas aplicadas este mes. De perro: {VacunacionDao.ConsultaAntirrabica(true)} y de gato: {VacunacionDao.ConsultaAntirrabica(false)}";
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocurrio un error", "Carga de datos");
+            }
+
         }
 
         private void RefrescarLista()
