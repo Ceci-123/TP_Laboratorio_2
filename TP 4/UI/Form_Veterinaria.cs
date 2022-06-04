@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using Entidades;
+using System;
 using System.Media;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
 
 namespace UI
 {
@@ -17,12 +10,13 @@ namespace UI
     {
         private int cantidadEsperando = 0;
         private Paciente? pacienteActual = null;
-        int segundos;
-        int minutos;
+        private int segundos;
+        private int minutos;
         int horas;
-        string segundosString;
+        private string segundosString;
         string minutosString;
-        string horasString;
+        private string horasString;
+        private Thread hiloAlterno;
         public Form_Veterinaria()
         {
             InitializeComponent();
@@ -33,7 +27,7 @@ namespace UI
             horas = 0;
         }
 
-  
+
         private void Form_Veterinaria_Load(object sender, EventArgs e)
         {
             this.lbl_NombreVet.Text = Veterinaria.Nombre;
@@ -47,6 +41,8 @@ namespace UI
             ReproducirLadrido();
             timer1.Enabled = true;
             timer1.Start();
+            hiloAlterno = new Thread(Anunciar);
+            hiloAlterno.Start();
         }
 
         private static void ReproducirLadrido()
@@ -59,11 +55,44 @@ namespace UI
             catch (Exception)
             {
                 Console.Beep();
-            }  
-            
-            
+            }
+
         }
 
+        private void Anunciar()
+        {
+            try
+            {
+                InvocarLabel("SESION INICIADA...");
+                Thread.Sleep(1000);
+                InvocarLabel("CARGANDO DEPOSITOS...");
+                Thread.Sleep(1000);
+                InvocarLabel("CARGANDO INVENTARIOS...");
+                Thread.Sleep(1000);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        public void InvocarLabel(string value)
+        {
+
+            if (InvokeRequired)
+            {
+                this.BeginInvoke((MethodInvoker)delegate ()
+                {
+                    lbl_aviso.Text = string.Empty;
+                    lbl_aviso.Text += value;
+                });
+            }
+            else
+            {
+                lbl_aviso.Text = string.Empty;
+                lbl_aviso.Text += value;
+            }
+        }
         private void btn_AgregarPaciente_Click(object sender, EventArgs e)
         {
             this.pictureBox_Foto.Visible = false;
@@ -98,7 +127,7 @@ namespace UI
 
                 MessageBox.Show("Ocurrio un error");
             }
-            
+
         }
 
         private void RefrescarListaYSumar()
@@ -127,31 +156,31 @@ namespace UI
         {
             try
             {
-               pacienteActual = Veterinaria.FilaDePacientes.Dequeue();
-               RefrescarListaYRestar();
+                pacienteActual = Veterinaria.FilaDePacientes.Dequeue();
+                RefrescarListaYRestar();
 
             }
             catch (InvalidOperationException)
             {
                 MessageBox.Show("No hay pacientes en espera");
-            }    
+            }
             catch (Exception)
             {
                 MessageBox.Show("algo malio sal");
             }
-            if(pacienteActual is not null)
+            if (pacienteActual is not null)
             {
-               Form frmAtencion = new Form_Atencion(pacienteActual);
+                Form frmAtencion = new Form_Atencion(pacienteActual);
                 this.Hide();
                 if (frmAtencion.ShowDialog() == DialogResult.OK)
                 {
                     this.Show();
                 }
             }
-            
+
         }
 
- 
+
         private void btn_Informacion_Click(object sender, EventArgs e)
         {
             Form_Info frm = new Form_Info();

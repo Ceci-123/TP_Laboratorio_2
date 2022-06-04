@@ -50,6 +50,7 @@
             this.lbl_tiempo_minuto = new System.Windows.Forms.Label();
             this.lbl_tiempo_segundos = new System.Windows.Forms.Label();
             this.lbl_sesion = new System.Windows.Forms.Label();
+            this.lbl_aviso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,13 +261,23 @@
             this.lbl_sesion.TabIndex = 21;
             this.lbl_sesion.Text = "Tiempo Sesion Actual";
             // 
+            // lbl_aviso
+            // 
+            this.lbl_aviso.AutoSize = true;
+            this.lbl_aviso.Location = new System.Drawing.Point(12, 537);
+            this.lbl_aviso.Name = "lbl_aviso";
+            this.lbl_aviso.Size = new System.Drawing.Size(55, 18);
+            this.lbl_aviso.TabIndex = 22;
+            this.lbl_aviso.Text = "label1";
+            // 
             // Form_Veterinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(907, 540);
+            this.ClientSize = new System.Drawing.Size(907, 574);
+            this.Controls.Add(this.lbl_aviso);
             this.Controls.Add(this.lbl_sesion);
             this.Controls.Add(this.lbl_tiempo_segundos);
             this.Controls.Add(this.lbl_tiempo_minuto);
@@ -324,5 +335,6 @@
         private System.Windows.Forms.Label lbl_tiempo_minuto;
         private System.Windows.Forms.Label lbl_tiempo_segundos;
         private System.Windows.Forms.Label lbl_sesion;
+        private System.Windows.Forms.Label lbl_aviso;
     }
 }
