@@ -14,6 +14,8 @@
 
 > Hay un formulario de manejo de datos donde puede guardarse y recuperarse la informacion en distintos formatos.
 
+> Tiene un timer que cuenta el tiempo transcurrido desde que se inicio la app.
+
 ## ⭐️ Temas vistos entre la clase 10 a 15
 
 ✅ Excepciones: Se utilizan en varios lugares donde puede haber errores, en el Formulario de Atenciones y en las serializaciones a xml y a Json.

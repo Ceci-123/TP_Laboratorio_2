@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Veterinaria));
             this.lbl_NombreVet = new System.Windows.Forms.Label();
             this.lbl_PacientesEnEspera = new System.Windows.Forms.Label();
@@ -44,6 +45,11 @@
             this.lbl_mensajito = new System.Windows.Forms.Label();
             this.pictureBox_Foto = new System.Windows.Forms.PictureBox();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.lbl_tiempo_hora = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbl_tiempo_minuto = new System.Windows.Forms.Label();
+            this.lbl_tiempo_segundos = new System.Windows.Forms.Label();
+            this.lbl_sesion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -212,6 +218,48 @@
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
+            // lbl_tiempo_hora
+            // 
+            this.lbl_tiempo_hora.AutoSize = true;
+            this.lbl_tiempo_hora.Location = new System.Drawing.Point(12, 497);
+            this.lbl_tiempo_hora.Name = "lbl_tiempo_hora";
+            this.lbl_tiempo_hora.Size = new System.Drawing.Size(55, 18);
+            this.lbl_tiempo_hora.TabIndex = 18;
+            this.lbl_tiempo_hora.Text = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // lbl_tiempo_minuto
+            // 
+            this.lbl_tiempo_minuto.AutoSize = true;
+            this.lbl_tiempo_minuto.Location = new System.Drawing.Point(73, 497);
+            this.lbl_tiempo_minuto.Name = "lbl_tiempo_minuto";
+            this.lbl_tiempo_minuto.Size = new System.Drawing.Size(55, 18);
+            this.lbl_tiempo_minuto.TabIndex = 19;
+            this.lbl_tiempo_minuto.Text = "label1";
+            // 
+            // lbl_tiempo_segundos
+            // 
+            this.lbl_tiempo_segundos.AutoSize = true;
+            this.lbl_tiempo_segundos.Location = new System.Drawing.Point(136, 497);
+            this.lbl_tiempo_segundos.Name = "lbl_tiempo_segundos";
+            this.lbl_tiempo_segundos.Size = new System.Drawing.Size(55, 18);
+            this.lbl_tiempo_segundos.TabIndex = 20;
+            this.lbl_tiempo_segundos.Text = "label2";
+            // 
+            // lbl_sesion
+            // 
+            this.lbl_sesion.AutoSize = true;
+            this.lbl_sesion.Location = new System.Drawing.Point(12, 466);
+            this.lbl_sesion.Name = "lbl_sesion";
+            this.lbl_sesion.Size = new System.Drawing.Size(169, 18);
+            this.lbl_sesion.TabIndex = 21;
+            this.lbl_sesion.Text = "Tiempo Sesion Actual";
+            // 
             // Form_Veterinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -219,6 +267,10 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(907, 540);
+            this.Controls.Add(this.lbl_sesion);
+            this.Controls.Add(this.lbl_tiempo_segundos);
+            this.Controls.Add(this.lbl_tiempo_minuto);
+            this.Controls.Add(this.lbl_tiempo_hora);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.pictureBox_Foto);
             this.Controls.Add(this.lbl_mensajito);
@@ -267,5 +319,10 @@
         private System.Windows.Forms.Label lbl_mensajito;
         private System.Windows.Forms.PictureBox pictureBox_Foto;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.Label lbl_tiempo_hora;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbl_tiempo_minuto;
+        private System.Windows.Forms.Label lbl_tiempo_segundos;
+        private System.Windows.Forms.Label lbl_sesion;
     }
 }

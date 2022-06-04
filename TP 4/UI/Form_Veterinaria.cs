@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
@@ -16,13 +17,23 @@ namespace UI
     {
         private int cantidadEsperando = 0;
         private Paciente? pacienteActual = null;
+        int segundos;
+        int minutos;
+        int horas;
+        string segundosString;
+        string minutosString;
+        string horasString;
         public Form_Veterinaria()
         {
             InitializeComponent();
             this.cantidadEsperando = Veterinaria.FilaDePacientes.Count;
             this.cmb_TipoAnimal.DataSource = Enum.GetValues(typeof(Paciente.eAnimal));
+            segundos = 0;
+            minutos = 0;
+            horas = 0;
         }
 
+  
         private void Form_Veterinaria_Load(object sender, EventArgs e)
         {
             this.lbl_NombreVet.Text = Veterinaria.Nombre;
@@ -34,9 +45,11 @@ namespace UI
             this.lbl_Hora.Text = DateTime.Now.ToString();
             this.lbl_mensajito.Text = ExtendTime.DiaSemana(DateTime.Now);
             ReproducirLadrido();
+            timer1.Enabled = true;
+            timer1.Start();
         }
 
-        private void ReproducirLadrido()
+        private static void ReproducirLadrido()
         {
             try
             {
@@ -138,7 +151,7 @@ namespace UI
             
         }
 
-        
+ 
         private void btn_Informacion_Click(object sender, EventArgs e)
         {
             Form_Info frm = new Form_Info();
@@ -148,6 +161,48 @@ namespace UI
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            segundos += 1;
+            if (segundos < 10)
+            {
+                segundosString = $"0 {segundos.ToString()}";
+            }
+            else
+            {
+                segundosString = $" {segundos.ToString()}";
+            }
+            if (minutos < 10)
+            {
+                minutosString = $"0 {minutos.ToString()}";
+            }
+            else
+            {
+                minutosString = $" {minutos.ToString()}";
+            }
+            if (horas < 10)
+            {
+                horasString = $"0 {horas.ToString()}";
+            }
+            else
+            {
+                horasString = $" {horas.ToString()}";
+            }
+            if (segundos == 59)
+            {
+                segundos = 0;
+                minutos += 1;
+            }
+            if (minutos == 59)
+            {
+                minutos = 0;
+                horas += 1;
+            }
+            this.lbl_tiempo_hora.Text = horasString;
+            this.lbl_tiempo_minuto.Text = minutosString;
+            this.lbl_tiempo_segundos.Text = segundosString;
         }
     }
 }
