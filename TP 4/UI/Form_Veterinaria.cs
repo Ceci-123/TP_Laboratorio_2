@@ -65,9 +65,9 @@ namespace UI
             {
                 InvocarLabel("SESION INICIADA...");
                 Thread.Sleep(1000);
-                InvocarLabel("CARGANDO DEPOSITOS...");
+                InvocarLabel("BIENVENID@ A PEQUEÑAS PATITAS...");
                 Thread.Sleep(1000);
-                InvocarLabel("CARGANDO INVENTARIOS...");
+                InvocarLabel("LISTO PARA INICIAR...");
                 Thread.Sleep(1000);
             }
             catch (Exception e)

@@ -39,7 +39,7 @@
 ⭐️Temas vistos entre la clase 15 a 20
 
 ✅ conexion a data base: Se envian datos sobre la vacunacion canina y felina a la base de datos de un Instituto de Zoonosis. Tambien se recupera desde esa base de datos el total de vacunas aplicadas por la Veterinaria. Se adjunta el backup de la base de datos en un archivo llamado INSTITUTOZOONOSIS.bak
-✅ delegados
+✅ delegados Y multithreading: Hay una funcion que simula una demora por carga de datos, que corre en un hilo diferente del hilo principal y utiliza delegados en la invocacion de los metodos
 ✅ expresiones lambda
-✅ multi hilo y concurrencia
+
 ✅ eventos
