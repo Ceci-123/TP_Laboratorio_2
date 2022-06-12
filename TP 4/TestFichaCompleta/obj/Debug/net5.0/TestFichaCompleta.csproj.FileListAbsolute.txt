@@ -100,3 +100,12 @@ C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\TestFichaCompl
 C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.pdb
 C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.genruntimeconfig.cache
 C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 3\TestFichaCompleta\obj\Debug\net5.0\ref\TestFichaCompleta.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.AssemblyInfo.cs
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\refint\TestFichaCompleta.dll
+C:\Users\user\Desktop\abril2022 repo github\TP_Laboratorio_2\TP 4\TestFichaCompleta\obj\Debug\net5.0\TestFichaCompleta.pdb

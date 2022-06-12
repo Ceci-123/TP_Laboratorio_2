@@ -17,6 +17,9 @@ namespace UI
         string minutosString;
         private string horasString;
         private Thread hiloAlterno;
+        public delegate void DelegadoModos();
+        public event DelegadoModos OnCambioModoClaro;
+        public event DelegadoModos OnCambioModoOscuro;
         public Form_Veterinaria()
         {
             InitializeComponent();
@@ -43,6 +46,8 @@ namespace UI
             timer1.Start();
             hiloAlterno = new Thread(Anunciar);
             hiloAlterno.Start();
+            OnCambioModoClaro = CambiarAModoClaro;
+            OnCambioModoOscuro = CambiarAModoOscuro;
         }
 
         private static void ReproducirLadrido()
@@ -232,6 +237,43 @@ namespace UI
             this.lbl_tiempo_hora.Text = horasString;
             this.lbl_tiempo_minuto.Text = minutosString;
             this.lbl_tiempo_segundos.Text = segundosString;
+        }
+
+        private void radioBtn_oscuro_CheckedChanged(object sender, EventArgs e)
+        {
+            if (OnCambioModoOscuro is not null)
+            {
+                OnCambioModoOscuro.Invoke();
+
+            }
+        }
+
+        private void radioBtn_claro_CheckedChanged(object sender, EventArgs e)
+        {
+            if(OnCambioModoClaro is not null)
+            {
+               OnCambioModoClaro.Invoke();
+
+            }
+        }
+
+        private void btn_traer_modo_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btn_carga_modo_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void CambiarAModoOscuro()
+        {
+            this.BackColor = System.Drawing.Color.CadetBlue;
+        }
+
+        private void CambiarAModoClaro()
+        {
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
         }
     }
 }

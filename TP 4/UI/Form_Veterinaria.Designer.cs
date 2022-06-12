@@ -51,6 +51,11 @@
             this.lbl_tiempo_segundos = new System.Windows.Forms.Label();
             this.lbl_sesion = new System.Windows.Forms.Label();
             this.lbl_aviso = new System.Windows.Forms.Label();
+            this.lbl_Modos = new System.Windows.Forms.Label();
+            this.radioBtn_claro = new System.Windows.Forms.RadioButton();
+            this.radioBtn_oscuro = new System.Windows.Forms.RadioButton();
+            this.btn_carga_modo = new System.Windows.Forms.Button();
+            this.btn_traer_modo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -270,13 +275,70 @@
             this.lbl_aviso.TabIndex = 22;
             this.lbl_aviso.Text = "label1";
             // 
+            // lbl_Modos
+            // 
+            this.lbl_Modos.AutoSize = true;
+            this.lbl_Modos.Location = new System.Drawing.Point(920, 116);
+            this.lbl_Modos.Name = "lbl_Modos";
+            this.lbl_Modos.Size = new System.Drawing.Size(98, 18);
+            this.lbl_Modos.TabIndex = 23;
+            this.lbl_Modos.Text = "Elegir modo";
+            // 
+            // radioBtn_claro
+            // 
+            this.radioBtn_claro.AutoSize = true;
+            this.radioBtn_claro.Location = new System.Drawing.Point(908, 183);
+            this.radioBtn_claro.Name = "radioBtn_claro";
+            this.radioBtn_claro.Size = new System.Drawing.Size(110, 22);
+            this.radioBtn_claro.TabIndex = 24;
+            this.radioBtn_claro.TabStop = true;
+            this.radioBtn_claro.Text = "Modo claro";
+            this.radioBtn_claro.UseVisualStyleBackColor = true;
+            this.radioBtn_claro.CheckedChanged += new System.EventHandler(this.radioBtn_claro_CheckedChanged);
+            // 
+            // radioBtn_oscuro
+            // 
+            this.radioBtn_oscuro.AutoSize = true;
+            this.radioBtn_oscuro.Location = new System.Drawing.Point(908, 230);
+            this.radioBtn_oscuro.Name = "radioBtn_oscuro";
+            this.radioBtn_oscuro.Size = new System.Drawing.Size(122, 22);
+            this.radioBtn_oscuro.TabIndex = 25;
+            this.radioBtn_oscuro.TabStop = true;
+            this.radioBtn_oscuro.Text = "Modo oscuro";
+            this.radioBtn_oscuro.UseVisualStyleBackColor = true;
+            this.radioBtn_oscuro.CheckedChanged += new System.EventHandler(this.radioBtn_oscuro_CheckedChanged);
+            // 
+            // btn_carga_modo
+            // 
+            this.btn_carga_modo.Location = new System.Drawing.Point(920, 285);
+            this.btn_carga_modo.Name = "btn_carga_modo";
+            this.btn_carga_modo.Size = new System.Drawing.Size(110, 91);
+            this.btn_carga_modo.TabIndex = 26;
+            this.btn_carga_modo.Text = "Guardar preferencia";
+            this.btn_carga_modo.UseVisualStyleBackColor = true;
+            this.btn_carga_modo.Click += new System.EventHandler(this.btn_carga_modo_Click);
+            // 
+            // btn_traer_modo
+            // 
+            this.btn_traer_modo.Location = new System.Drawing.Point(920, 415);
+            this.btn_traer_modo.Name = "btn_traer_modo";
+            this.btn_traer_modo.Size = new System.Drawing.Size(110, 91);
+            this.btn_traer_modo.TabIndex = 27;
+            this.btn_traer_modo.Text = "Leer preferencia guardada";
+            this.btn_traer_modo.UseVisualStyleBackColor = true;
+            this.btn_traer_modo.Click += new System.EventHandler(this.btn_traer_modo_Click);
+            // 
             // Form_Veterinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(907, 574);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1048, 574);
+            this.Controls.Add(this.btn_traer_modo);
+            this.Controls.Add(this.btn_carga_modo);
+            this.Controls.Add(this.radioBtn_oscuro);
+            this.Controls.Add(this.radioBtn_claro);
+            this.Controls.Add(this.lbl_Modos);
             this.Controls.Add(this.lbl_aviso);
             this.Controls.Add(this.lbl_sesion);
             this.Controls.Add(this.lbl_tiempo_segundos);
@@ -336,5 +398,10 @@
         private System.Windows.Forms.Label lbl_tiempo_segundos;
         private System.Windows.Forms.Label lbl_sesion;
         private System.Windows.Forms.Label lbl_aviso;
+        private System.Windows.Forms.Label lbl_Modos;
+        private System.Windows.Forms.RadioButton radioBtn_claro;
+        private System.Windows.Forms.RadioButton radioBtn_oscuro;
+        private System.Windows.Forms.Button btn_carga_modo;
+        private System.Windows.Forms.Button btn_traer_modo;
     }
 }
