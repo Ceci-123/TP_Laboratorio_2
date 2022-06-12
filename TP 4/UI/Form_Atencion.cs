@@ -77,22 +77,28 @@ namespace UI
                     bool auxPaseo = this.chk_paseo.Checked;
                     bool auxAntirrabica = this.chk_AplicarVacuna.Checked;
 
-                    
-                        switch (pacienteActual.TipoDeAnimal.ToString())
-                        {
-                            case "Conejo":
-                                if (auxEdad == 0)
-                                {
-                                    MessageBox.Show("La edad no puede ser 0", "Error");
-                                }
+
+                    switch (pacienteActual.TipoDeAnimal.ToString())
+                    {
+                        case "Conejo":
+                            if (auxEdad == 0)
+                            {
+                                MessageBox.Show("La edad no puede ser 0", "Error");
+                            }
+                            else
+                            {
                                 Veterinaria.AgregarAnimal(new Conejo(auxNombre, auxEdad, auxPelaje));
                                 bandera = true;
-                                break;
-                            case "Perro":
-                                if (auxEdad == 0 || auxPeso == 0)
-                                {
-                                    MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
-                                }
+
+                            }
+                            break;
+                        case "Perro":
+                            if (auxEdad == 0 || auxPeso == 0)
+                            {
+                                MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
+                            }
+                            else
+                            {
                                 Perro p = new Perro(auxNombre, auxEdad, auxPeso, auxRaza, auxVacunado);
                                 bandera = true;
                                 Veterinaria.AgregarAnimal(p);
@@ -104,12 +110,16 @@ namespace UI
                                 {
                                     p.AplicarVacuna();
                                 }
-                                break;
-                            case "Gato":
-                                if (auxEdad == 0 || auxPeso == 0)
-                                {
-                                    MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
-                                }
+
+                            }
+                            break;
+                        case "Gato":
+                            if (auxEdad == 0 || auxPeso == 0)
+                            {
+                                MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
+                            }
+                            else
+                            {
                                 Gato g = new Gato(auxNombre, auxEdad, auxVacunado, auxRaza);
                                 bandera = true;
                                 Veterinaria.AgregarAnimal(g);
@@ -121,19 +131,25 @@ namespace UI
                                 {
                                     g.AplicarVacuna();
                                 }
-                                break;
-                            case "Hamster":
-                                if (auxEdad == 0)
-                                {
-                                    MessageBox.Show("La edad no puede ser 0", "Error");
-                                }
+
+                            }
+                            break;
+                        case "Hamster":
+                            if (auxEdad == 0)
+                            {
+                                MessageBox.Show("La edad no puede ser 0", "Error");
+                            }
+                            else
+                            {
                                 Veterinaria.AgregarAnimal(new Hamster(auxNombre, auxEdad));
                                 bandera = true;
-                                break;
-                        }
-                        LimpiarCampos();
-                        RefrescarLista();
-                           
+
+                            }
+                            break;
+                    }
+                    LimpiarCampos();
+                    RefrescarLista();
+
                 }
 
 
@@ -144,7 +160,7 @@ namespace UI
 
             }
 
-        
+
         }
 
         /// <summary>
@@ -162,7 +178,7 @@ namespace UI
             try
             {
                 int aux = int.Parse(this.txt_bx_busquedaPorId.Text);
-                if(Veterinaria.ListaAnimales.Count == 0)
+                if (Veterinaria.ListaAnimales.Count == 0)
                 {
                     MessageBox.Show("Aun no hay animales ingresados");
                 }
