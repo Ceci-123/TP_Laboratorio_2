@@ -13,13 +13,13 @@ namespace Entidades
         {
 
         }
-            
+
         public Perro(string nombre, int edad) : base(nombre, edad)
         {
 
         }
 
-        public Perro(string nombre, int edad, int peso, string raza, bool vacunado) :this(nombre, edad)
+        public Perro(string nombre, int edad, int peso, string raza, bool vacunado) : this(nombre, edad)
         {
             this.peso = peso;
             this.raza = raza;

@@ -75,7 +75,7 @@ namespace UI
             try
             {
                 this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales));
-                if(Veterinaria.ListaAnimales.Count == 0)
+                if (Veterinaria.ListaAnimales.Count == 0)
                 {
                     this.richtxt_Info.Text = "No hay animales en la lista";
                 }
@@ -145,8 +145,8 @@ namespace UI
         {
             try
             {
-            this.richtxt_Info.Text = String.Empty;
-            this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.MostrarListaPaseos());
+                this.richtxt_Info.Text = String.Empty;
+                this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.MostrarListaPaseos());
 
             }
             catch (NoHayPaseosException)
@@ -168,11 +168,11 @@ namespace UI
 
         private void btn_calcular_Click(object sender, EventArgs e)
         {
-           int edad = (int)this.numeric_conversor.Value;
+            int edad = (int)this.numeric_conversor.Value;
             MultiplicadorEdad M = (x) => x * 7;
             edad = M(edad);
-           this.lbl_resultadoConversor.Text = edad.ToString() + " años";
-       
+            this.lbl_resultadoConversor.Text = edad.ToString() + " años";
+
         }
 
     }
