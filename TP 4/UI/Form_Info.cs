@@ -122,14 +122,42 @@ namespace UI
 
         private void btn_PaseoPerruno_Click(object sender, EventArgs e)
         {
-            this.richtxt_Info.Text = String.Empty;
-            this.richtxt_Info.Text = (Veterinaria.PaseoPerruno.MostrarListaPaseos());
+            try
+            {
+                this.richtxt_Info.Text = String.Empty;
+                this.richtxt_Info.Text = (Veterinaria.PaseoPerruno.MostrarListaPaseos());
+
+            }
+            catch (NoHayPaseosException)
+            {
+                MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
+
+            }
         }
 
         private void btn_PaseoGatuno_Click(object sender, EventArgs e)
         {
+            try
+            {
             this.richtxt_Info.Text = String.Empty;
             this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.MostrarListaPaseos());
+
+            }
+            catch (NoHayPaseosException)
+            {
+                MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
+
+            }
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
