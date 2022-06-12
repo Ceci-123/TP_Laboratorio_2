@@ -271,6 +271,10 @@ namespace UI
                 {
                     CambiarAModoClaro();
                 }
+                if (modo == " ")
+                {
+                    MessageBox.Show("No existe archivo", "Lectura de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                } 
             }
             catch (Exception)
             {
