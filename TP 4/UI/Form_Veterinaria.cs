@@ -260,12 +260,35 @@ namespace UI
 
         private void btn_traer_modo_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+               string modo = Veterinaria.LeerModoVisualizacion();
+                if (modo == "CadetBlue") 
+                {
+                   CambiarAModoOscuro(); 
+                }
+                else
+                {
+                    CambiarAModoClaro();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al leer archivo", "Lectura de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            }  
         }
 
         private void btn_carga_modo_Click(object sender, EventArgs e)
         {
-
+            string modo = this.BackColor.ToString();
+            try
+            {
+                Veterinaria.GuardarModoVisualizacion(modo);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al guardar archivo", "Guardado de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         private void CambiarAModoOscuro()
         {

@@ -50,7 +50,6 @@ namespace UI
             if (!bandera)
             {
 
-
                 try
                 {
                     VacunacionDao.EnviarData(1, DateTime.Now, Veterinaria.CantidadVacunasPerrunas, Veterinaria.CantidadVacunasGatunas); ;

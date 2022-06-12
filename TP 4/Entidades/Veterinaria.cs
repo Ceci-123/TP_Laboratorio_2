@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Entidades
@@ -217,32 +219,38 @@ namespace Entidades
             try
             {
                paseo.Lista = ClassSerializadora.LeerDesdeJson();
+               return paseo;
             }
             catch (System.Exception)
             {
+                paseo = new Paseador<Perro>(" ");
                 return paseo;
             }
-            return paseo;
+               
         }
 
         /// <summary>
-        /// Llama a la clase serializadora para guardar la lista de animales en una base de datos
+        /// Lee un archivo de texto en el escritorio con la preferencia de visualizacion
         /// </summary>
-        /// <param name="lista">La lista a guardar</param>
-        /// <returns></returns>
-        public static bool GuardarListaAnimalesDataBase(List<Animal> lista)
+        /// <returns>Un string con el modo</returns>
+        public static string LeerModoVisualizacion()
         {
-            return true;
-        }
+            string retorno = " ";
+            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            ruta += "\\carpetaVeterinaria";
+            ruta += "\\" + "preferencias.txt";
+            try
+            {
+               using StreamReader fileReader = new StreamReader(ruta);
+               retorno = fileReader.ReadToEnd();
+               return retorno;
 
-        /// <summary>
-        /// Llama a la clase serializadora para cargar la lista de animales de la veterinaria desde una base de datos
-        /// </summary>
-        /// <param name="lista">La lista donde se guardan los datos</param>
-        /// <returns></returns>
-        public static bool CargarListaAnimalesDataBase(List<Animal> lista)
-        {
-            return true;
+            }
+            catch (Exception)
+            {
+                return retorno;
+
+            }
         }
 
         /// <summary>
@@ -264,6 +272,26 @@ namespace Entidades
                 }
             }
            
+        }
+
+        /// <summary>
+        /// Guarda en un archivo de texto si el usuario elije modo claro o oscuro
+        /// </summary>
+        public static void GuardarModoVisualizacion(string modo)
+        {
+            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            ruta += "\\carpetaVeterinaria";
+            ruta += "\\" + "preferencias.txt";
+            try
+            {
+                using StreamWriter writer = new StreamWriter(ruta);
+                writer.WriteLine("Preferencia actual de visualizacion ");
+                writer.WriteLine(modo);
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }
