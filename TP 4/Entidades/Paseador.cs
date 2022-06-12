@@ -45,10 +45,14 @@ namespace Entidades
         public string MostrarListaPaseos()
         {
             StringBuilder sb = new StringBuilder();
-            foreach (T item in this.lista)
+            if(lista is not null)
             {
-                sb.AppendLine($"Nombre {item.Nombre} Edad {item.Edad} ");
+                foreach (T item in this.lista)
+                {
+                    sb.AppendLine($"Nombre {item.Nombre} Edad {item.Edad} ");
+                }
             }
+            
             return sb.ToString();
         }
     }
