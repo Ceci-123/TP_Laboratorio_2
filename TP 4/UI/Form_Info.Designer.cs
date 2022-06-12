@@ -39,6 +39,12 @@
             this.btn_PaseoPerruno = new System.Windows.Forms.Button();
             this.btn_PaseoGatuno = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.lbl_conversor = new System.Windows.Forms.Label();
+            this.numeric_conversor = new System.Windows.Forms.NumericUpDown();
+            this.lbl_resultadoConversor = new System.Windows.Forms.Label();
+            this.btn_calcular = new System.Windows.Forms.Button();
+            this.lbl_conversorTexto = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_conversor)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_GuardarEnXml
@@ -59,7 +65,7 @@
             this.richtxt_Info.Location = new System.Drawing.Point(25, 338);
             this.richtxt_Info.Margin = new System.Windows.Forms.Padding(4);
             this.richtxt_Info.Name = "richtxt_Info";
-            this.richtxt_Info.Size = new System.Drawing.Size(671, 280);
+            this.richtxt_Info.Size = new System.Drawing.Size(671, 227);
             this.richtxt_Info.TabIndex = 1;
             this.richtxt_Info.Text = "";
             // 
@@ -159,12 +165,65 @@
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
+            // lbl_conversor
+            // 
+            this.lbl_conversor.AutoSize = true;
+            this.lbl_conversor.Location = new System.Drawing.Point(25, 579);
+            this.lbl_conversor.Name = "lbl_conversor";
+            this.lbl_conversor.Size = new System.Drawing.Size(282, 18);
+            this.lbl_conversor.TabIndex = 10;
+            this.lbl_conversor.Text = "Conversor de edad canina a humana";
+            // 
+            // numeric_conversor
+            // 
+            this.numeric_conversor.Location = new System.Drawing.Point(178, 613);
+            this.numeric_conversor.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numeric_conversor.Name = "numeric_conversor";
+            this.numeric_conversor.Size = new System.Drawing.Size(65, 22);
+            this.numeric_conversor.TabIndex = 11;
+            // 
+            // lbl_resultadoConversor
+            // 
+            this.lbl_resultadoConversor.AutoSize = true;
+            this.lbl_resultadoConversor.Location = new System.Drawing.Point(482, 615);
+            this.lbl_resultadoConversor.Name = "lbl_resultadoConversor";
+            this.lbl_resultadoConversor.Size = new System.Drawing.Size(0, 18);
+            this.lbl_resultadoConversor.TabIndex = 12;
+            // 
+            // btn_calcular
+            // 
+            this.btn_calcular.Location = new System.Drawing.Point(258, 612);
+            this.btn_calcular.Name = "btn_calcular";
+            this.btn_calcular.Size = new System.Drawing.Size(194, 23);
+            this.btn_calcular.TabIndex = 13;
+            this.btn_calcular.Text = "Calcular edad humana";
+            this.btn_calcular.UseVisualStyleBackColor = true;
+            this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click);
+            // 
+            // lbl_conversorTexto
+            // 
+            this.lbl_conversorTexto.AutoSize = true;
+            this.lbl_conversorTexto.Location = new System.Drawing.Point(25, 617);
+            this.lbl_conversorTexto.Name = "lbl_conversorTexto";
+            this.lbl_conversorTexto.Size = new System.Drawing.Size(132, 18);
+            this.lbl_conversorTexto.TabIndex = 14;
+            this.lbl_conversorTexto.Text = "Si tu perr@ tiene";
+            // 
             // Form_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UI.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(818, 653);
+            this.Controls.Add(this.lbl_conversorTexto);
+            this.Controls.Add(this.btn_calcular);
+            this.Controls.Add(this.lbl_resultadoConversor);
+            this.Controls.Add(this.numeric_conversor);
+            this.Controls.Add(this.lbl_conversor);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_PaseoGatuno);
             this.Controls.Add(this.btn_PaseoPerruno);
@@ -184,7 +243,9 @@
             this.Name = "Form_Info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informacion sobre Pacientes";
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_conversor)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -200,5 +261,10 @@
         private System.Windows.Forms.Button btn_PaseoPerruno;
         private System.Windows.Forms.Button btn_PaseoGatuno;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.Label lbl_conversor;
+        private System.Windows.Forms.NumericUpDown numeric_conversor;
+        private System.Windows.Forms.Label lbl_resultadoConversor;
+        private System.Windows.Forms.Button btn_calcular;
+        private System.Windows.Forms.Label lbl_conversorTexto;
     }
 }

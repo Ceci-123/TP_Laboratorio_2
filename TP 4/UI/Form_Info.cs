@@ -7,6 +7,7 @@ namespace UI
     public partial class Form_Info : Form
     {
         bool bandera;
+        public delegate int MultiplicadorEdad(int edad);
         public Form_Info()
         {
             InitializeComponent();
@@ -164,5 +165,15 @@ namespace UI
         {
             Application.Exit();
         }
+
+        private void btn_calcular_Click(object sender, EventArgs e)
+        {
+           int edad = (int)this.numeric_conversor.Value;
+            MultiplicadorEdad M = (x) => x * 7;
+            edad = M(edad);
+           this.lbl_resultadoConversor.Text = edad.ToString() + " años";
+       
+        }
+
     }
 }

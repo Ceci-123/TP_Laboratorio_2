@@ -55,7 +55,6 @@ namespace Entidades
             if(lista.Count == 0)
             {
                 throw new NoHayPaseosException("No hay paseos que mostrar");
-                //sb.AppendLine();
             }
             return sb.ToString();
         }
