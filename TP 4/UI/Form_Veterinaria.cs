@@ -274,7 +274,7 @@ namespace UI
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al leer archivo", "Lectura de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Error al leer archivo", "Lectura de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }  
         }
 
