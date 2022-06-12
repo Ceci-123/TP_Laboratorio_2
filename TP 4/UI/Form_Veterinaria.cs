@@ -74,6 +74,7 @@ namespace UI
                 Thread.Sleep(1000);
                 InvocarLabel("LISTO PARA INICIAR...");
                 Thread.Sleep(1000);
+                InvocarLabel("TRABAJANDO");
             }
             catch (Exception e)
             {
