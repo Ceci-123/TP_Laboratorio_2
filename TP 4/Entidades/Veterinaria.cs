@@ -281,9 +281,20 @@ namespace Entidades
         {
             string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             ruta += "\\carpetaVeterinaria";
-            ruta += "\\" + "preferencias.txt";
+            if (!Directory.Exists(ruta))
+            {
+                try
+                {
+                    Directory.CreateDirectory(ruta);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
             try
             {
+                ruta += "\\" + "preferencias.txt";
                 using StreamWriter writer = new StreamWriter(ruta);
                 writer.WriteLine("Preferencia actual de visualizacion ");
                 writer.WriteLine(modo);

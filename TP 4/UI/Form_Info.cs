@@ -74,7 +74,10 @@ namespace UI
             try
             {
                 this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales));
-
+                if(Veterinaria.ListaAnimales.Count == 0)
+                {
+                    this.richtxt_Info.Text = "No hay animales en la lista";
+                }
             }
             catch (Exception)
             {

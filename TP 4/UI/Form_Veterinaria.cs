@@ -263,11 +263,11 @@ namespace UI
             try
             {
                string modo = Veterinaria.LeerModoVisualizacion();
-                if (modo == "CadetBlue") 
+                if (modo.Contains("CadetBlue")) 
                 {
                    CambiarAModoOscuro(); 
                 }
-                else
+                if (modo.Contains("WhiteSmoke"))
                 {
                     CambiarAModoClaro();
                 }

@@ -52,7 +52,10 @@ namespace Entidades
                     sb.AppendLine($"Nombre {item.Nombre} Edad {item.Edad} ");
                 }
             }
-            
+            if(lista.Count == 0)
+            {
+                sb.AppendLine("No hay paseos que mostrar");
+            }
             return sb.ToString();
         }
     }
