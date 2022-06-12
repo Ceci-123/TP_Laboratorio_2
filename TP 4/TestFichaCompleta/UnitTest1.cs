@@ -10,8 +10,7 @@ namespace TestFichaCompleta
         public void FichaCompleta_WhenSinNombre_DebeSerFalse()
         {
             //Arrange
-            Perro p = new Perro("");
-            p.Edad = 7;
+            Perro p = new Perro("",7);
             p.Peso = 20;
             p.Raza = "mestizo";
             p.Vacunado = true;
@@ -26,8 +25,7 @@ namespace TestFichaCompleta
         public void FichaCompleta_WhenEdadEsCero_DebeSerFalse()
         {
             //Arrange
-            Perro p = new Perro("Milo");
-            p.Edad = 0;
+            Perro p = new Perro("Milo",0);
             p.Peso = 20;
             p.Raza = "mestizo";
             p.Vacunado = true;
@@ -42,8 +40,7 @@ namespace TestFichaCompleta
         public void FichaCompleta_WhenSinRaza_DebeSerFalse()
         {
             //Arrange
-            Perro p = new Perro("Milo");
-            p.Edad = 7;
+            Perro p = new Perro("Milo",7);
             p.Peso = 20;
             p.Raza = "";
             p.Vacunado = true;
@@ -58,8 +55,7 @@ namespace TestFichaCompleta
         public void FichaCompleta_WhenSinVacunas_DebeSerFalse()
         {
             //Arrange
-            Perro p = new Perro("Milo");
-            p.Edad = 7;
+            Perro p = new Perro("Milo",7);
             p.Peso = 20;
             p.Raza = "mestizo";
             p.Vacunado = false;
@@ -74,8 +70,7 @@ namespace TestFichaCompleta
         public void FichaCompleta_WhenTodoCompleto_DeberiaSerTrue()
         {
             //Arrange
-            Perro p = new Perro("Milo");
-            p.Edad = 7;
+            Perro p = new Perro("Milo",7);
             p.Peso = 20;
             p.Raza = "mestizo";
             p.Vacunado = true;
