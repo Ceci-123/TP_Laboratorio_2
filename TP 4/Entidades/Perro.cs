@@ -55,8 +55,8 @@ namespace Entidades
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Perro");
-            sb.Append($"Peso {this.Peso} Raza {this.Raza}");
+            sb.Append("Es un Perro ");
+            sb.Append($"Peso: {this.Peso} Raza: {this.Raza}");
             if (vacunado)
             {
                 sb.Append($" Todas sus vacunas al dia");

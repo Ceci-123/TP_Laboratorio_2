@@ -152,6 +152,10 @@ namespace UI
             try
             {
                 int aux = int.Parse(this.txt_bx_busquedaPorId.Text);
+                if(Veterinaria.ListaAnimales.Count == 0)
+                {
+                    MessageBox.Show("Aun no hay animales ingresados");
+                }
                 animalito = Veterinaria.BuscarAnimalPorId(aux, Veterinaria.ListaAnimales);
                 if (animalito is not null)
                 {

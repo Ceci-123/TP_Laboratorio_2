@@ -24,7 +24,7 @@ namespace Entidades
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("Hamster");
+            sb.Append("Es un Hamster");
             return sb.ToString();
         }
     }

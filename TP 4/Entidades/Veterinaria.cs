@@ -85,9 +85,9 @@ namespace Entidades
             {
                 foreach (Animal item in lista)
                 {
-                    sb.Append($"id de Registro {item.Id.ToString()}");
-                    sb.Append(item.Nombre + " ");
-                    sb.AppendLine(item.Edad.ToString() + " años");
+                    sb.Append($"id: {item.Id.ToString()}");
+                    sb.Append("Nombre: " + item.Nombre + " ");
+                    sb.AppendLine("Edad: " + item.Edad.ToString() + " años");
                     if (item is Perro)
                     {
                         sb.AppendLine(((Perro)item).Mostrar());
