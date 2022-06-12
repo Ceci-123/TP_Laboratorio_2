@@ -77,19 +77,22 @@ namespace UI
                     bool auxPaseo = this.chk_paseo.Checked;
                     bool auxAntirrabica = this.chk_AplicarVacuna.Checked;
 
-                    if (auxEdad == 0 || auxPeso == 0)
-                    {
-                        MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
-                    }
-                    else
-                    {
+                    
                         switch (pacienteActual.TipoDeAnimal.ToString())
                         {
                             case "Conejo":
+                                if (auxEdad == 0)
+                                {
+                                    MessageBox.Show("La edad no puede ser 0", "Error");
+                                }
                                 Veterinaria.AgregarAnimal(new Conejo(auxNombre, auxEdad, auxPelaje));
                                 bandera = true;
                                 break;
                             case "Perro":
+                                if (auxEdad == 0 || auxPeso == 0)
+                                {
+                                    MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
+                                }
                                 Perro p = new Perro(auxNombre, auxEdad, auxPeso, auxRaza, auxVacunado);
                                 bandera = true;
                                 Veterinaria.AgregarAnimal(p);
@@ -103,6 +106,10 @@ namespace UI
                                 }
                                 break;
                             case "Gato":
+                                if (auxEdad == 0 || auxPeso == 0)
+                                {
+                                    MessageBox.Show("Ni la edad ni el peso pueden ser 0", "Error");
+                                }
                                 Gato g = new Gato(auxNombre, auxEdad, auxVacunado, auxRaza);
                                 bandera = true;
                                 Veterinaria.AgregarAnimal(g);
@@ -116,14 +123,17 @@ namespace UI
                                 }
                                 break;
                             case "Hamster":
+                                if (auxEdad == 0)
+                                {
+                                    MessageBox.Show("La edad no puede ser 0", "Error");
+                                }
                                 Veterinaria.AgregarAnimal(new Hamster(auxNombre, auxEdad));
                                 bandera = true;
                                 break;
                         }
                         LimpiarCampos();
                         RefrescarLista();
-                    }
-                    
+                           
                 }
 
 
