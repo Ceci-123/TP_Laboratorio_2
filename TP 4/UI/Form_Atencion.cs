@@ -189,6 +189,10 @@ namespace UI
                     MostrarAnimalitoPorId(animalito);
 
                 }
+                if(aux > Veterinaria.ListaAnimales.Count)
+                {
+                    MessageBox.Show("Numero de id fuera de rango");
+                }
             }
             catch (Exception)
             {
