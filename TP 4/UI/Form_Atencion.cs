@@ -263,6 +263,10 @@ namespace UI
         private void btn_listado_Click(object sender, EventArgs e)
         {
             RefrescarLista();
+            if(Veterinaria.ListaAnimales.Count == 0)
+            {
+                MessageBox.Show("Aun no hay animalitos ingresados");
+            }
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
