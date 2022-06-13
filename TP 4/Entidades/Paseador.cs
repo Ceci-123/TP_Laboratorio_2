@@ -45,17 +45,30 @@ namespace Entidades
         public string MostrarListaPaseos()
         {
             StringBuilder sb = new StringBuilder();
-            if(lista is not null)
+            try
             {
-                foreach (T item in this.lista)
+                if (lista is not null)
                 {
-                    sb.AppendLine($"Nombre {item.Nombre} Edad {item.Edad} ");
+                    foreach (T item in this.lista)
+                    {
+                        sb.AppendLine($"Nombre {item.Nombre} Edad {item.Edad} ");
+                    }
+                    if (lista.Count == 0)
+                    {
+                        throw new NoHayPaseosException("No hay paseos que mostrar");
+                    }
                 }
+                
             }
-            if(lista.Count == 0)
+            catch (NoHayPaseosException)
             {
-                throw new NoHayPaseosException("No hay paseos que mostrar");
+
             }
+            catch (Exception)
+            {
+
+            }
+            
             return sb.ToString();
         }
     }

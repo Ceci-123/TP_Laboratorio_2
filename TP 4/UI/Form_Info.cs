@@ -127,6 +127,15 @@ namespace UI
             {
                 this.richtxt_Info.Text = String.Empty;
                 this.richtxt_Info.Text = (Veterinaria.PaseoPerruno.MostrarListaPaseos());
+                if(Veterinaria.PaseoPerruno.Lista is not null)
+                {
+                    if (Veterinaria.PaseoPerruno.Lista.Count == 0)
+                    {
+                        MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
+                    }
+                }
+                
+                
 
             }
             catch (NoHayPaseosException)
@@ -147,6 +156,14 @@ namespace UI
             {
                 this.richtxt_Info.Text = String.Empty;
                 this.richtxt_Info.Text = (Veterinaria.PaseoGatuno.MostrarListaPaseos());
+                if (Veterinaria.PaseoGatuno.Lista is not null)
+                {
+                    if (Veterinaria.PaseoGatuno.Lista.Count == 0)
+                    {
+                        MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
+                    }
+                }
+                
 
             }
             catch (NoHayPaseosException)
