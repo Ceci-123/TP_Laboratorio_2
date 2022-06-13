@@ -138,14 +138,22 @@ namespace UI
 
         private void RefrescarListaYSumar()
         {
-            this.rchTxt_Info.Text = Veterinaria.MostrarFila(Veterinaria.FilaDePacientes);
-            SumarUnPaciente();
+            if (Veterinaria.FilaDePacientes is not null)
+            {
+                this.rchTxt_Info.Text = Veterinaria.MostrarFila(Veterinaria.FilaDePacientes);
+                SumarUnPaciente();
+            }
+
         }
 
         private void RefrescarListaYRestar()
         {
-            this.rchTxt_Info.Text = Veterinaria.MostrarFila(Veterinaria.FilaDePacientes);
-            RestarUnPaciente();
+            if (Veterinaria.FilaDePacientes is not null)
+            {
+                this.rchTxt_Info.Text = Veterinaria.MostrarFila(Veterinaria.FilaDePacientes);
+                RestarUnPaciente();
+            }
+
         }
         private void SumarUnPaciente()
         {
@@ -251,9 +259,9 @@ namespace UI
 
         private void radioBtn_claro_CheckedChanged(object sender, EventArgs e)
         {
-            if(OnCambioModoClaro is not null)
+            if (OnCambioModoClaro is not null)
             {
-               OnCambioModoClaro.Invoke();
+                OnCambioModoClaro.Invoke();
 
             }
         }
@@ -262,10 +270,10 @@ namespace UI
         {
             try
             {
-               string modo = Veterinaria.LeerModoVisualizacion();
-                if (modo.Contains("CadetBlue")) 
+                string modo = Veterinaria.LeerModoVisualizacion();
+                if (modo.Contains("CadetBlue"))
                 {
-                   CambiarAModoOscuro(); 
+                    CambiarAModoOscuro();
                 }
                 if (modo.Contains("WhiteSmoke"))
                 {
@@ -274,12 +282,12 @@ namespace UI
                 if (modo == " ")
                 {
                     MessageBox.Show("No existe archivo", "Lectura de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                } 
+                }
             }
             catch (Exception)
             {
                 MessageBox.Show("Error al leer archivo", "Lectura de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }  
+            }
         }
 
         private void btn_carga_modo_Click(object sender, EventArgs e)

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using System.Xml.Serialization;
 
 namespace Entidades
@@ -24,7 +20,7 @@ namespace Entidades
 
         static Animal()
         {
-            
+
             nextId = 1;
         }
         public Animal()
@@ -48,12 +44,12 @@ namespace Entidades
         public static bool operator ==(Animal a1, Animal a2)
         {
             bool retorno = false;
-            if (a1 == null && a2 == null)
+            if (a1 is not null && a2 is not null)
             {
-                if(a1.Id == a2.Id)
+                if (a1.Id == a2.Id)
                 {
                     retorno = true;
-                }  
+                }
             }
             return retorno;
         }

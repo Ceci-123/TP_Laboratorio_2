@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
 
 namespace Entidades
@@ -38,7 +34,7 @@ namespace Entidades
             }
             catch (Exception)
             {
-                throw;
+
             }
             finally
             {
@@ -55,7 +51,7 @@ namespace Entidades
                 conexion.Open();
                 if (esPerro)
                 {
-                   comando.CommandText = $"SELECT SUM(ANTIRRABICAPERROS) AS SUMA FROM [INSTITUTOZOONOSIS].[dbo].[VacunasAntirrabicas] WHERE id_veterinaria = 1";
+                    comando.CommandText = $"SELECT SUM(ANTIRRABICAPERROS) AS SUMA FROM [INSTITUTOZOONOSIS].[dbo].[VacunasAntirrabicas] WHERE id_veterinaria = 1";
                 }
                 else
                 {
@@ -70,19 +66,19 @@ namespace Entidades
                     }
                 }
 
-                return retorno;
             }
             catch (Exception)
             {
-                throw;
+
             }
             finally
             {
                 conexion.Close();
             }
-       
+            return retorno;
+
         }
 
-        
+
     }
 }

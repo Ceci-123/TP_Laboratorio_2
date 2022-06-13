@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Paseador<T> where T: Animal
+    public class Paseador<T> where T : Animal
     {
         private List<T> lista;
         private string nombrePaseador;
@@ -18,8 +17,8 @@ namespace Entidades
 
         public Paseador(string nombre)
         {
-           this.lista = new List<T>();
-           this.nombrePaseador = nombre;
+            this.lista = new List<T>();
+            this.nombrePaseador = nombre;
         }
 
         /// <summary>
@@ -29,13 +28,13 @@ namespace Entidades
         /// <param name="lista">La lista donde se agrega el objeto</param>
         public void AgregarALista(T t, List<T> lista)
         {
-           if(t is not null && lista is not null)
+            if (t is not null && lista is not null)
             {
-               lista.Add(t);
+                lista.Add(t);
 
             }
 
-            
+
         }
 
         /// <summary>
@@ -58,7 +57,7 @@ namespace Entidades
                         throw new NoHayPaseosException("No hay paseos que mostrar");
                     }
                 }
-                
+
             }
             catch (NoHayPaseosException)
             {
@@ -68,7 +67,7 @@ namespace Entidades
             {
 
             }
-            
+
             return sb.ToString();
         }
     }

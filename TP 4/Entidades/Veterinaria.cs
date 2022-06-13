@@ -65,11 +65,15 @@ namespace Entidades
         public static string MostrarFila(Queue<Paciente> filaDePacientes)
         {
             StringBuilder sb = new StringBuilder();
-            foreach (Paciente item in filaDePacientes)
+            if (filaDePacientes != null)
             {
-                sb.Append(item.Nombre + " ");
-                sb.AppendLine(item.TipoDeAnimal.ToString());
+                foreach (Paciente item in filaDePacientes)
+                {
+                    sb.Append(item.Nombre + " ");
+                    sb.AppendLine(item.TipoDeAnimal.ToString());
+                }
             }
+
             return sb.ToString();
         }
 
@@ -134,14 +138,18 @@ namespace Entidades
         public static Animal BuscarAnimalPorId(int id, List<Animal> lista)
         {
             Animal aux = null;
-            foreach (Animal item in lista)
+            if (lista != null)
             {
-                if (item.Id == id)
+                foreach (Animal item in lista)
                 {
-                    aux = item;
-                    break;
+                    if (item.Id == id)
+                    {
+                        aux = item;
+                        break;
+                    }
                 }
             }
+
             return aux;
         }
 
@@ -152,16 +160,20 @@ namespace Entidades
         /// <returns>La lista cargada</returns>
         public static List<Animal> CargarAnimalesDesdeXml(List<Animal> lista)
         {
-            try
+            if (lista is not null)
             {
-                lista = ClassSerializadora.LeerDesdeXml();
+                try
+                {
+                    lista = ClassSerializadora.LeerDesdeXml();
 
-            }
-            catch (System.Exception)
-            {
-                return lista;
+                }
+                catch (System.Exception)
+                {
+                    return lista;
 
+                }
             }
+
             return lista;
         }
 
@@ -175,7 +187,11 @@ namespace Entidades
             bool retorno = false;
             try
             {
-                ClassSerializadora.EscribirAJson(lista);
+                if (lista is not null)
+                {
+                    ClassSerializadora.EscribirAJson(lista);
+
+                }
                 retorno = true;
             }
             catch (System.Exception)
@@ -197,7 +213,11 @@ namespace Entidades
 
             try
             {
-                ClassSerializadora.EscribirAXml(lista);
+                if (lista is not null)
+                {
+                    ClassSerializadora.EscribirAXml(lista);
+
+                }
                 retorno = true;
             }
             catch (System.Exception)
@@ -218,15 +238,19 @@ namespace Entidades
         {
             try
             {
-               paseo.Lista = ClassSerializadora.LeerDesdeJson();
-               return paseo;
+                if (paseo.Lista is not null)
+                {
+
+                    paseo.Lista = ClassSerializadora.LeerDesdeJson();
+                }
+                return paseo;
             }
             catch (System.Exception)
             {
                 paseo = new Paseador<Perro>(" ");
                 return paseo;
             }
-               
+
         }
 
         /// <summary>
@@ -241,9 +265,9 @@ namespace Entidades
             ruta += "\\" + "preferencias.txt";
             try
             {
-               using StreamReader fileReader = new StreamReader(ruta);
-               retorno = fileReader.ReadToEnd();
-               return retorno;
+                using StreamReader fileReader = new StreamReader(ruta);
+                retorno = fileReader.ReadToEnd();
+                return retorno;
 
             }
             catch (Exception)
@@ -260,18 +284,18 @@ namespace Entidades
         /// <returns></returns>
         public static void AgregarAPaseos(Animal a)
         {
-           if (a is not null)
+            if (a is not null)
             {
-                if (a is Perro)
+                if (a is Perro && paseadorPerros.Lista is not null)
                 {
                     paseadorPerros.AgregarALista((Perro)a, paseadorPerros.Lista);
                 }
-                if (a is Gato)
+                if (a is Gato && paseadorGatos.Lista is not null)
                 {
                     paseadorGatos.AgregarALista((Gato)a, paseadorGatos.Lista);
                 }
             }
-           
+
         }
 
         /// <summary>

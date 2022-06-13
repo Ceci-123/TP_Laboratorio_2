@@ -16,14 +16,22 @@ namespace UI
 
         private void btn_GuardarEnXml_Click(object sender, EventArgs e)
         {
-            if (Veterinaria.GuardarAnimalesEnXml(Veterinaria.ListaAnimales))
+            try
             {
-                MessageBox.Show("Datos guardados exitosamente", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (Veterinaria.GuardarAnimalesEnXml(Veterinaria.ListaAnimales))
+                {
+                    MessageBox.Show("Datos guardados exitosamente", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Ocurrio un error al guardar los datos", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            else
+            catch (Exception)
             {
                 MessageBox.Show("Ocurrio un error al guardar los datos", "Persistencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
         }
 
         private void btn_GuardarEnJson_Click(object sender, EventArgs e)
@@ -118,7 +126,11 @@ namespace UI
         private void RefrescarLista()
         {
             this.richtxt_Info.Text = String.Empty;
-            this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
+            if (Veterinaria.ListaAnimales is not null)
+            {
+                this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.ListaAnimales);
+
+            }
         }
 
         private void btn_PaseoPerruno_Click(object sender, EventArgs e)
@@ -127,15 +139,15 @@ namespace UI
             {
                 this.richtxt_Info.Text = String.Empty;
                 this.richtxt_Info.Text = (Veterinaria.PaseoPerruno.MostrarListaPaseos());
-                if(Veterinaria.PaseoPerruno.Lista is not null)
+                if (Veterinaria.PaseoPerruno.Lista is not null)
                 {
                     if (Veterinaria.PaseoPerruno.Lista.Count == 0)
                     {
                         MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
                     }
                 }
-                
-                
+
+
 
             }
             catch (NoHayPaseosException)
@@ -163,7 +175,7 @@ namespace UI
                         MessageBox.Show("No hay paseos que mostrar", "Carga de datos");
                     }
                 }
-                
+
 
             }
             catch (NoHayPaseosException)
