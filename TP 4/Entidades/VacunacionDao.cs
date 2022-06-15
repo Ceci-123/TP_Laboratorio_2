@@ -11,7 +11,7 @@ namespace Entidades
 
         static VacunacionDao()
         {
-            cadenaConexion = @"Data Source=.;Initial Catalog=INSTITUTOZONOSIS;Integrated Security=True";
+            cadenaConexion = @"Data Source=.;Initial Catalog=INSTITUTOZOONOSIS;Integrated Security=True";
             comando = new SqlCommand();
             conexion = new SqlConnection(cadenaConexion);
             comando.CommandType = System.Data.CommandType.Text;
@@ -31,6 +31,10 @@ namespace Entidades
                 comando.Parameters.AddWithValue("@AntiGato", cantidadVacunaGato);
                 int rows = comando.ExecuteNonQuery();
 
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                throw;
             }
             catch (Exception)
             {

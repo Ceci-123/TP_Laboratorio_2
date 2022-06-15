@@ -66,6 +66,10 @@ namespace UI
                     bandera = true;
 
                 }
+                catch (System.Data.SqlClient.SqlException)
+                {
+                    MessageBox.Show("No se encuentra la base de datos", "Envio datos a Zoonosis");
+                }
                 catch (Exception)
                 {
 
