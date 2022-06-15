@@ -21,6 +21,12 @@ namespace Entidades
             this.nombrePaseador = nombre;
         }
 
+        public Paseador()
+        {
+            this.lista = new List<T>();
+     
+        }
+
         /// <summary>
         /// Agrega un objeto de tipo T a la lista de paseos
         /// </summary>

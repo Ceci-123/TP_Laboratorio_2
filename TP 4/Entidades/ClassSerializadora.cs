@@ -128,20 +128,21 @@ namespace Entidades
         {
            
             string archivo = path + "SerializacionJson" + ".JSON";
-            List<Perro> datosRecuperados = new List<Perro>();
+            Paseador<Perro> datosRecuperados = null;
             try
             {
 
                 if (Directory.Exists(path))
                 {
-
                     if (archivo != null)
                     {
-                      datosRecuperados = JsonSerializer.Deserialize<List<Perro>>(File.ReadAllText(archivo));
+                        string jsonString = File.ReadAllText(archivo);
+                        datosRecuperados = JsonSerializer.Deserialize<Paseador<Perro>>(jsonString);
+                        
                     }
                 }
                 
-                return datosRecuperados;
+                return datosRecuperados.Lista;
             }
             catch (Exception e)
             {
