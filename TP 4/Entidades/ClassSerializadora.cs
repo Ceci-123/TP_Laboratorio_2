@@ -129,6 +129,7 @@ namespace Entidades
            
             string archivo = path + "SerializacionJson" + ".JSON";
             Paseador<Perro> datosRecuperados = null;
+            List<Perro> listaAlternativa = new List<Perro>();
             try
             {
 
@@ -141,8 +142,15 @@ namespace Entidades
                         
                     }
                 }
-                
-                return datosRecuperados.Lista;
+                if(datosRecuperados is not null)
+                {
+                    return datosRecuperados.Lista;
+
+                }
+                else
+                {
+                    return listaAlternativa;
+                }
             }
             catch (Exception e)
             {

@@ -100,7 +100,13 @@ namespace UI
             try
             {
                 this.richtxt_Info.Text = (Veterinaria.CargarListaAnimalesJson(Veterinaria.PaseoPerruno)).MostrarListaPaseos();
-
+                if(Veterinaria.PaseoPerruno is not null)
+                {
+                    if(Veterinaria.PaseoPerruno.TamañoManada == 0)
+                    {
+                        MessageBox.Show("La lista no tiene perros", "Carga de datos");
+                    }
+                }
             }
             catch (Exception)
             {
