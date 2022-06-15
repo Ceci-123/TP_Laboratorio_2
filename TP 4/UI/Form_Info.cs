@@ -83,9 +83,9 @@ namespace UI
             try
             {
                 this.richtxt_Info.Text = Veterinaria.MostrarLista(Veterinaria.CargarAnimalesDesdeXml(Veterinaria.ListaAnimales));
-                if (Veterinaria.ListaAnimales.Count == 0)
+                if (Veterinaria.ListaAnimales is null)
                 {
-                    this.richtxt_Info.Text = "No hay animales en la lista";
+                    MessageBox.Show("Ocurrio un error", "Carga de datos");
                 }
             }
             catch (Exception)
@@ -121,6 +121,10 @@ namespace UI
             {
                 this.richtxt_Info.Text = $"Vacunas antirrabicas aplicadas este mes. De perro: {VacunacionDao.ConsultaAntirrabica(true)} y de gato: {VacunacionDao.ConsultaAntirrabica(false)}";
 
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("No se encuentra la base de datos", "Carga de datos");
             }
             catch (Exception)
             {
