@@ -126,30 +126,21 @@ namespace Entidades
         /// <exception cref="Exception"></exception>
         public static List<Perro> LeerDesdeJson()
         {
-            string archivo = string.Empty;
-            string informacionRecuperada = string.Empty;
-            List<Perro> datosRecuperados = default;
+           
+            string archivo = path + "SerializacionJson" + ".JSON";
+            List<Perro> datosRecuperados = new List<Perro>();
             try
             {
 
                 if (Directory.Exists(path))
                 {
-                    string[] archivosEnElPath = Directory.GetFiles(path);
-                    foreach (string path in archivosEnElPath)
-                    {
-                        if (path.Contains("SerializacionJson"))
-                        {
-                            archivo = path;
-                            break;
-                        }
-                    }
 
                     if (archivo != null)
                     {
-                        datosRecuperados = JsonSerializer.Deserialize<List<Perro>>(File.ReadAllText(archivo));
+                      datosRecuperados = JsonSerializer.Deserialize<List<Perro>>(File.ReadAllText(archivo));
                     }
                 }
-
+                
                 return datosRecuperados;
             }
             catch (Exception e)
