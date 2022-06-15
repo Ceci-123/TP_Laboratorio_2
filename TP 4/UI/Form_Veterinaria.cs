@@ -106,7 +106,6 @@ namespace UI
             this.lbl_TipoAnimal.Visible = true;
             this.cmb_TipoAnimal.Visible = true;
             this.txt_bx_nombre.Visible = true;
-            this.cmb_TipoAnimal.Text = "";
         }
 
         private void btn_Ok_Click(object sender, EventArgs e)
