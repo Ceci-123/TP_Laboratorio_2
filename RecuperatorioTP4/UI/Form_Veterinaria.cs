@@ -17,7 +17,6 @@ namespace UI
         private string segundosString;
         string minutosString;
         private string horasString;
-        //private Thread hiloAlterno;
         public delegate void DelegadoModos();
         public event DelegadoModos OnCambioModoClaro;
         public event DelegadoModos OnCambioModoOscuro;
@@ -45,9 +44,7 @@ namespace UI
             ReproducirLadrido();
             timer1.Enabled = true;
             timer1.Start();
-            //hiloAlterno = new Thread(Anunciar);
-            //hiloAlterno.Start();
-            Task tarea = new Task(()=> Anunciar());
+            Task tarea = Task.Run(Anunciar);
             OnCambioModoClaro = CambiarAModoClaro;
             OnCambioModoOscuro = CambiarAModoOscuro;
         }
